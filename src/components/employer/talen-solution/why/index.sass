@@ -1,0 +1,140 @@
+.mt-4
+	margin-top: 40px
+.employer-talen-solution-why
+	.cb-title
+		color: #182642
+		margin-bottom: 15px
+		span 
+			color: #f79c25
+		@media(min-width: 1024px)
+			font-size: 30px
+			span 
+				font-size: 30px
+		@media(min-width: 1200px)
+			font-size: 36px
+			margin-bottom: 25px
+			span 
+				font-size: 36px
+	.sub-title
+		margin-bottom: 25px
+		> *
+			font-size: 16px
+			font-weight: 400
+			color: #172642
+			text-align: center
+		@media(min-width: 1024px)
+			margin-bottom: 35px
+			> *
+				font-size: 17px
+		@media(min-width: 1200px)
+			margin-bottom: 45px
+		@media(min-width: 1440px)
+			> *
+				font-size: 18px
+	// .list-why
+	.why-item
+		display: flex
+		padding: 15px 
+		border: 1px solid #e0e0e0
+		height: 100%
+		max-width: 680px
+		// margin-top: 20px
+		@media(max-width: 1024px)
+			margin-left: auto 
+			margin-right: auto 
+		.icon
+			width: 90px
+			min-width: 90px
+		.caption
+			width: calc(100% - 90px)
+			padding-left: 20px
+		.title
+			font-size: 16px
+			font-weight: 900
+			color: #172642
+			text-transform: uppercase
+			@media(min-width: 1024px)
+				font-size: 18px
+		.sub-title
+			font-size: 16px
+			font-weight: 400
+			color: #999999
+			margin: 0
+			margin-top: 3px
+		.number-phone
+			font-size: 16px
+			font-weight: 400
+			color: #172642
+			a 
+				font-size: 24px
+				font-weight: 900
+				color: #172642
+				display: flex
+		.email
+			font-size: 16px
+			font-weight: 400
+			color: #172642
+			margin-top: 5px
+			a 
+				font-size: 16px
+				font-weight: 500
+				color: #109ed9
+				display: flex
+			@media(min-width: 1024px)
+				a 
+					font-size: 18px
+		.content
+			margin-top: 5px
+			> * 
+				font-size: 16px
+				font-weight: 400
+				color: #172642
+		.button
+			margin-top: 10px
+			display: flex
+			a 
+				display: flex
+				justify-content: center
+				align-items: center
+				min-width: 160px
+				height: 40px
+				border-radius: 4px
+				background: $gradient-2
+				background-size: 200% 100%
+				color: #ffffff
+				font-size: 16px
+				font-weight: 700
+				text-transform: uppercase
+				text-decoration: none
+				text-align: center
+				padding: 5px 10px
+				text-align: center
+				em 
+					padding-right: 10px
+				&:hover 
+					background-position: 100% 0
+		@media(min-width: 1024px)
+			padding: 20px
+			.caption
+				padding-left: 25px
+		@media(min-width: 1200px)
+			padding: 25px 40px
+			// margin-top: 40px
+			.caption
+				padding-left: 35px
+	.list-why-top
+		@media(min-width: 1024px)
+			margin-bottom: -40px
+			> * 
+				margin-bottom: 40px
+				&:nth-child(2n)
+					.why-item
+						margin-left: auto 
+						margin-right: 0
+	.list-why-bottom
+		@media(min-width: 1024px)
+			> * 
+				&:nth-child(2n)
+					.why-item
+						margin-left: auto 
+						margin-right: 0

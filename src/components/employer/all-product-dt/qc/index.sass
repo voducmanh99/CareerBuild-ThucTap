@@ -1,0 +1,82 @@
+.all-product-detail-1
+	background-size: cover 
+	background-repeat: no-repeat
+	background-position: center center
+	min-height: 320px
+	display: flex
+	justify-content: center
+	align-items: center
+	.cb-title
+		color: #ffffff
+		font-weight: 300
+		@media(min-width: 1200px)
+			font-size: 30px
+	.button
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 20px
+		a 
+			display: flex
+			justify-content: center
+			align-items: center
+			min-width: 190px 
+			padding: 5px 10px
+			height: 45px
+			background: #ffffff
+			text-decoration: none
+			font-size: 16px
+			font-weight: 700
+			text-transform: uppercase
+			color: #0197d2
+			text-align: center
+			border-radius: 4px
+			transition: .4s ease-in-out all
+			&:hover 
+				color: #ffffff
+				background: #0197d2
+.all-product-detail-2
+	min-height: 540px
+	display: flex
+	justify-content: center
+	align-items: center
+	.image
+		+img-scale(408/690*100%)
+		&.popup-video
+			position: relative
+			&::before
+				content: url('../img/employer/button-play.png')
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				z-index: 11
+				pointer-events: none
+	.cb-title
+		color: #ffffff
+		@media(min-width: 1024px)
+			
+			margin-top: 35px
+		@media(min-width: 1200px)
+			font-size: 36px
+	.content
+		margin-top: 20px
+		> * 
+			font-size: 16px
+			font-weight: 400
+			color: #ffffff
+		@media(min-width: 1024px)
+			max-height: 190px
+			overflow-y: auto 
+			padding: 10px
+			&::-webkit-scrollbar
+				width: 6px
+				background: #eaeaea
+			&::-webkit-scrollbar-thumb
+				background: #7fcb42
+			> * 
+				font-size: 18px
+		@media(min-width: 1366px)
+			max-height: 250px
+		@media(min-width: 1440px)
+			max-height: 275px

@@ -1,0 +1,97 @@
+.all-product-detail-attractive
+	position: relative
+	background: #fbfbfb
+	display: flex
+	justify-content: center
+	align-items: center
+	padding-bottom: 0
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		background: #ebf8ff
+		height: 380px
+		width: 100%
+		z-index: 1
+	.container
+		z-index: 20
+	.cb-title
+		color: #182642
+		margin-bottom: 15px
+		@media(min-width: 1024px)
+			font-size: 30px
+		@media(min-width: 1200px)
+			font-size: 36px
+			margin-bottom: 25px
+	.sub-title
+		margin-bottom: 25px
+		max-width: 1060px
+		margin-left: auto 
+		margin-right: auto 
+		> *
+			font-size: 16px
+			font-weight: 400
+			color: #172642
+			text-align: center
+		@media(min-width: 1024px)
+			margin-bottom: 35px
+			> *
+				font-size: 17px
+		@media(min-width: 1200px)
+			margin-bottom: 45px
+		@media(min-width: 1440px)
+			> *
+				font-size: 18px
+	.main-attractive
+		background: #ffffff
+		border: 1px solid #e7e7e7
+		padding: 15px
+		padding-top: 0
+		box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+		@media(min-width: 1024px)
+			padding: 40px
+			padding-top: 0
+			.row
+				margin: 0 -20px
+				margin-bottom: 0
+				> * 
+					padding-left: 20px
+					padding-right: 20px
+					margin-bottom: 0
+		@media(min-width: 1440px)
+			padding: 40px 70px
+			padding-top: 0
+			.row
+				margin: 0 -45px
+				margin-bottom: 0
+				> * 
+					padding-left: 45px
+					padding-right: 45px
+	.attractive-item
+		margin-top: 15px
+		.image
+			box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+			border-radius: 10px
+			overflow: hidden
+			+img-scale(220/590*100%)
+		.caption
+			margin-top: 20px
+			.title
+				font-size: 18px
+				font-weight: 700
+				color: #007f5e
+				text-align: center
+			.des 
+				text-align: center
+				margin-top: 5px
+				max-width: 560px
+				margin-left: auto 
+				margin-right: auto 
+				> * 
+					font-size: 	15px
+					font-weight: 400
+					color: #172642
+		@media(min-width: 1024px)
+			margin-top: 40px
+		

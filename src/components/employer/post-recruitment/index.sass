@@ -1,0 +1,353 @@
+
+.col-xl-5-12
+	width: 100%
+	padding: 0 15px
+	@media(min-width: 1200px)
+		flex: 0 0 20%
+		max-width: 20%
+.mdi-arrow-right-bold-box:before 
+	content: '\F734'
+.post-recruitment-banner
+	.banner-mb
+		display: none
+		.image
+			width: 100%
+			height: auto 
+			max-width: 100%
+			img 
+				// width: 100%
+				object-fit: contain
+		@media(max-width: 576px)
+			display: block
+	.banner-pc
+		@media(max-width: 576px)
+			display: none
+		.image
+			+img-scale(450 / 1920 * 100%)
+			@media(max-width: 768px)
+				+img-scale(450 / 1200 * 100%)
+	.left-content
+		@media(min-width: 1024px)
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50% , -50%)
+			width: 100%
+	.box-content
+		width: 100%
+		// max-width: 570px
+		text-align: left
+		padding: 15px
+		margin: 0 auto 
+		padding-bottom: 35px
+		h1, h2 
+			font-size: 24px
+			color: #ffffff
+			text-shadow: 0 0 1px rgba(0,0,0,0.1)
+			font-weight: 700
+			text-transform: uppercase
+			line-height: 1.2
+		.content
+			margin-top: 12px
+			max-width: 575px
+			color: #172642
+			font-size: 16px
+			text-transform: uppercase
+		@media(min-width: 768px)
+			h1, h2 
+				font-size: 28px
+		@media(min-width: 1025px)
+			padding: 0 15px
+			z-index: 11 
+			h1, h2 
+				font-size: 32px
+			.content
+				font-size: 18px
+				> * 
+					color: #ffffff
+		@media(min-width: 1200px)
+			h1, h2 
+				font-size: 54px
+			.content
+				font-size: 20px
+.employer-post-recruitment
+	// padding: 15px 0
+	padding-bottom: 40px
+	background: #ffffff
+	border-top: 2px solid #d8d8d8
+	border-bottom: 2px solid #d8d8d8
+	.list-menu
+		display: flex
+		flex-wrap: wrap 
+		li 
+			padding: 15px 0
+			margin-right: 30px
+			transition: .4s ease-in-out all
+			border-bottom: 3px solid #ffffff
+			a 
+				font-size: 16px
+				font-weight: 700
+				color: #999999
+				transition: .4s ease-in-out all
+				display: block
+				text-decoration: none
+			&:hover, &.active
+				border-color:#172642
+				a 
+					color: #172642
+			&:last-child
+				margin-right: 0
+			&.contact
+				padding: 0
+				a 
+					margin-left: 0
+					padding: 15px 25px
+					background: #007f5e
+					color: #ffffff
+	.tab-content
+		margin-top: 30px
+	.full-content
+		p 
+			font-size: 14px
+			margin-top: 10px
+		ul 
+			margin-top: 10px
+			padding-left: 15px
+			list-style: disc
+			li 
+				font-size: 14px
+				+ li 
+					margin-top: 10px
+		.table
+			margin-top: 10px
+			table 
+				width: 100%
+				th, td 
+					padding: 10px 20px
+					font-size: 14px
+					font-weight: 400
+				th 
+					color: #09a0db
+					font-weight: 700
+					border-bottom: 2px solid #cccccc
+				td 
+					border-bottom: 1px solid #f1f1f1
+		.contact
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 20px
+			a 
+				display: flex
+				justify-content: center
+				align-items: center
+				min-width: 160px
+				height: 40px
+				border-radius: 4px
+				background: $gradient-2
+				font-size: 16px
+				font-weight: 700
+				text-align: center
+				text-transform: uppercase
+				text-decoration: none
+				color: #ffffff
+				background-size: 200% 100%
+				padding: 10px 15px
+				&:hover 
+					background-position: 100% 0
+		.bottom-content
+			margin-top: 20px
+			padding-top: 20px
+			border-top: 2px solid #cccccc
+	.list-service
+		margin-left: -10px
+		margin-right: -10px
+		margin-bottom: 0
+		> * 
+			padding-right: 10px
+			padding-left: 10px
+			margin-bottom: 0
+			margin-top: 30px
+		+ p 
+			margin-top: 25px
+	.service-item
+		// margin-top: 30px
+		box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+		padding: 15px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+		.name 
+			text-align: center
+			font-size: 18px
+			font-weight: 700
+			color: #172642
+			text-transform: uppercase
+			@media(max-width: 1024px)
+				font-size: 15px
+		.price
+			margin-top: 15px
+			font-size: 30px
+			font-weight: 700
+			color: #0197d2
+			text-align: center
+			@media(max-width: 1024px)
+				font-size: 24px
+		ul 
+			margin-top: 15px
+			list-style-type: none
+			li 
+				position: relative
+				padding-left: 10px
+				font-size: 15px
+				color: #172642
+				&::before
+					font-family: 'Material Design Icons'
+					content: '\F12C'
+					position: absolute
+					top: 0
+					left: -15px
+					font-size: 16px
+					color: #6cd100
+				span 
+					font-size: 15px
+					color: #0197d2
+					font-weight: 700
+		.button
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 25px
+			.btn-buy 
+				display: flex
+				justify-content: center
+				align-items: center
+				min-width: 160px
+				height: 40px
+				border-radius: 4px
+				background: $gradient-2
+				font-size: 16px
+				font-weight: 700
+				text-align: center
+				text-transform: uppercase
+				text-decoration: none
+				color: #ffffff
+				background-size: 200% 100%
+				&:hover 
+					background-position: 100% 0
+	.employer-post-recruitment-slide
+		position: relative
+		.cb-title
+			color: #182642
+			margin-bottom: 15px
+			span 
+				color: #f79c25
+			@media(min-width: 1024px)
+				font-size: 30px
+				span 
+					font-size: 30px
+			@media(min-width: 1200px)
+				font-size: 36px
+				margin-bottom: 25px
+				span 
+					font-size: 36px
+		.sub-title
+			margin-bottom: 25px
+			> *
+				font-size: 16px
+				font-weight: 400
+				color: #172642
+				text-align: center
+			@media(min-width: 1024px)
+				margin-bottom: 35px
+				> *
+					font-size: 17px
+			@media(min-width: 1200px)
+				margin-bottom: 45px
+			@media(min-width: 1440px)
+				> *
+					font-size: 18px
+	.main-slide
+		position: relative
+	.swiper-slide
+		.image
+			background: #ffffff
+			display: flex
+			justify-content: center
+			align-items: center
+			position: relative
+			overflow: hidden
+			padding-top: calc(420/330*100%)
+			box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+			a 
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 100%
+				height: 100%
+				img 
+					max-width: 100%
+					max-height: 100%
+		.content
+			margin-top: 15px
+			text-align: center
+			.name
+				font-size: 14px
+				font-weight: 700
+				text-align: center
+				color: #172642
+	.main-button
+		margin-top: 15px
+		display: flex
+		justify-content: center
+		align-items: center
+		.button-prev, .button-next
+			display: flex
+			justify-content: center
+			align-items: center
+			em 
+				font-size: 24px
+				color: #333333
+				margin: 0 10px
+			&:focus
+				outline: none
+		@media(min-width: 768px)
+			.button-prev, .button-next
+				em 
+					font-size: 30px
+		@media(min-width: 1025px)
+			.button-prev, .button-next
+				position: absolute
+				cursor: pointer
+				top: 50%
+				transform: translateY(-50%)
+				z-index: 11 
+				em 
+					margin: 0
+					font-size: 40px
+				&:focus
+					outline: none
+			.button-prev
+				right: 100%
+			.button-next
+				left: 100%
+		@media(min-width: 1200px)
+			.button-prev, .button-next
+				em 
+					font-size: 48px
+	@media(min-width: 1024px)
+		border-top: none
+		.service-item
+			padding: 25px 20px
+	@media(min-width: 1200px)
+		.service-item
+			padding: 25px 20px
+	@media(min-width: 1440px)
+		.service-item
+			padding: 25px 30px
+

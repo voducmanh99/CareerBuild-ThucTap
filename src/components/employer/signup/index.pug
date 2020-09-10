@@ -1,0 +1,106 @@
+section.employer-signup.cb-section
+	.container
+		h2.cb-title.cb-title-center Đăng ký tài khoản nhà tuyển dụng
+		.row.no-gutters.box-shadow
+			.col-lg-6
+				.image
+					img(src="./img/employer/banner-signup.png", alt="")
+			.col-lg-6
+				.main-form
+					.head-form
+						ul.list-tabs
+							li.active(data-tab="1")
+								a(href="javascript:void(0)") Thông tin đăng nhập
+							li(data-tab="2")
+								a(href="javascript:void(0)") Thông tin công ty
+						.helps 
+							a(href="javascript:void(0)")
+								em.mdi.mdi-file-document
+								span Hướng dẫn
+					p.note * Quý khách sử dụng thông tin tài khoản này để đăng nhập vào CareerBuilder.vn. Nếu bạn đã có tài khoản. Vui lòng 
+						a(href="#") Đăng nhập
+					.form-login.active(data-form="1")
+						form
+							.form-group.form-text.form-check
+								input(type="text" onkeyup="this.setAttribute('value', this.value);" value="info@canhcam.vn")
+								label(for="") * Email đăng nhập
+								a(href="#").check-email Kiểm tra sự tồn tại của email
+								.checked
+									em.mdi.mdi-check
+								span.form-error Email đăng nhập đã tồn tại
+							.form-group.form-text
+								input(type="text" onkeyup="this.setAttribute('value', this.value);" value="")
+								label(for="") * Xác nhận email
+								span.form-error Xác nhận email không đúng
+							.form-group.form-text
+								input(type="password" onkeyup="this.setAttribute('value', this.value);" value="")
+								label(for="") * Mật khẩu
+								span.form-error Mật khẩukhông đúng định dạng
+							.form-group.form-text
+								input(type="password" onkeyup="this.setAttribute('value', this.value);" value="")
+								label(for="") * Xác nhận mật khẩu
+								span.form-error Xác nhận mật khẩu không đúng
+							.form-group.form-submit.form-submit-continue
+								a(href="javascript:void(0)" form-tab="2").btn-gradient.btn-continue Tiếp tục
+					
+					.form-login(data-form="2")
+						form
+							.form-group.form-text
+								input(type="text" onkeyup="this.setAttribute('value', this.value);" value="Canh Cam")
+								label(for="") * Tên công ty
+								span.form-error Tên công ty sai
+							.form-group.form-select
+								label(for="") Quy mô công ty
+								select
+									option(value="0") 10
+									option(value="0") 20
+									option(value="0") 30
+								span.form-error Vui lòng chọn quy mô công ty
+							.form-group.form-select
+								label(for="") Quốc gia
+								select
+									option(value="0") Viet Nam
+								span.form-error Vui lòng chọn Quốc gia
+							.form-group.form-select
+								label(for="") Tỉnh/ Thành phố
+								select
+									option(value="0") HCM
+								span.form-error Vui lòng chọn Tỉnh/ Thành phố
+							.form-group.form-text
+								input(type="text" onkeyup="this.setAttribute('value', this.value);" value="")
+								label(for="") * Địa chỉ
+								span.form-error Vui lòng nhập Địa chỉ
+							.form-group.form-noti
+								.form-group.form-text
+									input(type="text" onkeyup="this.setAttribute('value', this.value);" value="")
+									label(for="") * Sơ lược về công ty
+								.noti  
+									em.material-icons error_outline
+								span.form-error Vui lòng nhập Sơ lược về công ty
+							.form-group.form-text
+								input(type="text" onkeyup="this.setAttribute('value', this.value);" value="")
+								label(for="") * Tên người liên hệ
+								span.form-error Vui lòng nhập Tên người liên hệ
+							.form-group.form-text
+								input(type="text" onkeyup="this.setAttribute('value', this.value);" value="")
+								label(for="") * Điện thoại
+								span.form-error Vui lòng nhập Điện thoại
+							.form-group.form-capcha
+								.form-group.form-text
+									input(type="text" onkeyup="this.setAttribute('value', this.value);" value="")
+									label(for="") * Mã xác nhận
+									span.form-error Mã xác nhận không đúng
+								.img-capcha
+									img(src="./img/employer/capcha.png", alt="")
+								.reCapcha
+									a(href="#")
+										em.material-icons replay
+							.form-group.form-note
+								p.note Bằng việc nhấp vào "Đăng Ký Ngay!", bạn đã đồng ý với các điều khoản ghi trong 
+									a(href="#") Thỏa thuận dịch vụ của CareerBuilder.vn.
+							.form-group.form-submit
+								a(href="javascript:void(0)" form-tab="1").btn-back quay lại
+								button(type="submit").btn-gradient đăng ký
+						.foot-form
+							p Nếu bạn đã có tài khoản. Vui lòng 
+								a(href="#") Đăng nhập

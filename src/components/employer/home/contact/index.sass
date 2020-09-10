@@ -1,0 +1,86 @@
+.employer-contact
+    .mdi-fax:before
+        content: '\f212'
+    .mdi-mail:before
+        content: '\f1ee'
+    .cb-title
+        color: #182642
+        margin-bottom: 15px
+        @media(min-width: 1025px)
+            font-size: 30px
+            margin-bottom: 20px
+        @media(min-width: 1200px)
+            font-size: 36px
+            margin-bottom: 25px
+    .col-ipro
+        @media(min-width: 1010px)
+            flex: 0 0 50%
+            max-width: 50%
+        @media(min-width: 1025px)
+            flex: 0 0 100%
+            max-width: 100%
+        @media(min-width: 1200px)
+            flex: 0 0 50%
+            max-width: 50%
+    .item
+        padding: 15px
+        border: 1px solid #ebebeb
+        .image
+            +img-scale(180/270*100%)
+        .content
+            margin-top: 20px
+            .name 
+                font-size: 16px
+                font-weight: 900
+                color: #109ed9
+                text-transform: uppercase
+                @media(min-width: 1440px)
+                    font-size: 18px
+            ul 
+                margin-top: 15px
+                li 
+                    font-size: 16px
+                    font-weight: 400
+                    color: #172642
+                    margin-top: 8px
+                    display: flex
+                    em 
+                        font-size: 18px
+                        color: #747d8d
+                        padding-right: 10px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+        @media(min-width: 768px)
+            display: flex
+            flex-wrap: wrap 
+            .flex-img 
+                flex: 0 0 200px
+                max-width: 200px
+            .content
+                flex: 0 0 calc(100% - 200px)
+                max-width: calc(100% - 200px)
+                padding: 5px
+                margin-top: 0
+                padding-left: 20px
+                
+        @media(min-width: 1200px)
+            .flex-img 
+                flex: 0 0 200px
+                max-width: 200px
+            .content
+                padding: 5px
+                flex: 0 0 calc(100% - 200px)
+                max-width: calc(100% - 200px)
+                padding-left: 20px
+            padding: 20px
+        @media(min-width: 1440px)
+            .flex-img 
+                flex: 0 0 270px
+                max-width: 270px
+            .content
+                flex: 0 0 calc(100% - 270px)
+                max-width: calc(100% - 270px)
+            .content
+                padding: 20px
+                padding-left: 40px

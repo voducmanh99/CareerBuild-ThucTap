@@ -1,7 +1,6 @@
 {
-	"buildAll": true,
-	"page": [
-		{
+	"buildAll": false,
+	"page": [{
 			"name": "index",
 			"isWorking": false,
 			"js": [
@@ -14,7 +13,12 @@
 			"js": [
 				"src/components/phase5/vn-salary-dt/index.js"
 			]
+		},
+		{
+			"name": "02-employer-dashboard",
+			"isWorking": true,
+			"js": []
 		}
-		
+
 	]
 }

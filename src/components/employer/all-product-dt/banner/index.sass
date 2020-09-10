@@ -1,0 +1,142 @@
+.all-product-detail-banner
+	.banner-pc
+		@media(max-width: 576px)
+			display: none
+		.image
+			+img-scale(450 / 1920 * 100%)
+			@media(max-width: 768px)
+				+img-scale(450 / 1200 * 100%)
+	.banner-mb
+		display: none
+		.image
+			width: 100%
+			height: auto 
+			max-width: 100%
+			img 
+				// width: 100%
+				object-fit: contain
+		@media(max-width: 576px)
+			display: block
+
+	.right-content
+		@media(min-width: 1024px)
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50% , -50%)
+			width: 100%
+	.box-content
+		width: 100%
+		max-width: 570px
+		padding: 15px
+		margin: 0 auto 
+		padding-bottom: 35px
+		h1, h2 
+			font-size: 24px
+			color: #007f5e
+			font-weight: 700
+			text-transform: uppercase
+			line-height: 1.2
+		.content
+			margin-top: 12px
+			max-width: 575px
+			color: #172642
+			font-size: 16px
+			text-transform: uppercase
+		@media(min-width: 768px)
+			h1, h2 
+				font-size: 28px
+		@media(min-width: 1024px)
+			padding: 0 0
+			z-index: 11 
+			margin-left: auto 
+			margin-right: 0
+			max-width: 430px
+			h1, h2 
+				font-size: 32px
+			.content
+				font-size: 18px
+				> * 
+					// color: #ffffff
+		@media(min-width: 1200px)
+			max-width: 570px
+			h1, h2 
+				font-size: 54px
+			.content
+				font-size: 20px
+.all-product-detail-nav
+	// padding: 15px 0
+	background: #ffffff
+	border-top: 2px solid #d8d8d8
+	border-bottom: 2px solid #d8d8d8
+	// &.active
+	top: 59px
+	position: -webkit-sticky
+	position: sticky
+	z-index: 888
+	@media(min-width: 1200px)
+		top: 79px
+	.nav-mobile
+		display: none
+		justify-content: space-between
+		align-items: center
+		padding: 10px 15px
+		font-size: 16px
+		text-transform: uppercase
+		font-weight: 700
+		color: #172642
+		cursor: pointer
+		&.active
+			em 
+				transform: rotate(180deg)
+		@media(min-width: 768px)
+			display: none
+	.list-menu
+		display: flex
+		flex-wrap: wrap 
+		li 
+			padding: 15px 0
+			margin-right: 65px
+			a 
+				font-size: 16px
+				font-weight: 700
+				color: #999999
+				transition: .4s ease-in-out all
+				display: block
+				text-decoration: none
+			&:hover, &.active
+				a 
+					color: #172642
+			&:last-child
+				margin-right: 0
+			&.contact
+				padding: 0
+				a 
+					margin-left: 0
+					padding: 15px 25px
+					background: #007f5e
+					color: #ffffff
+			@media(max-width: 1200px)
+				margin-right: 20px
+		@media(max-width: 768px)
+			// display: none
+			border-top: 1px solid #f1f1f1
+			overflow-x: auto 
+			// max-width: 100%
+			flex-wrap: nowrap
+			&::-webkit-scrollbar
+				height: 10px
+				background: #eaeaea
+			&::-webkit-scrollbar-thumb
+				background: #7fcb42
+			li 
+				width: max-content
+				min-width: max-content
+				padding: 0
+				margin-top: 15px
+				margin-bottom: 15px
+				a 
+					padding-left: 15px
+
+	@media(min-width: 1024px)
+		border-top: none

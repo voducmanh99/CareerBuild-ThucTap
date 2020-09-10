@@ -1,0 +1,124 @@
+.all-product-detail-handbook
+	.cb-title
+		color: #182642
+		margin-bottom: 15px
+		@media(min-width: 1024px)
+			font-size: 30px
+		@media(min-width: 1200px)
+			font-size: 36px
+			margin-bottom: 25px
+	.main-slide
+		position: relative
+		@media(min-width: 1024px)
+			margin-top: 80px
+	.handbook-item
+		border: 1px solid #ebebeb
+		border-radius: 5px
+		overflow: hidden
+		.image
+			+img-scale(185/330*100%)
+		.caption
+			border-top: 1px solid #ebebeb
+			.title
+				height: 150px
+				padding: 20px
+				a 
+					font-size: 18px
+					font-weight: 500
+					color: #172642
+					+line(3)
+			.view-more
+				border-top: 1px solid #ebebeb
+				padding: 6px 20px
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 100%
+				margin: 0
+				a 
+					display: flex
+					justify-content: space-between
+					align-items: center
+					font-size: 16px
+					font-weight: 700
+					color: #1976d2
+					text-decoration: none
+					width: 100%
+					
+					em 
+						font-size: 30px
+						color: #999999
+					&:hover 
+						span 
+							text-decoration: underline
+	.main-button
+		display: none
+		justify-content: center
+		align-items: center
+		.button-prev, .button-next
+			display: flex
+			justify-content: center
+			align-items: center
+			em 
+				font-size: 24px
+				color: #999999
+				margin: 0 10px
+			&:focus
+				outline: none
+		@media(min-width: 768px)
+			.button-prev, .button-next
+				em 
+					font-size: 30px
+		@media(min-width: 1024px)
+			display: flex
+			position: absolute
+			top: -60px
+			right: 0
+			z-index: 11
+			.button-prev, .button-next
+				cursor: pointer
+				width: 34px
+				height: 34px
+				min-width: 34px
+				display: flex
+				justify-content: center
+				align-items: center
+				background: #fcfcfc
+				border: 1px solid #e0e0e0
+				em 
+					margin: 0
+					font-size: 30px
+				&:focus
+					outline: none
+				&:hover 
+					background: #f89827
+					em 
+						color: #ffffff
+			// .button-prev
+			// 	right: 100%
+			.button-next
+				margin-left: 2px
+		@media(min-width: 1200px)
+			.button-prev, .button-next
+				em 
+					font-size: 36px
+	.main-page
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 30px
+		.swiper-pagination
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-wrap: wrap
+			.swiper-pagination-bullet
+				width: 10px
+				height: 10px
+				opacity: 1 
+				background: #bbbbbb
+				margin: 0 5px
+				&:focus
+					outline: none
+				&.swiper-pagination-bullet-active
+					background: #f89827

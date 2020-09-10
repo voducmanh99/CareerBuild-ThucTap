@@ -1,0 +1,71 @@
+.feedback-employer-btn
+    position: fixed
+    top: 50%
+    right: 0
+    transform: translate(25%,-50%) rotate(270deg)
+    padding: 5px 10px
+    font-size: 14px
+    color: #5d677a
+    background: #fff
+    border: 1px solid #e5e5e5
+    border-top: 3px solid #287ab9
+    text-decoration: none
+    z-index: 999
+    &:hover 
+        color: #5d677a
+        text-decoration: none
+    @media(max-width: 576px)
+        display: none
+.feedback-employer-modal
+    width: 570px
+    .logo
+        margin-bottom: 20px
+        text-align: center
+    .text
+        margin-bottom: 20px
+        p
+            + p
+                margin-top: 10px
+            font-size: 14px
+            strong
+                font-size: 18px
+    .form-group
+        + .form-group
+            margin-top: 15px
+        label
+            display: block
+            margin-bottom: 5px
+        input[type="text"],textarea
+            width: 100%
+        input[type="text"]
+            height: 40px
+            padding: 0 15px
+        textarea
+            height: 120px
+            padding: 5px 15px
+        span 
+            font-size: 12px
+            font-weight: 400
+            color: red 
+            font-style: italic
+        .note
+            font-size: 12px
+        &.form-submit
+            text-align: center
+            margin-top: 30px
+            input
+                background: #f79d25
+                border: 0
+                width: 80px
+                height: 36px
+                color: #fff
+                transition: 0.3s all
+                font-size: 14px
+                &:hover
+                    background: darken(#f79d25, 10%)
+    .fancybox-close-small
+        background: #f7a334
+        opacity: 1
+        svg
+            path
+                fill: #fff

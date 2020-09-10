@@ -1,0 +1,219 @@
+header.for-customers
+	.main-candidates
+		background: #fcb616
+		a 
+			padding: 28px 12.5px
+			display: flex
+			justify-content: center
+			align-items: center
+			&:hover 
+				text-decoration: none
+		h4 
+			font-size: 14px
+			font-weight: 400
+			color: #ffffff
+		em 
+			font-size: 24px
+			padding-right: 10px
+			color: #ffffff
+	.main-menu 
+		.menu 
+			li 
+				a 
+					color: #172642
+					&:before 
+						background: #172642
+				&.active, &:hover 
+					a 
+						color: #0097d1
+						&:before 
+							background: #0097d1
+				&:first-child
+					a 
+						font-size: 0 
+						&:after 
+							font-family: 'Material Design Icons'
+							content: '\f2dc'
+							font-size: 18px
+							color: #172642
+					&.active, &:hover 
+						a 
+							&:after 
+								color: #0097d1
+				&.dropdown
+					a 
+						color: #172642
+						font-weight: 400
+					&.active, &:hover 
+						a 
+							color: #0097d1
+							&:before 
+								background: #0097d1
+					.dropdown-menu
+						width: max-content
+						ul 
+							li 
+								a 
+									color: #172642
+									font-weight: 700
+								&:first-child
+									a 
+										font-size: 14px
+										&::after
+											display: none
+								
+			@media screen and (max-width: 1368px)
+				li 
+					padding: 0 10px
+					a 
+						font-size: 14px
+	.main-login .login-wrapper .forget-password
+		padding-top: 10px
+		display: inline-block
+		margin-right: 10px
+	.mobile-menu
+		box-shadow: -20px 0 10px 3px rgba(0,0,0,0.5)
+		&.show
+			box-shadow: 2px 0 10px 3px rgba(0,0,0,0.5)
+		.header-bottom
+			background: #ffffff
+		.profile
+			background: #172642
+			display: flex
+			align-items: flex-start
+			.username
+				margin-top: 0
+				padding-left: 15px
+				text-align: left
+				a 
+					text-align: left
+				p 
+					text-align: left
+			.avatar
+				width: 80px
+				min-width: 80px
+			.authentication-links
+				background: none
+				border: none
+				padding: 0
+				margin-top: 10px
+				ul 
+					display: flex
+					justify-content: flex-start
+					align-items: center
+					flex-wrap: wrap
+					li 
+						margin-top: 0
+						// margin-right: 10px
+						width: 100%
+						justify-content: flex-start
+						display: flex
+						a 
+							color: #ffffff
+							font-size: 14px
+							text-transform: none
+							i  
+								margin-right: 5px
+						+ li
+							margin-top: 5px
+		.employer-site
+			background: #172642
+			// border-top: 1px solid #cccccc
+			// border-bottom: 1px solid #cccccc
+			h4 
+				a 
+					color: #ffffff
+					font-size: 14px
+					font-weight: 400
+			ul 
+				// margin-top: 10px
+				li 
+					a, p
+						font-size: 14px
+						font-weight: 400
+						color: #ffffff
+					i 
+						margin-right: 10px
+					+ li 
+						margin-top: 10px
+		.authentication-links
+			background: #ffffff
+			border-top: 1px solid #cccccc
+			border-bottom: 1px solid #cccccc
+			ul 
+				li 
+					a 
+						color: #172642
+		.dropdown-mobile:before
+			color: #172642
+		.dropdown-mobile-2:before
+			color: #172642
+		.header-alert
+			background: #172642
+			h4 
+				a 
+					color: #ffffff
+					font-size: 14px
+					font-weight: 400
+					strong 
+						font-size: 16px
+					span 
+						display: block
+						margin-top: 5px
+			ul 
+				margin-top: 10px
+				li 
+					a 
+						color: #ffffff
+		.menu 
+			border-bottom: none
+			ul 
+				li
+					a
+						color: #172642
+					&.active 
+						a
+							color: #182641
+							font-weight: 700
+					&.dropdown-mobile
+						&.active
+							&::before
+								color: #182641
+						ul 
+							padding-left: 32px
+							padding-right: 0
+							li 
+								a 
+									color: #172642
+									font-weight: 400
+								&.active 
+									a
+										color: #182641
+										font-weight: 700
+					+ li 
+						margin-top: 15px
+		.profile 
+			.avatar
+				background: rgba(255,255,255,1)
+		&.logged
+			.profile
+				align-items: center
+	.mdi-contacts:before
+		content: '\f6ca'
+	.mdi-room-service-outline:before
+		content: '\fd73'
+	.mdi-account-circle-outline:before
+		content: '\fb31'
+	.mdi-briefcase-account:before
+		content: '\fccc'
+	.mdi-apps:before
+		content: '\f03b'
+	.mdi-cart:before 
+		content: "\F110"
+	.main-login
+		&.logged
+			.dropdown-menu
+				ul 
+					li 
+						em 
+							padding-right: 3px

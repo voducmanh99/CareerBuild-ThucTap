@@ -1,0 +1,69 @@
+.employer-choose
+    .image
+        +img-scale(470/960*100%)
+    .box-content
+        padding: 15px
+        background: #109ed9
+        .cb-title
+            color: #ffffff
+            max-width: 620px
+            margin: 0 auto 
+            @media(min-width: 1025px)
+                font-size: 30px
+                max-width: 600px
+                margin-left: 0
+            @media(min-width: 1200px)
+                font-size: 32px
+        .content
+            margin-top: 20px
+            max-width: 600px
+            * > 
+                color: #ffffff
+                font-size: 16px
+                font-weight: 400
+            p  
+                font-size: 15px
+                font-weight: 700
+                color: #ffffff
+            ul 
+                margin-top: 10px
+                li 
+                    position: relative
+                    padding-left: 20px
+                    color: #ffffff
+                    font-size: 14px
+                    font-weight: 400
+                    &:before
+                        font-family: 'Material Design Icons'
+                        content: '\f054'
+                        position: absolute
+                        top: 0
+                        left: 0
+                        color: #ffffff
+            @media(min-width: 768px)
+                max-width: 620px
+                margin: 0 auto 
+                margin-top: 20px
+            @media(min-width: 1025px)
+                margin-left: 0
+                margin-top: 20px
+                max-width: 600px
+    @media(min-width: 768px)
+        display: flex
+        flex-wrap: wrap
+        .flex-img, .box-content
+            flex: 0 0 50%
+            max-width: 50%
+        .image 
+            padding-top: 58%
+            height: 100%
+        .box-content
+            display: flex
+            flex-direction: column
+            justify-content: center
+    @media(min-width: 1025px)
+        .box-content
+            padding-left: 50px
+    @media(min-width: 1440px)
+        .image
+            +img-scale(470/960*100%)

@@ -1,0 +1,55 @@
+.all-product-banner
+	.banner-pc
+		@media(max-width: 576px)
+			display: none
+		.image
+			+img-scale(450 / 1920 * 100%)
+			@media(max-width: 768px)
+				+img-scale(450 / 1200 * 100%)
+	.banner-mb
+		display: none
+		.image
+			width: 100%
+			height: auto 
+			max-width: 100%
+			img 
+				// width: 100%
+				object-fit: contain
+		@media(max-width: 576px)
+			display: block
+	.box-content
+		width: 100%
+		max-width: 1260px
+		padding: 15px
+		margin: 0 auto 
+		padding-bottom: 35px
+		h1, h2 
+			font-size: 24px
+			color: #172642
+			font-weight: 700
+			line-height: 1.2
+			// max-width: 650px
+		.content
+			margin-top: 15px
+			max-width: 575px
+		@media(min-width: 768px)
+			h1, h2 
+				font-size: 28px
+		@media(min-width: 1024px)
+			position: absolute
+			padding: 0 15px
+			z-index: 11 
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			h1, h2 
+				font-size: 32px
+				color: #ffffff
+			.content
+				margin-top: 20px
+				> * 
+					color: #ffffff
+		@media(min-width: 1200px)
+			h1, h2 
+				font-size: 36px
+	

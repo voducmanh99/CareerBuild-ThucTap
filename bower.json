@@ -37,6 +37,7 @@
     "material-design-icons": "^3.0.1",
     "countUp.js": "^2.0.4",
     "waypoints": "^4.0.1",
-    "cropperjs": "^1.5.7"
+    "cropperjs": "^1.5.7",
+    "chart.js": "^2.9.3"
   }
 }

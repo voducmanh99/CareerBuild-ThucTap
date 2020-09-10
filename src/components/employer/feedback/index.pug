@@ -1,0 +1,25 @@
+a(href="#").feedback-employer-btn
+	span Feedback
+.feedback-employer-modal(style="display: none")
+	form
+		.logo
+			img(src="./img/logo.png", alt="")
+		.text
+			p
+				strong Chia sẻ ý kiến với CareerBuilder.vn
+			p Để nâng cao chất lượng dịch vụ và hỗ trợ tốt nhất cho người dùng, chúng tôi rất mong nhận được ý kiến của bạn về chức năng, giao diện web, nội dung, ...
+		.form-group
+			label Nhập ý kiến của bạn tại đây:
+			textarea(name="", cols="30", rows="10")
+			p.note (Đã nhập quá 5.000 ký tự)
+			span (Vui lòng nhập tối đa không quá 5.000 ký tự)
+		.form-group
+			label Số điện thoại:
+			input(type="text")
+			span Vui lòng nhập đúng định dạng số điện thoại
+		.form-group
+			label Email:
+			input(type="text")
+			span Vui lòng nhập đúng định dạng email
+		.form-group.form-submit
+			input(type="submit", value="Send")

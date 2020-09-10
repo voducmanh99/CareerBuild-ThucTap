@@ -1,0 +1,389 @@
+.col-xl-5-12
+	width: 100%
+	padding: 0 15px
+	@media(min-width: 1200px)
+		flex: 0 0 20%
+		max-width: 20%
+
+.employer-nav
+	// padding: 15px 0
+	background: #ffffff
+	border-top: 2px solid #d8d8d8
+	border-bottom: 2px solid #d8d8d8
+	// &.active
+	top: 59px
+	position: -webkit-sticky
+	position: sticky
+	z-index: 888
+	@media(min-width: 1200px)
+		top: 79px
+	.nav-mobile
+		display: none
+		justify-content: space-between
+		align-items: center
+		padding: 10px 15px
+		font-size: 16px
+		text-transform: uppercase
+		font-weight: 700
+		color: #172642
+		cursor: pointer
+		&.active
+			em 
+				transform: rotate(180deg)
+		@media(min-width: 768px)
+			display: none
+	.list-menu
+		display: flex
+		flex-wrap: wrap 
+		li 
+			padding: 15px 0
+			margin-right: 65px
+			a 
+				font-size: 16px
+				font-weight: 700
+				color: #999999
+				transition: .4s ease-in-out all
+				display: block
+				text-decoration: none
+			&:hover, &.active
+				a 
+					color: #172642
+			&:last-child
+				margin-right: 0
+			&.contact
+				padding: 0
+				a 
+					margin-left: 0
+					padding: 15px 25px
+					background: #007f5e
+					color: #ffffff
+			@media(max-width: 1200px)
+				margin-right: 20px
+		@media(max-width: 768px)
+			// display: none
+			border-top: 1px solid #f1f1f1
+			overflow-x: auto 
+			// max-width: 100%
+			flex-wrap: nowrap
+			&::-webkit-scrollbar
+				height: 10px
+				background: #eaeaea
+			&::-webkit-scrollbar-thumb
+				background: #7fcb42
+			li 
+				width: max-content
+				min-width: max-content
+				padding: 0
+				margin-top: 15px
+				margin-bottom: 15px
+				a 
+					padding-left: 15px
+
+	@media(min-width: 1024px)
+		border-top: none
+
+
+.recruitment-advertising-banner
+	.banner-mb
+		display: none
+		.image
+			width: 100%
+			height: auto 
+			max-width: 100%
+			img 
+				// width: 100%
+				object-fit: contain
+		@media(max-width: 576px)
+			display: block
+	.banner-pc
+		@media(max-width: 576px)
+			display: none
+		.image
+			+img-scale(450 / 1920 * 100%)
+			@media(max-width: 768px)
+				+img-scale(450 / 1200 * 100%)
+	.left-content
+		// @media(min-width: 1024px)
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50% , -50%)
+		width: 100%
+	.box-content
+		width: 100%
+		// max-width: 570px
+		text-align: left
+		// padding: 15px
+		margin: 0 auto 
+		// padding-bottom: 35px
+		h1, h2 
+			font-size: 24px
+			color: #ffffff
+			text-shadow: 0 0 1px rgba(0,0,0,0.1)
+			font-weight: 700
+			text-transform: uppercase
+			line-height: 1.2
+		.content
+			margin-top: 12px
+			max-width: 575px
+			color: #ffffff
+			font-size: 16px
+			text-transform: uppercase
+		@media(min-width: 768px)
+			h1, h2 
+				font-size: 28px
+		@media(min-width: 1024px)
+			padding: 0 0
+			z-index: 11 
+			h1, h2 
+				font-size: 32px
+				color: #ffffff
+			.content
+				font-size: 18px
+				> * 
+					color: #ffffff
+		@media(min-width: 1200px)
+			h1, h2 
+				font-size: 54px
+			.content
+				font-size: 20px
+.employer-recruitment-advertising
+	// padding: 15px 0
+	padding-bottom: 40px
+	background: #ffffff
+	// border-top: 2px solid #d8d8d8
+	// border-bottom: 2px solid #d8d8d8
+	.list-menu
+		display: flex
+		flex-wrap: wrap 
+		li 
+			padding: 15px 0
+			margin-right: 30px
+			transition: .4s ease-in-out all
+			border-bottom: 3px solid #ffffff
+			a 
+				font-size: 16px
+				font-weight: 700
+				color: #999999
+				transition: .4s ease-in-out all
+				display: block
+				text-decoration: none
+			&:hover, &.active
+				border-color:#172642
+				a 
+					color: #172642
+			&:last-child
+				margin-right: 0
+			&.contact
+				padding: 0
+				a 
+					margin-left: 0
+					padding: 15px 25px
+					background: #007f5e
+					color: #ffffff
+	.tab-content
+		margin-top: 30px
+	.full-content
+		p 
+			font-size: 14px
+			margin-top: 10px
+		ul 
+			margin-top: 10px
+			padding-left: 15px
+			list-style: disc
+			li 
+				font-size: 14px
+				+ li 
+					margin-top: 10px
+		.image
+			text-align: center
+		.table
+			margin-top: 10px
+			table 
+				width: 100%
+				th, td 
+					padding: 10px 20px
+					font-size: 14px
+					font-weight: 400
+				th 
+					color: #09a0db
+					font-weight: 700
+					border-bottom: 2px solid #cccccc
+				td 
+					border-bottom: 1px solid #f1f1f1
+		.contact
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 20px
+			a 
+				display: flex
+				justify-content: center
+				align-items: center
+				min-width: 160px
+				height: 40px
+				border-radius: 4px
+				background: $gradient-2
+				font-size: 16px
+				font-weight: 700
+				text-align: center
+				text-transform: uppercase
+				text-decoration: none
+				color: #ffffff
+				background-size: 200% 100%
+				padding: 10px 15px
+				&:hover 
+					background-position: 100% 0
+	.list-service
+		margin-left: -10px
+		margin-right: -10px
+		margin-bottom: 0
+		> * 
+			padding-right: 10px
+			padding-left: 10px
+			margin-bottom: 0
+			margin-top: 30px
+		+ p 
+			margin-top: 25px
+	.title-service
+		margin-top: 30px
+		font-size: 16px
+		color: #0197d2
+		font-weight: 700
+	.service-item
+		// margin-top: 20px
+		box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+		padding: 15px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+		.name 
+			text-align: center
+			font-size: 18px
+			font-weight: 700
+			color: #172642
+			text-transform: uppercase
+			@media(max-width: 1024px)
+				font-size: 15px
+		.price
+			margin-top: 15px
+			font-size: 30px
+			font-weight: 700
+			color: #0197d2
+			text-align: center
+			@media(max-width: 1024px)
+				font-size: 24px
+		ul 
+			margin-top: 15px
+			list-style-type: none
+			li 
+				position: relative
+				padding-left: 10px
+				font-size: 15px
+				color: #172642
+				&::before
+					font-family: 'Material Design Icons'
+					content: '\F12C'
+					position: absolute
+					top: 0
+					left: -15px
+					font-size: 16px
+					color: #6cd100
+				span 
+					font-size: 15px
+					color: #0197d2
+					font-weight: 700
+		.button
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 25px
+			.btn-buy 
+				display: flex
+				justify-content: center
+				align-items: center
+				min-width: 160px
+				height: 40px
+				border-radius: 4px
+				background: $gradient-2
+				font-size: 16px
+				font-weight: 700
+				text-align: center
+				text-transform: uppercase
+				text-decoration: none
+				color: #ffffff
+				background-size: 200% 100%
+				&:hover 
+					background-position: 100% 0
+	.section-content
+		// &:not(:last-child)
+		padding-bottom: 0
+	.cb-title
+		color: #182642
+		margin-bottom: 15px
+		@media(min-width: 1024px)
+			font-size: 30px
+		@media(min-width: 1200px)
+			font-size: 36px
+			margin-bottom: 25px
+	.main-attractive
+		background: #ffffff
+		border: 1px solid #e7e7e7
+		padding: 15px
+		padding-top: 0
+		box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+		@media(min-width: 1024px)
+			padding: 40px
+			padding-top: 0
+			.row
+				margin: 0 -20px
+				margin-bottom: 0
+				> * 
+					padding-left: 20px
+					padding-right: 20px
+					margin-bottom: 0
+		@media(min-width: 1440px)
+			padding: 40px 70px
+			padding-top: 0
+			.row
+				margin: 0 -45px
+				margin-bottom: 0
+				> * 
+					padding-left: 45px
+					padding-right: 45px
+	.attractive-item
+		margin-top: 15px
+		.image
+			box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+			border-radius: 10px
+			overflow: hidden
+			+img-scale(220/590*100%)
+		.caption
+			margin-top: 20px
+			.title
+				font-size: 18px
+				font-weight: 700
+				color: #007f5e
+				text-align: center
+			.des 
+				text-align: center
+				margin-top: 5px
+				max-width: 560px
+				margin-left: auto 
+				margin-right: auto 
+				> * 
+					font-size: 	15px
+					font-weight: 400
+					color: #172642
+	@media(min-width: 1024px)
+		border-top: none
+		.service-item
+			padding: 25px 20px
+	@media(min-width: 1200px)
+		.service-item
+			padding: 25px 20px
+	@media(min-width: 1440px)
+		.service-item
+			padding: 25px 30px
+

@@ -1,0 +1,75 @@
+.employer-talen-solution-advanced
+	background: #ebf8ff
+	// min-height: 550px
+	display: flex
+	justify-content: center
+	align-items: center
+	@media(min-width: 1200px)
+		min-height: 550px
+	.image
+		max-width: 660px
+		+img-scale(390/660*100%)
+		&.popup-video
+			position: relative
+			&::before
+				content: url('../img/employer/button-play.png')
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				z-index: 11
+				pointer-events: none
+		@media(max-width: 1024px)
+			margin-left: auto 
+			margin-right: auto 
+	.cb-title
+		color: #172642
+		line-height: 1.3
+		text-align: center
+		span 
+			color: #f79c25
+		@media(min-width: 1024px)
+			padding-left: 25px
+			margin-top: 35px
+			text-align: left
+			span 
+				font-size: 30px
+		@media(min-width: 1200px)
+			font-size: 36px
+			span 
+				font-size: 36px
+	// .content
+	// 	margin-top: 20px
+		
+	// 	> * 
+	// 		font-size: 16px
+	// 		font-weight: 400
+	// 		color: #172642
+	// 	@media(min-width: 1024px)
+	// 		padding-left: 25px
+	// 		max-width: 610px
+	// 		> * 
+	// 			font-size: 18px
+
+	.content
+		margin-top: 20px
+		> * 
+			font-size: 16px
+			font-weight: 400
+			color: #172642
+		@media(min-width: 1024px)
+			max-height: 150px
+			overflow-y: auto 
+			padding: 10px
+			padding-left: 25px
+			&::-webkit-scrollbar
+				width: 6px
+				background: #eaeaea
+			&::-webkit-scrollbar-thumb
+				background: #7fcb42
+			> * 
+				font-size: 18px
+		@media(min-width: 1366px)
+			max-height: 250px
+		@media(min-width: 1440px)
+			max-height: 275px

@@ -1,0 +1,21 @@
+section.employer-customer.cb-section
+	.container
+		h2.cb-title.cb-title-center Khách hàng của chúng tôi
+		.sub-title
+			p CareerBuilder tự hào đã cung cấp dịch vụ cho hơn 14.000 + doanh nghiệp hàng đầu tại Việt Nam
+		.main-slide
+			.swiper-container
+				.swiper-wrapper
+					-for(x=0; x<12; x++)
+						.swiper-slide
+							img(src="./img/employer/"+(x+4)+".png" alt="")
+					-for(x=0; x<12; x++)
+						.swiper-slide
+							img(src="./img/employer/"+(x+4)+".png" alt="")
+			.main-button
+				.button-prev
+					em.mdi.mdi-chevron-left 
+				.button-next
+					em.mdi.mdi-chevron-right
+		.view-more
+			a(href="#").btn-gradient Xem thêm

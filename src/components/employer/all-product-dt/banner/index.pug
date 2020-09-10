@@ -1,0 +1,47 @@
+section.all-product-detail-banner
+	.swiper-container
+		.swiper-wrapper
+			.swiper-slide
+				.banner-pc
+					.image
+						img(src="./img/employer/20.png", alt="").swiper-lazy
+						.swiper-lazy-preloader
+				.banner-mb
+					.image
+						img(src="./img/employer/20.png", alt="").swiper-lazy
+						.swiper-lazy-preloader
+				.right-content
+					.container
+						.box-content
+							h1 Đăng tuyển dụng
+							.content
+								p Xây dựng đội ngũ nhân tài cho doanh nghiệp
+			.swiper-slide
+				.banner-pc
+					.image
+						img(src="./img/employer/20.png", alt="").swiper-lazy
+						.swiper-lazy-preloader
+				.banner-mb
+					.image
+						img(src="./img/employer/20.png", alt="").swiper-lazy
+						.swiper-lazy-preloader
+				.right-content
+					.container
+						.box-content
+							h2 Đăng tuyển dụng
+							.content
+								p Xây dựng đội ngũ nhân tài cho doanh nghiệp
+section.all-product-detail-nav
+	.container
+		//- .nav-mobile
+		//- 	p Danh mục 
+		//- 	em.mdi.mdi-chevron-down
+		ul.list-menu
+			li(data-menu="1").active
+				a(href="javascript:void(0)") Lợi ích
+			- var listmenu10 =['Bảng giá','Mẫu đăng tuyển dụng','Mẫu đăng tuyển','Cẩm nang tuyển dụng']
+			- for (i=0; i<listmenu10.length; i++)
+				li(data-menu=""+(i + 2)+"")
+					a(href="javascript:void(0)") #{listmenu10[i]} 
+			li.contact(data-menu="6")
+				a(href="#") Liên hệ tư vấn

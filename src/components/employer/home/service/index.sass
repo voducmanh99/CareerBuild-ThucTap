@@ -1,0 +1,121 @@
+.employer-service
+    .cb-title, .sub-title, .list-service
+        max-width: 1230px
+        margin: 0 auto
+    .cb-title
+        color: #182642
+        margin-bottom: 15px
+        @media(min-width: 1025px)
+            font-size: 30px
+        @media(min-width: 1200px)
+            font-size: 36px
+            margin-bottom: 25px
+    .sub-title
+        margin-bottom: 25px
+        > *
+            font-size: 16px
+            font-weight: 400
+            color: #172642
+            text-align: center
+        @media(min-width: 1025px)
+            margin-bottom: 35px
+            > *
+                font-size: 17px
+        @media(min-width: 1200px)
+            margin-bottom: 45px
+        @media(min-width: 1440px)
+            > *
+                font-size: 18px
+    .list-service
+        .item
+            display: flex
+            align-items: flex-start
+            flex-wrap: wrap 
+            .image
+                width: 100px
+                height: 100px
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+                border: 1px solid #172642
+                flex: 0 0 100px
+                max-width: 100px
+                overflow: hidden
+                a 
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 100%
+                    height: 100%
+                    text-decoration: none
+                img 
+                    max-width: 70px
+                    max-height: 70px
+                @media(min-width: 1025px)
+                    width: 140px
+                    height: 140px
+                    flex: 0 0 140px
+                    max-width: 140px
+                    img 
+                        max-width: 100px
+                        max-height: 100px
+            .caption
+                flex: 0 0 calc(100% - 100px)
+                max-width: calc(100% - 100px)
+                padding-left: 15px
+                .title
+                    margin-bottom: 8px
+                    > *
+                        font-size: 16px
+                        font-weight: 900
+                        color: #172642
+                        text-transform: uppercase
+                    @media(min-width: 1025px)
+                        > * 
+                            font-size: 18px
+                .content
+                    font-size: 14px
+                    font-weight: 400
+                    color: #172642
+                    line-height: 1.3
+                    @media(min-width: 1025px)
+                        font-size: 16px
+                        min-height: 88px
+                    @media(min-width: 1440px)
+                        font-size: 18px
+                        min-height: 115px
+                .view-more
+                    justify-content: flex-start
+                    margin-top: 10px
+                    font-weight: 700
+                    color: #109ed9
+                    transition: .4s ease-in-out all
+                    text-decoration: none
+                    em 
+                        font-size: 20px
+                        color: #109ed9
+                        transition: .4s ease-in-out all
+                    @media(min-width: 1025px)
+                        &:hover 
+                            color: #f9a134
+                            text-decoration: none
+                            em 
+                                color: #f9a134
+                @media(min-width: 1025px)
+                    padding-left: 20px
+                    flex: 0 0 calc(100% - 140px)
+                    max-width: calc(100% - 140px)
+                    
+        @media(min-width: 1025px)
+            .item
+                max-width: 530px
+            .row
+                .col-lg-6, .col-md-6
+                    &:nth-child(2n)
+                        .item
+                            margin-left: auto 
+                            margin-right: 0
+    @media(min-width: 1200px)
+        .row > *
+            margin-bottom: 50px

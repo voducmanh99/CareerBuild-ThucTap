@@ -1,0 +1,143 @@
+.all-product-detail-build
+	// padding-top: 0
+	.cb-title
+		color: #182642
+		margin-bottom: 15px
+		@media(min-width: 1024px)
+			font-size: 30px
+		@media(min-width: 1200px)
+			font-size: 36px
+			margin-bottom: 25px
+	.sub-title
+		margin-bottom: 25px
+		max-width: 1060px
+		margin-left: auto 
+		margin-right: auto 
+		> *
+			font-size: 16px
+			font-weight: 400
+			color: #172642
+			text-align: center
+		@media(min-width: 1024px)
+			margin-bottom: 35px
+			> *
+				font-size: 17px
+		@media(min-width: 1200px)
+			margin-bottom: 45px
+		@media(min-width: 1440px)
+			> *
+				font-size: 18px
+	.col-xxl-5-12
+		width: 100%
+		@media(min-width: 1440px)
+			flex: 0 0 20%
+			max-width: 20%
+
+	.list-build
+		box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+		border-top: 1px solid #e7e7e7
+		border-left: 1px solid #e7e7e7
+		margin: 0
+		> * 
+			margin: 0
+	.build-item
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		border-right: 1px solid #e7e7e7
+		border-bottom: 1px solid #e7e7e7
+		height: 100%
+		padding: 40px
+		.top-build
+			.name
+				font-size: 18px
+				font-weight: 700
+				color: #172642
+				text-transform: uppercase
+				text-align: center
+				@media(max-width: 1024px)
+					font-size: 15px
+			.price
+				font-size: 30px
+				font-weight: 700
+				color: #0197d2
+				text-align: center
+				margin-top: 20px
+				@media(max-width: 1024px)
+					font-size: 24px
+			.list-service
+				margin-top: 20px
+				li 
+					font-size: 15px
+					font-weight: 400
+					color: #172642
+					position: relative
+					&::before
+						font-family: 'Material Design Icons'
+						content: '\F12C'
+						position: absolute
+						top: 0
+						left: -25px
+						font-size: 16px
+						color: #6cd100
+					+ li 
+						margin-top: 5px
+		.bottom-build
+			margin-top: 25px
+			.input-amount
+				display: flex
+				border: 1px solid #e7e7e7
+				border-radius: 5px
+				.btn-dec, .btn-inc
+					width: 45px
+					height: 45px
+					display: flex
+					justify-content: center
+					align-items: center
+					font-size: 24px
+					font-weight: 500
+					color: #747d8d
+					background: #ededed
+					min-width: 45px
+					text-decoration: none
+					transition: .2s ease-in-out all
+					&:hover 
+						color: #ffffff
+						background: #747d8d
+				.amount
+					width: 100%
+					padding: 5px 
+					text-align: center
+					border: none
+					font-size: 16px
+					font-weight: 700
+					color: #172642
+			.button
+				margin-top: 15px
+				display: flex
+				justify-content: center
+				align-items: center
+				a 
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100%
+					height: 40px
+					border-radius: 4px
+					background: $gradient-2
+					background-size: 200% 100%
+					color: #ffffff
+					font-size: 16px
+					font-weight: 700
+					text-transform: uppercase
+					text-decoration: none
+					text-align: center
+					padding: 5px 10px
+					&:hover 
+						background-position: 100% 0
+	.note 
+		margin-top: 20px
+		p 
+			font-size: 14px
+			font-weight: 400
+			color: #999999

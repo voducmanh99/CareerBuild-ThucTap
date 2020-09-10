@@ -1,0 +1,208 @@
+header.for-customers
+	.container-fluid
+		.main-wrap
+			.left-wrap
+				.button-hambuger
+					span.mdi.mdi-menu
+				.logo
+					a(href="/")
+						img(src="./img/logo.png" alt="")
+				.main-menu
+					ul.menu
+						li
+							a(href="javascript:void(0)") Trang chủ
+						li.dropdown.active
+							a(href="javascript:void(0)") Sản phẩm và Dịch vụ
+							.dropdown-menu
+								ul 
+									li
+										a(href="javascript:void(0)") Đăng Tuyển Dụng
+									li 
+										a(href="javascript:void(0)") Tìm Hồ Sơ Ứng Viên
+									li 
+										a(href="javascript:void(0)") Talent Solution
+									li 
+										a(href="javascript:void(0)") Quảng Cáo Tuyển Dụng
+									li 
+										a(href="javascript:void(0)") Talent Driver
+									li 
+										a(href="javascript:void(0)") Targeted Email Marketing
+									li 
+										a(href="javascript:void(0)") Talent Referral
+									li 
+										a(href="javascript:void(0)") Đăng Tuyển Dụng & Tìm Hồ Sơ Quốc tế
+									li 
+										a(href="javascript:void(0)") Xem tất cả sản phẩm / dịch vụ
+						li.dropdown
+							a(href="javascript:void(0)") HR Central
+							.dropdown-menu
+								ul 
+									li 
+										a(href="javascript:void(0)") HR Central
+									li 
+										a(href="javascript:void(0)") Đăng Tuyển Dụng
+									li 
+										a(href="javascript:void(0)") Tìm Hồ Sơ
+									li 
+										a(href="javascript:void(0)") Careerbuilder Rewards
+						li 
+							a(href="javascript:void(0)") Cẩm nang tuyển dụng
+						li 
+							a(href="javascript:void(0)") Liên hệ
+			.right-wrap
+				.main-login.dropdown
+					.title-login
+						a(href="#") 
+							span.mdi.mdi-account-circle
+							| Đăng nhập
+					
+					.dropdown-menu
+						.login-wrapper
+							form
+								.row
+									.form-group.col-12
+										input(type="text", placeholder="Email/Tên đăng nhập")
+									.form-group.col-8
+										input(type="password", placeholder="Mật khẩu")
+									.form-group.col-4
+										button(type="submit") Đăng nhập
+									//- .form-group.form-check.col-12
+									//- 	input(type="checkbox", name="")
+									//- 	label Tự động đăng nhập
+								a(href="#").forget-password Quên mật khẩu?
+								a(href="#").forget-password.register Đăng ký
+							//- .sign-in-by
+							//- 	span Đăng nhập bằng:
+							//- 	ul
+							//- 		li
+							//- 			a(href="#")
+							//- 				i.fa.fa-facebook-official
+							//- 		li
+							//- 			a(href="#")
+							//- 				i.fa.fa-linkedin-square
+							//- 		li
+							//- 			a(href="#")
+							//- 				i.fa.fa-google-plus-square
+				.main-register
+					a(href="#") Đăng ký
+				//- .main-noti.dropdown
+				.main-noti(style="display: none")
+					a(href="#") 
+						span.mdi.mdi-cart
+					//- .dropdown-menu
+					//- 	.noti
+					//- 		p Đăng ký nhận email thông báo việc làm để không bỏ lỡ cơ hội, giúp bạn thăng tiến trong nghề nghiệp.
+					//- 		a.email(href="#") Tạo ngay
+				.main-language.dropdown
+					.dropdown-toggle
+						p VN
+							em.mdi.mdi-chevron-down
+					.dropdown-menu
+						.item.active
+							a(href="javascript:void(0)").dropdown-item VN
+						.item
+							a(href="javascript:void(0)").dropdown-item EN
+				.main-candidates
+					a(href="#")
+						em.material-icons launch
+						h4 Dành cho ứng viên
+
+	.mobile-menu
+		.mobile-wrap
+			.header-logo
+				a(href="/")
+					img(src="./img/logo.png" alt="")
+			.header-bottom
+				.header-bottom-top
+					.profile
+						.avatar
+							a(href="#")
+								img(src="./img/avata-new.png", alt="")
+						.username
+							a(href="#") welcome to careerbuilder
+							.authentication-links
+								ul
+									li
+										a(href="#") 
+											i.mdi.mdi-login-variant
+											| Đăng nhập
+									li
+										a(href="#") 
+											i.mdi.mdi-account-plus-outline
+											| Đăng ký
+						.back-menu-normal
+							em.mdi.mdi-arrow-left
+					.menu
+						ul.menu-normal
+							li.active
+								a(href="#") 
+									i.mdi.mdi-home-outline
+									| Trang chủ
+							li.dropdown-mobile
+								a(href="#") 
+									i.mdi.mdi-apps
+									| Sản phẩm và Dịch vụ
+								.dropdown-menu
+									ul 
+										li
+											a(href="javascript:void(0)") Đăng Tuyển Dụng
+										li 
+											a(href="javascript:void(0)") Tìm Hồ Sơ Ứng Viên
+										li 
+											a(href="javascript:void(0)") Talent Solution
+										li 
+											a(href="javascript:void(0)") Quảng Cáo Tuyển Dụng
+										li 
+											a(href="javascript:void(0)") Talent Driver
+										li 
+											a(href="javascript:void(0)") Targeted Email Marketing
+										li 
+											a(href="javascript:void(0)") Talent Referral
+										li 
+											a(href="javascript:void(0)") Đăng Tuyển Dụng & Tìm Hồ Sơ Quốc tế
+										li 
+											a(href="javascript:void(0)") Xem tất cả sản phẩm / dịch vụ
+							li.dropdown-mobile
+								a(href="#") 
+									i.mdi.mdi-briefcase-account
+									| HR Central
+								.dropdown-menu
+									ul 
+										li 
+											a(href="javascript:void(0)") HR Central
+										li 
+											a(href="javascript:void(0)") Đăng Tuyển Dụng
+										li 
+											a(href="javascript:void(0)") Tìm Hồ Sơ
+							li
+								a(href="#") 
+									i.mdi.mdi-lightbulb-on-outline
+									| Cẩm nang tuyển dụng
+							li
+								a(href="#") 
+									i.mdi.mdi-contacts
+									| Liên hệ
+							li
+								a(href="#") 
+									i.mdi.mdi-web
+									span English
+					
+				.header-bottom-bottom
+					.header-alert
+						h4
+							a(href="#") 
+								strong Dành cho ứng viên 
+								br
+								span Cơ hội việc làm
+					.employer-site
+						
+						ul 
+							li 
+								a(href="http://") 
+									i.mdi.mdi-phone
+									span HCM: (84.28) 3822 6060 
+							li 
+								a(href="http://") 
+									i.mdi.mdi-phone
+									span HN: (84.24) 7305 6060
+	.backdrop

@@ -1,0 +1,96 @@
+section.post-recruitment-banner
+	.swiper-container
+		.swiper-wrapper
+			.swiper-slide
+				.banner-pc
+					.image
+						img(src="https://images.careerbuilder.vn/product/banner1_1453168761_1453437615.jpg", alt="").swiper-lazy
+						.swiper-lazy-preloader
+				.banner-mb
+					.image
+						img(src="https://images.careerbuilder.vn/product/banner1_1453168761_1453437615.jpg", alt="").swiper-lazy
+						.swiper-lazy-preloader
+				.left-content
+					.container
+						.box-content
+							h1 Đăng Tuyển Dụng
+section.employer-post-recruitment
+	.container
+		.tabs
+			ul.list-menu.tabs-toggle
+				li.active
+					a(href="#tab-1") Tổng quan
+				li
+					a(href="#tab-2") Lợi ích
+				li
+					a(href="#tab-3") Mẫu đăng tuyển dụng
+				li
+					a(href="#tab-4") Mẫu đăng tuyển
+			.tab-content#tab-1.active
+				.full-content
+					p 
+						strong Xây dựng đội ngũ nhân tài cho doanh nghiệp
+					p Bạn có thể đăng thông tin tuyển dụng không giới hạn số lượng từ ngữ để thu hút những ứng viên xuất sắc nhất. Thông tin đăng tuyển của bạn sẽ hiển thị trực tuyến trên CareerBuilder.vn và các trang đối tác của chúng tôi trong vòng 30 ngày.
+					p Lưu ý: Giá chưa bao gồm 10% thuế
+					.row.list-service
+						- for (i=1; i<11; i++)
+							.col-sm-6.col-md-4.col-lg-3.col-xl-5-12
+								.service-item
+									.head-item
+										p.name Rengular Posting
+										p.price 3.586.000đ
+										ul
+											li Đăng tuyển trong 30 ngày
+									.button
+										a(href="#").btn-gradient.btn-buy Mua ngay
+					p(style="color: #ff5b00")
+						strong Tìm kiếm nhân tài chưa bao giờ dễ dàng hơn thế:
+					ul 
+						li 1. Đăng nhập tài khoản nhà tuyển dụng.
+						li 2. Nhập thông tin đăng tuyển.
+						li 3. Chọn gói dịch vụ mong muốn.
+						li 4. Bấm “
+							strong Đăng tuyển
+							| ” để hoàn thành.
+					p Bạn đã đăng tuyển thành công cùng CareerBuilder.vn.
+					.contact
+						a(href="#").btn-gradient Đăng tuyển ngay
+					.bottom-content
+						p 
+							strong Quý khách muốn quảng bá thông tin tuyển dụng này?
+						p Tìm hiểu thêm 
+							a(href="#") Quảng Bá Thông Tin Tuyển Dụng. 
+								em.mdi.mdi-arrow-right-bold-box
+			.tab-content#tab-2
+				.full-content
+					ul 
+						- for (i=1; i<6; i++)
+							li 
+								p Thông tin tuyển dụng của bạn sẽ được đăng tải rộng rãi trên các trang web lớn, không tăng thêm chi phí.
+			.tab-content#tab-3
+				.full-content
+					p
+						img(src="https://images.careerbuilder.vn/content/Product/Quang Ba Tuyen  Dung - VN.jpg", alt="")
+					p 
+						img(src="https://images.careerbuilder.vn/content/Product/Job detail vn.jpg", alt="")
+			.tab-content#tab-4
+				.full-content
+					.employer-post-recruitment-slide
+						h2.cb-title.cb-title-center Hiện có 
+							span 6 
+							| mẫu quảng cáo tuyển dụng nổi bật
+						.main-slide
+							.swiper-container
+								.swiper-wrapper
+									- for (i=1; i<10; i++)
+										.swiper-slide
+											.image
+												a(href="#")
+													img(src="https://static.careerbuilder.vn/themes/kiemviecv32/employers/images/products/template_201_1593502211.jpg", alt="")
+											.content
+												a(href="#").name Template #{i}
+							.main-button
+								.button-prev
+									em.mdi.mdi-chevron-left
+								.button-next
+									em.mdi.mdi-chevron-right
