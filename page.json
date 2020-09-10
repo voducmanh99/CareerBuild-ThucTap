@@ -1,5 +1,5 @@
 {
-	"buildAll": false,
+	"buildAll": true,
 	"page": [
 		{
 			"name": "index",
@@ -13,7 +13,7 @@
 		},
 		{
 			"name": "02-employer-dashboard",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
@@ -25,6 +25,16 @@
 			"name": "02-managefollowers",
 			"isWorking": true,
 			"js": []
+		},
+		{
+			"name": "02-Faq-dt",
+			"isWorking": false,
+			"js": []
+		},
+		{
+			"name": "MJP-ExpiredJob-DetailJ-Email",
+			"isWorking": false,
+			"js": ["src/components/Lam-MJP-ExpiredJob-DetailJ-Email/index.js"]
 		}
 	]
 }
