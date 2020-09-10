@@ -1,0 +1,50 @@
+{
+	"name": "source-v3",
+	"version": "3.2.2",
+	"description": "source build html",
+	"main": "gulpfile.js",
+	"repository": "https://github.com/sonvh2510/01.ToolBuildHTML.git",
+	"private": false,
+	"author": "sonvh2510",
+	"license": "MIT",
+	"scripts": {
+		"start": "gulp",
+		"build": "gulp buildFinal"
+	},
+	"dependencies": {
+		"@babel/core": "^7.8.7",
+		"@babel/polyfill": "^7.8.7",
+		"@babel/preset-env": "^7.8.7",
+		"@babel/register": "^7.8.6",
+		"autoprefixer": "^9.7.3",
+		"browser-sync": "^2.26.7",
+		"console-browserify": "^1.2.0",
+		"countup.js": "^2.0.4",
+		"css-declaration-sorter": "^4.0.1",
+		"cssnano": "^4.1.8",
+		"dart-sass": "^1.24.2",
+		"del": "^3.0.0",
+		"fibers": "^4.0.2",
+		"graceful-fs": "^4.2.3",
+		"gulp": "^4.0.2",
+		"gulp-babel": "^8.0.0-beta.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-cssimport": "^7.0.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^8.0.0",
+		"gulp-pug": "^4.0.1",
+		"gulp-rename": "^1.4.0",
+		"gulp-replace": "^1.0.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-sass-unicode": "^1.0.5",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-terser": "^1.2.0",
+		"jspdf": "^1.5.3",
+		"node-sass": "^4.14.1",
+		"slim-select": "^1.25.0",
+		"tippy.js": "^4.3.5"
+	},
+	"devDependencies": {
+		"@editorjs/editorjs": "^2.17.0"
+	}
+}

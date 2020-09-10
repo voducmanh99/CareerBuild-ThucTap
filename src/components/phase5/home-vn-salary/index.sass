@@ -1,0 +1,669 @@
+select
+	background-color: #ffffff
+.mdi-star
+	&::before
+		content: '\F4CE'
+.mdi-close-circle:before
+	content: '\f159'
+.justify-content-center
+	justify-content: center
+.home-salary-banner
+	position: relative
+	.image
+		+img-scale(570/1920*100%)
+	.video
+		+img-scale(570/1920*100%)
+		video
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			object-fit: cover 
+	.box-salary
+		position: relative
+		padding: 15px
+		background: #ffffff
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			background: linear-gradient(to left, rgba(11,143,203,1) 0%, rgba(132,206,64,1) 100%)
+			width: 100%
+			height: 5px
+			opacity: 0.6
+		h1
+			font-size: 20px
+			font-weight: 700
+			color: #172642
+			text-transform: uppercase
+			line-height: 1.2
+			@media(min-width: 576px)
+				font-size: 22px
+			@media(min-width: 768px)
+				font-size: 24px
+			@media(min-width: 1024px)
+				font-size: 26px
+			@media(min-width: 1200px)
+				font-size: 30px
+	.des
+		margin-top: 5px
+		> *
+			font-size: 16px
+			font-weight: 400
+			color: #172642
+			line-height: 1.2
+	.main-form
+		margin-top: 20px
+	.list-form-group
+		display: flex
+		flex-wrap: wrap
+		border-radius: 4px
+
+
+		.form-group
+			flex: 0 0 100%
+			max-width: 100%
+			position: relative
+			width: 100%
+			margin-top: 10px
+			&:first-child
+				margin-top: 0
+			input, select
+				width: 100%
+				font-size: 14px
+				font-weight: 400
+				color: #666666
+				padding: 5px 15px
+				padding-left: 40px
+				height: 45px
+				border: 1px solid #cccccc
+			input
+				&::placeholder
+					font-size: 14px
+					font-weight: 400
+					color: #cccccc
+			select
+				-webkit-appearance: none
+				-moz-appearance: none
+				color: #cccccc
+				option
+					color: #666666
+			label
+				position: absolute
+				top: 0
+				left: 0
+				z-index: 11
+				height: 45px
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 40px
+				em
+					font-size: 20px
+					color: #cccccc
+			&.form-keyword
+				position: relative
+				input
+					padding-right: 30px
+				.cleartext
+					position: absolute
+					top: 10px
+					right: 8px
+					z-index: 11
+					cursor: pointer
+					opacity: 0
+					color: #cccccc
+					em
+						font-size: 18px
+						color: #cccccc
+					&.active
+						opacity: 1
+			&.form-submit
+				button
+					background-image: $gradient-1
+					height: 45px
+					width: 45px
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100%
+					em
+						font-size: 30px
+						color: #ffffff
+				@media(max-width: 576px)
+					button
+						&:before
+							content: 'Tìm kiếm'
+							font-size: 18px
+							color: #ffffff
+							text-transform: uppercase
+						em
+							display: none
+		@media(min-width: 768px)
+			border: 1px solid #cccccc
+			overflow: hidden
+			.form-group
+				flex: 0 0 calc((100% - 45px) / 3)
+				max-width: calc((100% - 45px) / 3)
+				margin-top: 0
+				&.form-submit
+					flex: 0 0 45px
+					max-width: 45px
+	@media(min-width: 1024px)
+		.main-salary
+			position: absolute
+			bottom: 15px
+			z-index: 11
+			left: 50%
+			transform: translateX(-50%)
+			margin: 0 auto
+			max-width: 1100px
+			width: 100%
+		.box-salary
+			padding: 30px 45px
+			background: rgba(#ffffff, 0.85)
+	@media(min-width: 1200px)
+		.main-salary
+			bottom: 55px
+.home-salary-1
+	background: #faf9fe
+	.image
+		+img-scale(380/690*100%)
+		position: relative
+		&:before
+			font-family: 'Material Design Icons'
+			content: '\F40D'
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: 11
+			font-size: 48px
+			color: #ffffff
+			pointer-events: none
+	.video
+		+img-scale(380/690*100%)
+		video
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			object-fit: cover 
+	.iframe
+		+img-scale(380/690*100%)
+		iframe
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			object-fit: cover 
+	.main-content
+		margin-top: 20px
+		ul
+			li
+				display: flex
+				align-items: flex-start
+				margin-bottom: 30px
+				&:last-child
+					margin-bottom: 0
+				.icon
+					min-width: 65px
+					width: 65px
+				.text
+					padding-left: 30px
+					h3
+						font-size: 16px
+						font-weight: 700
+						color: #172642
+						margin-bottom: 3px
+						@media(min-width: 1024px)
+							font-size: 18px
+					p
+						font-size: 16px
+						font-weight: 400
+						color: #5d677a
+					a
+						font-size: 16px
+						text-decoration: underline
+						color: #109ed9
+						margin-top: 6px
+						display: block
+
+		@media(min-width: 1024px)
+			margin-top: 0
+			ul
+				li
+					margin-bottom: 40px
+					max-width: 580px
+		@media(min-width: 1440px)
+			ul
+				padding-left: 35px
+.home-salary-2
+	.cb-title
+		h2
+			margin-bottom: 10px
+	.des
+		text-align: center
+		span
+			font-weight: 700
+			padding-right: 3px
+			padding-left: 3px
+	.main-slide
+		margin-top: 35px
+		.swiper-slide
+			.content
+				max-width: 415px
+				margin-top: 13px
+				+line(6)
+			.user
+				margin-top: 40px
+				display: flex
+				align-items: center
+				.ava
+					width: 100px
+					height: 100px
+					min-width: 100px
+					border-radius: 50%
+					overflow: hidden
+					img
+						width: 100%
+						height: 100%
+						object-fit: cover
+				.name
+					padding-left: 30px
+					h3
+						font-size: 16px
+						font-weight: 400
+						color: #172642
+						span
+							font-weight: 700
+							padding-left: 3px
+							text-transform: uppercase
+					p
+						font-size: 14px
+						font-weight: 400
+						color: #999999
+	.main-page
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 30px
+		.swiper-pagination
+			display: flex
+			justify-content: center
+			align-items: center
+			.swiper-pagination-bullet
+				width: 10px
+				height: 10px
+				min-width: 10px
+				border-radius: 50%
+				background: #cdcdcd
+				margin: 0 5px
+				opacity: 1
+				&:focus
+					outline: none
+				&.swiper-pagination-bullet-active
+					background: #1fb0e5
+		@media(min-width: 1024px)
+			margin-top: 40px
+	.banner
+		margin-top: 30px
+		img
+			width: 100%
+			height: auto
+		@media(min-width: 1024px)
+			margin-top: 60px
+		@media(min-width: 1440px)
+			margin-top: 70px
+.home-salary-3
+	background: #faf9fe
+	.cb-title
+		margin-bottom: 0
+		h2
+			margin-bottom: 0
+	.main-content
+		.list-item
+			li
+				margin-top: 30px
+				display: flex
+				align-items: flex-start
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					left: 85px
+					background: #70bedd
+					width: 1px
+					height: 100%
+					pointer-events: none
+				.icon
+					width: 75px
+					min-width: 75px
+					height: 100%
+				.content
+					padding-left: 30px
+					max-width: 440px
+					a
+						text-decoration: none
+						color: #5d667a
+					h4
+						font-size: 16px
+						font-weight: 700
+						color: #172642
+						line-height: 1.2
+						text-decoration: none
+						@media(min-width: 768px)
+							font-size: 18px
+						@media(min-width: 1024px)
+							font-size: 20px
+						@media(min-width: 1200px)
+							font-size: 24px
+					p
+						margin-top: 10px
+						a 
+							&:hover 
+								text-decoration: underline
+				@media(min-width: 1024px)
+					margin-top: 40px
+					padding-left: 30px
+					&:before
+						left: 115px
+				@media(min-width: 1200px)
+					margin-top: 60px
+					padding-left: 60px
+					&::before
+						left: 160px
+					.content
+						padding-left: 60px
+			@media(min-width: 1024px)
+				display: flex
+				flex-wrap: wrap
+				li
+					flex: 0 0 50%
+					max-width: 50%
+					width: 100%
+	.banner
+		margin-top: 30px
+		img
+			width: 100%
+			height: auto
+		@media(min-width: 768px)
+			margin-top: 40px
+		@media(min-width: 1200px)
+			margin-top: 100px
+		@media(min-width: 1440px)
+			margin-top: 120px
+.home-salary-4
+	background: #009b74
+	.main-content
+		min-height: 250px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		@media(min-width: 1600px)
+			min-height: 350px
+	.cb-title
+		h2
+			color: #ffffff
+			@media(max-width: 576px)
+				font-size: 20px
+	.apply-now
+		display: flex
+		justify-content: center
+		align-items: center
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 5px 15px
+			min-height: 50px
+			border-radius: 4px
+			border: 2px solid #5ac24f
+			color: #029f44
+			font-size: 14px
+			font-weight: 700
+			text-transform: uppercase
+			background: #ffffff
+			box-shadow: 0 0 10px 0 rgba(0,0,0,0.2)
+			text-decoration: none
+			transition: .4s ease-in-out all
+			text-align: center
+			&:hover
+				background: linear-gradient(to right,#169b74, #86cb49)
+				color: #ffffff
+		@media(min-width: 1024px)
+			a
+				font-size: 16px
+		@media(min-width: 1200px)
+			a
+				min-width: 400px
+.widget
+	background: #ffffff
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+	// margin-bottom: 30px
+	.widget-head
+		background: #d9e6ed
+		padding: 7px 15px
+		@media(min-width: 1025px)
+			padding: 11.5px 30px
+		h3
+			font-size: 18px
+			font-weight: 700
+			color: #172642
+			margin-bottom: 0
+			text-transform: uppercase
+			@media(min-width: 1025px)
+				font-size: 18px
+	.widget-body
+		padding: 15px
+		@media(min-width: 1025px)
+			padding: 25px 30px
+.widget-5
+	padding: 0
+	.cb-title-h3
+		h3
+			margin-bottom: 0
+	.cb-sub-title
+		font-size: 14px
+		font-weight: 400
+		color: #5d677a
+		margin-bottom: 10px
+	.widget-body
+		padding: 20px
+		.title
+			h4
+				font-size: 14px
+				font-weight: 400
+				color: #287ab9
+				cursor: pointer
+	.main-form
+		padding-top: 15px
+		.form-group
+			margin-bottom: 16px
+			label
+				font-size: 14px
+				font-weight: 400
+				color: #5d677a
+				width: 100%
+				span
+					font-size: 12px
+					font-weight: 400
+					color: #999999
+					transition: 0.5s
+					font-style: normal
+					display: initial
+					@media(min-width: 1025px)
+						font-size: 14px
+				@media(min-width: 1440px)
+					font-size: 16px
+			input
+				height: 40px
+				padding: 5px 0
+				font-size: 16px
+				font-weight: 700
+				color: #172642
+				border: none
+				border-bottom: 1px solid #93bcdc
+				width: 100%
+				&:focus
+					outline: none
+			&.form-text
+				position: relative
+				label
+					position: absolute
+					top: 7px
+					left: 0
+					pointer-events: none
+					transition: 0.5s
+				input
+					// &:valid ~ label,
+					&:focus ~ label,
+					&:not([value=""]) ~ label
+						top: -12px
+						left: 0
+						font-size: 14px
+						span
+							font-size: 10px
+			&.form-select
+				label
+					font-size: 14px
+				select
+					width: 100%
+					height: 40px
+					border: none
+					padding: 5px 0
+					border-bottom: 1px solid #93bcdc
+					font-size: 16px
+					font-weight: 700
+					color: #172642
+					-webkit-appearance: none
+					-moz-appearance: none
+		.form-submit
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-top: 3px
+			margin-bottom: 0
+			a
+				display: flex
+				align-items: center
+				justify-content: center
+				height: 44px
+				padding: 5px 20px
+				border-radius: 5px
+				background-image: linear-gradient(270deg, #169b74, #86cb49, #169b74)
+				color: #fff
+				font-size: 16px
+				font-weight: 700
+				text-align: center
+				text-decoration: none
+				text-transform: uppercase
+				width: 270px
+		.btn-advanced
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 10px
+			color: #287ab9
+			font-size: 16px
+			font-weight: 400
+		@media(min-width: 1025px)
+			// .widget-body
+			.main-form
+				padding-top: 25px
+				.form-group
+					&.form-text
+						input
+							&:not([value=""]) ~ label,
+							&:focus ~ label
+								top: -15px
+
+.feedback-btn
+	position: fixed
+	background: #747d8d
+	border-top-left-radius: 5px
+	border-top-right-radius: 5px
+	height: 40px
+	min-width: 132px
+	top: 50%
+	transform: translateY(-50%) rotate(270deg)
+	right: -46px
+	display: flex
+	justify-content: center
+	align-items: center
+	z-index: 999
+	border: none
+	a
+		font-size: 14px
+		font-weight: 500
+		color: #ffffff
+		text-decoration: none
+		em
+			font-size: 16px
+			padding-right: 10px
+	@media(max-width: 800px)
+		display: none
+.list-nav-fixed
+	position: fixed
+	top: 200px
+	z-index: 999
+	left: 0
+	border-top-right-radius: 5px
+	border-bottom-right-radius: 5px
+	overflow: hidden
+	li
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		border-bottom: 1px solid #269956
+		&:last-child
+			border-bottom: none
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 10px
+			background: #008738
+			width: 50px
+			height: 50px
+			transition: .4s ease-in-out all
+			text-decoration: none
+			em
+				color: #ffffff
+				font-size: 22px
+				text-decoration: none
+			.material-icons
+				font-size: 36px
+			&:hover
+				background: #5ac24f
+	@media(max-width: 576px)
+		top: auto
+		bottom: 0
+		left: 0
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+		border: none
+		li
+			flex: 0 0 20%
+			max-width: 20%
+			width: 100%
+			border-bottom: none
+			border-right: 1px solid #269956
+			&:last-child
+				border-right: none
+			a
+				width: 100%
+// .salary-calculator-2-modal
+.salary-calculator-2-modal
+	padding: 0

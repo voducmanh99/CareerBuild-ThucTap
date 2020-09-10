@@ -1,0 +1,32 @@
+.pagination
+	margin-top: 30px
+	ul
+		display: flex
+		align-items: center
+		justify-content: center
+		li
+			a
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 30px
+				height: 30px
+				background: #fff
+				border: 1px solid #e5e5e5
+				opacity: 1
+				color: #5d677a
+				font-size: 14px
+				line-height: 1
+				border-radius: 50%
+				text-decoration: none
+			+ li
+				margin-left: 10px
+			&.prev-page,&.next-page
+				a
+					background: #f5f5f5
+					border: 1px solid transparent
+			&.active,&:hover
+				a
+					background: #f7a334
+					border-color: #f7a334
+					color: #fff

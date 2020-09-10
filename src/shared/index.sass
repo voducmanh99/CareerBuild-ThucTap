@@ -1,0 +1,58 @@
+@import "../plugins/font.css"
+@import '../../bower_components/font-awesome/css/font-awesome.css'
+@import "../plugins/grid.css"
+@import 'import.sass'
+@import 'icon.sass'
+@import 'elements.sass'
+
+
+
+html,body
+	font-family: 'Roboto', sans-serif
+	font-size: 13px
+	color: #5d677a
+	@media (min-width: 768px) 
+		font-size: 14px
+	@media (min-width: 1025px) 
+		font-size: 15px
+	@media (min-width: 1200px)
+		font-size: 16px
+body
+	left: 0
+	transition: left 0.5s ease-in-out
+	position: relative
+	min-height: 100vh
+html
+	&.menu-mobile-active
+		@media screen and ( max-width: 1200px )
+			overflow: hidden
+			position: fixed
+			width: 100%
+			body,header
+				left: 290px
+a
+	color: #09a0db
+
+main
+	padding-top: 80px
+	@media screen and ( max-width: 1200px )
+		padding-top: 60px
+
+img
+	max-width: 100%
+	height: auto 
+iframe
+	max-width: 100%
+select
+	background-image: url('../img/sl.png')
+	background-repeat: no-repeat
+	background-position: 95% 50%
+
+button
+	border: 0
+
+strong,b
+	font-weight: 700
+@import "header/index.sass"
+@import "footer/index.sass"
+@import "fixed/index.sass"

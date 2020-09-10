@@ -1,0 +1,30 @@
+include ../job-item/index.pug
+section.jobs-side-list
+	.applied-job-list
+		+job-side-item-has-background('./img/brand-logo/1.png')
+		+job-side-item-premium('./img/brand-logo/2.png')
+	.jobs-list
+		+job-side-item-orange-title('./img/home/1.png')
+		+job-side-item-red-title('./img/home/1.png')
+		+job-side-item('./img/home/1.png')
+	.banner-ad
+		a(href="#")
+			img(src="./img/ad/1.jpg")
+	.jobs-list
+		-for(x=0; x<5; x++)
+			+job-side-item('./img/brand-logo/4.png')
+	.banner-ad
+		a(href="#")
+			img(src="./img/ad/2.jpg")
+	.jobs-list
+		-for(x=0; x<5; x++)
+			+job-side-item('./img/brand-logo/5.png')
+	.banner-ad
+		a(href="#")
+			img(src="./img/ad/2.jpg")
+	.jobs-list
+		-for(x=0; x<80; x++)
+			+job-side-item('./img/brand-logo/3.png')
+	.load-more
+		a(href="#") Load more
+			span.mdi.mdi-arrow-down

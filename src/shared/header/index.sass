@@ -1,0 +1,672 @@
+header
+	position: fixed !important
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 999
+	background: #ffffff
+	position: relative
+	transition: left 0.5s ease-in-out
+	padding: 22.5px 0
+	&:before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		background: #e8e8e8
+		height: 1px
+		width: 100%
+		z-index: 1
+	@media (max-width: 1200px)
+		height: 60px
+		padding: 14px 0
+		position: fixed
+	&.active
+		box-shadow: 1px 0 20px 0 rgba(0,0,0,0.1)
+		@media(max-width: 1025px)
+			box-shadow: none
+	.container-fluid
+		padding-right: 0
+	.main-wrap, .right-wrap, .left-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.main-menu
+		margin-left: 40px
+		.menu
+			display: flex
+			justify-content: space-between
+			align-items: center
+			li
+				padding: 0 10px
+				a 
+					position: relative
+					transition: .4s ease-in-out all
+					font-size: 14px
+					font-weight: 400
+					color: #5d677a
+					text-decoration: none
+					// &:before
+					// 	content: ''
+					// 	position: absolute
+					// 	bottom: -32px
+					// 	left: 0
+					// 	width: 100%
+					// 	height: 4px
+					// 	background: #287ab9
+					// 	transition: .4s ease-in-out all
+					// 	z-index: 12
+					// 	opacity: 0
+				&:hover
+					a 
+						color: #009c75
+						text-shadow: 0.3px 0 0 #009c75
+						// &::before
+						// 	opacity: 1
+				&.active
+					a 
+						color: #009c75
+						text-shadow: 0.3px 0 0 #009c75
+						// font-weight: 700
+						// &::before
+						// 	opacity: 1
+						// 	width: 0
+						// 	display: none
+				&.dropdown
+					position: relative
+					.dropdown-menu
+						left: 0
+					li 
+						margin-bottom: 5px
+						padding: 0
+						a 
+							font-weight: 700
+							color: #182642
+							font-size: 14px
+							&:before 
+								bottom: -5px
+								height: 2px
+								opacity: 0
+								display: none
+					li
+						&:hover
+							a 
+								color: #182642
+								&::before
+									opacity: 1
+						&.active
+							a 
+								color: #182642
+								font-weight: 700
+								&::before
+									opacity: 1
+		@media (min-width: 1400px)
+			.menu
+				li 
+					padding: 0 15px
+		@media (max-width: 1368px)
+			margin-left: 10px
+			.menu
+				li
+					padding: 0 6px
+					a 
+						font-size: 13px
+	.main-noti
+		width: 47px
+		display: flex
+		justify-content: center
+		align-items: center
+		border-right: 1px solid #e8e8e8
+		&:hover
+			a
+				color: #f79d25
+		a 
+			font-size: 20px
+			color: #5d677a
+			height: 26px
+		.dropdown-menu
+			.noti
+				padding: 20px
+				min-width: 310px
+			p
+				font-size: 14px
+			.email
+				color: #fff
+				width: 75px
+				text-align: center
+				padding: 0 5px
+				font-weight: bold
+				font-size: 12px
+				display: block
+				height: 27px
+				line-height: 27px
+				margin: 15px auto 0
+				cursor: pointer
+				background-color: #f79d25
+				border: none
+	.main-login, .title-login
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 0 10px
+		height: 26px
+		border-right: 1px solid #e8e8e8
+		&:hover
+			> a
+				color: #f79d25
+		> a 
+			font-size: 14px
+			color: #5d677a
+			font-weight: 400
+			display: flex
+			justify-content: center
+			align-items: center
+			span
+				font-size: 20px
+				padding-right: 5px
+				line-height: 0
+		.dropdown-menu
+			min-width: 250px
+		
+		.login-wrapper
+			padding: 15px
+			.row
+				margin-bottom: -10px
+				margin-left: -5px
+				margin-right: -5px
+				> *
+					padding: 0 5px
+					margin-bottom: 10px
+			.form-group
+				display: flex
+				input[type="text"], input[type="password"]
+					width: 100%
+					font-size: 14px
+					padding: 0 5px
+					height: 30px
+					&::placeholder
+						font-size: 14px
+				button
+					height: 100%
+					background: #f79d25
+					color: #fff
+					font-size: 14px
+					width: 100%
+					&:hover
+						background: darken(#f79d25, 10%)
+				label
+					font-size: 13px
+				&.form-check
+					display: flex
+					input
+						margin-right: 5px
+			.forget-password
+				font-size: 14px
+			.sign-in-by
+				display: flex
+				align-items: center
+				span
+					font-size: 13px
+					margin-right: 10px
+				ul
+					li
+						display: inline-block
+						margin-left: 5px
+						a
+							color: inherit
+							text-decoration: none
+							font-size: 20px
+							&:hover
+								color: #f79d25
+		&.dropdown
+			.dropdown-menu
+				display: none
+				min-width: 350px
+			&:hover
+				.dropdown-menu
+					display: none
+		&.logged
+			.dropdown-menu
+				min-width: 170px
+			> a 
+				color: #287ab9 
+				span
+					font-size: 15px !important
+					color: #287ab9
+					font-weight: 700
+					display: flex
+					padding-left: 4px
+				&:hover
+					text-decoration: none
+			&:hover
+				.dropdown-menu
+					display: block
+	.title-login
+		border-right: none
+		padding: 0
+	.main-register
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 0 10px
+		height: 26px
+		border-right: 1px solid #e8e8e8
+		&:hover
+			a
+				color: #f79d25
+		a 
+			display: flex
+			justify-content: center
+			align-items: center
+			font-size: 14px
+			color: #5d677a
+			font-weight: 400
+	.left-wrap
+		.logo 
+			@media(max-width: 1025px)
+				padding-left: 20px
+			@media(max-width: 768px)
+				padding-left: 10px
+	.main-language
+		padding: 0 15px
+		position: relative
+		height: 26px
+		display: flex
+		justify-content: center
+		align-items: center
+		.dropdown-toggle
+			font-size: 14px
+			font-weight: 400
+			color: #666666
+			position: relative
+			transition: .4s ease-in-out all
+			display: flex
+			@media(max-width: 1025px)
+				color: #5d677a
+			&:hover
+				cursor: pointer
+				color: #182642
+				&:before
+					color: #182642
+		.dropdown-menu
+			min-width: 50px
+			
+			.item
+				padding: 5px 5px
+				position: relative
+				padding-left: 25px
+				box-shadow: none !important
+				border-left: 1px solid #ebebeb
+				border-right: 1px solid #ebebeb
+				&.active
+					&:before
+						font-family: 'Material Design Icons'
+						content: '\F12C'
+						position: absolute
+						top: 50% 
+						transform: translateY(-50%)
+						left: 5px
+						color: #182642
+						font-size: 18px
+				&:first-child
+					border-top: 1px solid #ebebeb
+				&:last-child
+					border-bottom: 1px solid #ebebeb
+			a 
+				font-size: 14px
+				font-weight: 400
+				color: #5d677a
+				line-height: 1.2
+				transition: .4s ease-in-out all
+				&:hover
+					color: #182642
+		&:hover
+			.dropdown-menu
+				display: block
+	.main-employer
+		position: relative
+		z-index: 2
+		.dropdown-menu
+			padding-top: 0
+		.dropdown-toggle
+			padding: 17.5px
+			background: #182642
+			h4 
+				font-size: 16px
+				font-weight: 700
+				color: #ffffff
+			em 
+				padding-left: 5px
+				font-size: 14px
+				color: #ffffff
+			p  
+				font-size: 14px
+				color: #999999
+				font-weight: 400
+		&:hover
+			a 
+				text-decoration: none
+			.dropdown-menu
+				display: block
+		@media(min-width: 1400px)
+			.dropdown-toggle
+				padding: 17.5px 20px
+				min-width: 190px
+	.button-hambuger
+		display: none
+	.backdrop
+		position: fixed
+		width: 100%
+		opacity: 0
+		pointer-events: none
+		height: 100%
+		transition: .5s ease-in-out
+		background: rgba(0,0,0,.8)
+		top: 0
+		left: 0
+		z-index: 31
+		&.active
+			opacity: 1
+			pointer-events: initial
+	.mobile-menu
+		position: fixed
+		top: 0
+		left: -290px
+		background-color: #fff
+		width: 290px
+		height: 100%
+		display: block
+		transition: left .5s ease-in-out
+		z-index: 900
+		// overflow-y: auto
+		&.show
+			left: 0
+		.mobile-wrap
+			height: 100%
+		.header-logo
+			padding: 20px 10px
+			text-align: center
+		.header-bottom
+			color: #fff
+			background: #182641
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			height: calc(100% - 77px)
+			// max-height: calc(100% - 77px)
+			overflow-y: auto
+			overflow-x: hidden
+		.dropdown-mobile
+			position: relative
+			&:before
+				font-family: 'Material Design Icons'
+				content: '\f140'
+				position: absolute
+				top: 0
+				right: 15px
+				color: #ffffff
+				font-size: 16px 
+			.dropdown-menu
+				display: none
+				ul 
+					padding: 10px
+			&.show-menu 
+				&:before
+					transform: rotate(180deg)
+				.dropdown-menu
+					display: block
+		.dropdown-mobile-2
+			position: relative
+			&:before
+				font-family: 'Material Design Icons'
+				content: '\f140'
+				position: absolute
+				top: 0
+				right: 15px
+				color: #ffffff
+				font-size: 16px 
+			.dropdown-menu-2
+				display: none
+				ul 
+					padding: 10px 25px
+					padding-right: 10px
+			&.show-menu-2
+				&:before
+					transform: rotate(180deg)
+				.dropdown-menu-2
+					display: block
+		.profile
+			padding: 20px 10px
+			border-bottom: 1px solid #ccc
+			position: relative
+			.avatar
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 50%
+				width: 80px
+				height: 80px
+				margin: 0 auto
+				background: rgba(#fff , 0.3)
+				overflow: hidden
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+			.username
+				margin-top: 15px
+				font-size: 16px
+				text-align: center
+				text-transform: uppercase
+				p, a 
+					font-size: 16px
+					text-align: center
+					text-transform: uppercase
+					color: #ffffff
+					&:hover 
+						text-decoration: none
+			.back-menu-normal, .back-menu-normal-2
+				position: absolute
+				top: 25px
+				left: 15px
+				opacity: 0
+				transition: .4s ease-in-out all
+				pointer-events: none
+				em 
+					font-size: 35px
+					font-weight: 700
+					color: #ffffff
+				&.active
+					opacity: 1
+					cursor: pointer
+					pointer-events: auto
+		.menu,.authentication-links,.header-alert
+			padding: 20px
+			border-bottom: 1px solid #ccc
+			ul
+				li
+					+ li
+						margin-top: 10px
+					a
+						color: inherit
+						font-size: 14px
+						i
+							margin-right: 10px
+		.authentication-links
+			border-bottom: none
+
+		.menu
+			position: relative
+			ul
+				li
+					&.active
+						a
+							color: #f7a334
+					&.dropdown-search-jobs
+						.dropdown-menu
+							display: none
+							ul 
+								padding-left: 35px
+								padding-top: 5px
+								li 
+									a 
+										font-size: 14px
+			.menu-normal
+				transition: .4s ease-in-out all
+				li 
+					a 
+						i
+							&.fa 
+								font-size: 14px
+				&.active
+					transform: translateX(-300px)
+			.menu-logged
+				width: calc(100% - 50px)
+			.menu-logged, .menu-search-jobs, .list-unstyled
+				transition: .4s ease-in-out all
+				transform: translateX(300px)
+				.menu-dashboard
+					a
+						position: relative
+						padding-right: 15px
+						&:before
+							font-family: 'Material Design Icons'
+							content: '\f142'
+							position: absolute
+							top: 1.2px
+							left: calc(100% - 15px)
+							font-size: 12px
+							color: #ffffff
+					.list-unstyled
+						width: 100%
+						li 
+							a 
+								line-height: 1.3
+					ul 
+						li 
+							a 
+								&:before 
+									display: none
+				&.active
+					transform: translateX(0)
+					opacity: 1 
+					pointer-events: auto
+				&.active-2
+					transform: translateX(-300px)
+					opacity: 1
+					pointer-events: none
+					.menu-dashboard
+						.list-unstyled
+							transform: translateX(300px)
+			&.active
+				border-bottom: none
+			
+		.header-alert
+			background: #182641
+			ul
+				display: flex
+				flex-wrap: wrap
+				li
+					flex: 0 0 100%
+					max-width: 100%
+					a 
+						display: flex
+						align-items: flex-start
+						i 
+							margin: 0
+							padding-top: 3px
+							margin-right: 10px
+						span 
+							display: flex
+		.employer-site
+			margin-top: auto
+			padding: 20px
+			background: #4892C7
+			h4
+				font-size: 16px
+				color: #ffffff
+			p
+				font-size: 14px
+				color: #ffffff
+		.menu-logged, .menu-search-jobs, .list-unstyled
+			position: absolute
+			top: 20px
+			left: 20px
+			z-index: 11
+			opacity: 0
+			pointer-events: none 
+			transition: .4s ease-in-out all
+			ul 
+				li 
+					a 
+						display: flex
+						justify-content: flex-start
+						align-items: center
+						i
+							width: 25px
+							margin-right: 0
+							display: flex
+							justify-content: center
+							align-items: center
+							padding-right: 7px
+							&.fa 
+								font-size: 16px
+								// padding-left: 2px
+		.header-bottom-bottom
+			a 
+				&:hover, &:focus
+					text-decoration: none
+			.authentication-links
+				background: #4990c6
+				transition: .4s ease-in-out all
+				ul 
+					li 
+						a 
+							i  
+								width: 20px
+								&.fa 
+									font-size: 15px
+				&.active
+					transform: translateX(-300px)
+		.menu-logged, .menu-search-jobs, .list-unstyled
+			p  
+				font-size: 14px
+				font-weight: 700
+				color: #ffffff
+				margin-bottom: 10px
+		&.logged
+			.menu
+				border-bottom: none
+	@media screen and ( min-width: 1200px )
+		.mobile-menu
+			display: none
+	@media screen and ( max-width: 1280.98px )
+		.main-menu 
+			.menu 
+				li 
+					a
+						font-size: 13px
+	@media screen and ( max-width: 1200px )
+		.button-hambuger
+			display: block
+			span
+				font-size: 24px
+				line-height: normal
+		.left-wrap
+			display: flex
+			position: relative
+			width: 100%
+			align-items: center
+			.logo
+				padding-left: 0
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				img
+					max-width: 200px
+		.right-wrap
+			display: none
+		.left-wrap
+			.main-menu
+				display: none

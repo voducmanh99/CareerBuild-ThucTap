@@ -1,0 +1,171 @@
+header
+	.container-fluid
+		.main-wrap
+			.left-wrap
+				.button-hambuger
+					span.mdi.mdi-menu
+				.logo
+					a(href="/")
+						img(src="./img/logo.png" alt="")
+				.main-menu
+					ul.menu
+						li.dropdown
+							a(href="javascript:void(0)") Tìm việc làm
+							.dropdown-menu
+								ul
+									li
+										a(href="#") Việc làm mới nhất
+									li
+										a(href="#") Jobs by Industries
+						li
+							a(href="javascript:void(0)") Build Resume
+						li
+							a(href="javascript:void(0)") VietnamSalary
+						li
+							a(href="javascript:void(0)") CareerMap
+						li
+							a(href="javascript:void(0)") Cẩm Nang
+			.right-wrap
+				.main-noti.dropdown
+					a(href="#")
+						span.mdi.mdi-bell
+					.dropdown-menu
+						.noti
+							p Đăng ký nhận email thông báo việc làm để không bỏ lỡ cơ hội, giúp bạn thăng tiến trong nghề nghiệp.
+							a.email(href="#") Tạo ngay
+				.main-login.dropdown
+					.title-login
+						a(href="#")
+							span.mdi.mdi-account-circle
+							| Đăng nhập
+					.dropdown-menu
+						.login-wrapper
+							form
+								.row
+									.form-group.col-12
+										input(type="text", placeholder="Enter your email")
+									.form-group.col-8
+										input(type="text", placeholder="Enter your password")
+									.form-group.col-4
+										button(type="submit") Sign in
+									.form-group.form-check.col-12
+										input(type="checkbox", name="")
+										label Automatically sign me on next time
+								a(href="#").forget-password Forget password
+							.sign-in-by
+								span Sign in by:
+								ul
+									li
+										a(href="#")
+											i.fa.fa-facebook-official
+									li
+										a(href="#")
+											i.fa.fa-linkedin-square
+									li
+										a(href="#")
+											i.fa.fa-google-plus-square
+				.main-register
+					a(href="#") Đăng ký
+				.main-language.dropdown
+					.dropdown-toggle
+						p EN
+							em.mdi.mdi-chevron-down
+					.dropdown-menu
+						.item.active
+							a(href="javascript:void(0)").dropdown-item EN
+						.item
+							a(href="javascript:void(0)").dropdown-item VN
+				.main-employer.dropdown
+					a(href="#")
+						.dropdown-toggle
+							h4 Nhà tuyển dụng
+								em.mdi.mdi-chevron-down
+							p Đăng tuyển, Tìm ứng viên
+					.dropdown-menu
+						ul
+							li
+								a(href="#") Sign in
+							li
+								a(href="#") Post Jobs
+							li
+								a(href="#") Search Resume
+							li
+								a(href="#") Browse Products & Services
+
+	.mobile-menu
+		.mobile-wrap
+			.header-logo
+				a(href="/")
+					img(src="./img/logo.png" alt="")
+			.header-bottom
+				.header-bottom-top
+					.profile
+						.avatar
+							a(href="#")
+								img(src="./img/user_circle.png", alt="")
+						.username
+							a(href="#") welcome to careerbuilder
+						.back-menu-normal
+							em.mdi.mdi-arrow-left
+					.menu
+						ul.menu-normal
+							li.active
+								a(href="#")
+									i.mdi.mdi-home-outline
+									| Home
+							li.dropdown-mobile
+								a(href="#")
+									i.mdi.mdi-magnify
+									| Search Jobs
+								.dropdown-menu
+									ul
+										li
+											a(href="#")
+												i.fa.fa-thumb-tack
+												| Việc làm mới nhất
+										li
+											a(href="#")
+												i.fa.fa-location-arrow
+												| Jobs by Industries
+							li
+								a(href="#")
+									i.mdi.mdi-file-document-edit-outline
+									| Build Resume
+							li
+								a(href="#")
+									i.mdi.mdi-currency-usd
+									| VietnamSalary
+							li
+								a(href="#")
+									i.mdi.mdi-chart-line-variant
+									| CareerMap
+							li
+								a(href="#")
+									i.mdi.mdi-lightbulb-on-outline
+									| Career Advice
+					.authentication-links
+						ul
+							li
+								a(href="#")
+									i.mdi.mdi-login-variant
+									| Login
+							li
+								a(href="#")
+									i.mdi.mdi-account-plus-outline
+									| Register
+				.header-bottom-bottom
+					a(href="#")
+						.employer-site
+							h4 Employers Site
+							p Post job, Search resume
+					.header-alert
+						ul
+							li
+								a(href="#")
+									i.mdi.mdi-bell-outline
+									span Job Alert
+							li
+								a(href="#")
+									i.mdi.mdi-web
+									span English
+	.backdrop

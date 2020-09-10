@@ -1,0 +1,234 @@
+section.vn-salary-detail-form
+	.container
+		.main-form
+			form
+				.list-form-group
+					.form-group.form-keyword
+						label
+							em.material-icons search
+						input(type="text" placeholder="Nhập vị trí hoặc chức danh")#searchautocomplate
+						.cleartext
+							em.mdi.mdi-close-circle
+					.form-group.form-select
+						label
+							em.material-icons place
+						select
+							option(value="0") Tất cả địa điểm
+							option(value="") HCM
+					.form-group
+						label
+							em.material-icons attach_money
+						input(type="text" placeholder="Nhập mức lương khảo sát(VND)")
+					.form-group.form-submit
+						button.btn-gradient tìm hiểu ngay
+section.vn-salary-detail.cb-section
+	.container
+		.box-detail-top
+			.cb-name
+				h1 Lương Chuyên Viên Thiết Kế tại Hồ Chí Minh
+				.noti
+					a(href="#")
+						em.mdi.mdi-information-outline
+						span Phương pháp luận
+			.main-salary
+				.left-salary
+					.salary-default
+						p Lương trung bình
+							span 12 tr/ tháng
+					.list-salary
+						- for (i=1; i<6; i++)
+							.item
+								p.name Lương thấp nhất
+								p.salary-number 5 tr
+				.right-salary
+					.list-salary
+						.item
+							p.name Vị trí
+							p.salary-number Chuyên Viên Thiết Kế
+						.item
+							p.name Địa điểm
+							p.salary-number Hồ Chí Minh
+						.item
+							p.name Lương khảo sát
+							p.salary-number 30tr
+								span.arrow-up
+								span.number 123%
+								span.gray so với mức lương TB
+					.salary-range-2
+						ul.progress-salary
+							li
+								.progress-dot
+									.value-text-medium
+										span 7,630K
+										p Thấp
+							li 
+								.progress-dot
+							li.value-point-popular-min.rectangle-color
+								.progress-dot
+									.value-text-medium
+										p TB Thấp
+										span 14tr
+							li.rectangle-color
+								.progress-dot
+									.value-text-medium
+										span 37,000K
+										p Trung bình
+							li.value-point-popular-max.rectangle-color
+								.progress-dot
+									.value-text-medium
+										p TB Cao
+										span 20,5tr
+							li 
+								.progress-dot
+							li.salary-of-you
+								.progress-dot
+									.value-text-medium
+										p Bạn
+											em.material-icons star
+										span 30tr
+							li 
+								.progress-dot
+							li 
+								.progress-dot
+							li
+								.progress-dot
+									.value-text-medium
+										span 67,500K
+										p Cao
+		.box-detail-bottom
+			.row
+				.col-lg-8.col-xl-9-custom
+					.banner
+						a(href="#")
+							img(src="./img/vn-salary/banner3.png", alt="")
+					.box-jobs-list
+						.title
+							h2 Có thể bạn quan tâm
+						include ../../jobs-side-list/index6.pug
+					.list-banner.row
+						.col-md-4
+							.banner
+								a(href="#")
+									img(src="./img/home/4.png", alt="")
+						.col-md-4
+							.banner
+								a(href="#")
+									img(src="./img/promo/2.png", alt="")
+						.col-md-4
+							.banner
+								a(href="#")
+									img(src="./img/promo/3.png", alt="")
+				.col-lg-4.col-xl-3-custom
+					.pl-xl-10
+						.banner
+							a(href="#")
+								img(src="./img/vn-salary/banner7.png", alt="")
+						.widget.widget-5
+							.widget-head
+								.cb-title-h3
+									h3 thông báo việc làm
+							.widget-body
+								.cb-sub-title
+									p Quickly calculate your Gross/Net income and PIT
+								.main-form
+									.form-group.form-text
+										input(type="text" onkeyup="this.setAttribute('value', this.value);" value="Chuyên viên thiết kế" data-type="currency")
+										label * Chức danh, vị trí công việc
+									.form-group.form-select-chosen
+										select(data-placeholder="* Chọn địa điểm" multiple class="chosen-select-max-five")
+											option Hồ Chí Minh
+											option Hà Nội
+											option Hồ Chí Minh
+											option Hà Nội
+											option Hồ Chí Minh
+											option Hà Nội
+									.form-group.form-text
+										input(type="text" onkeyup="this.setAttribute('value', this.value);" value="" data-type="currency")
+										label * Nhập email của bạn
+									.form-group.form-submit
+										a(href="javascript:void(0)").btn-gradient tạo thông báo
+									//- a(href="#").btn-advanced Nâng cao
+
+						.widget.widget-5
+							.widget-head
+								.cb-title-h3
+									h3 Tính lương Gross/Net/Thuế TNCN
+							.widget-body
+								.cb-sub-title
+									p Bảng tính lương mẫu, tính lương Gross, tính lương NET, thuế thu nhập cá nhân
+								.title
+									h4  Tính nâng cao
+								.main-form
+									.form-group.form-text
+										input(type="text" onkeyup="this.setAttribute('value', this.value);" value="15.000.000" data-type="currency")
+										label * Nhập mức lương tổng VNĐ
+									.form-group.form-text
+										input(type="text" onkeyup="this.setAttribute('value', this.value);" value="" data-type="currency")
+										label * Số người phụ thuộc
+									.form-group.form-submit
+										a(href="javascript:void(0)").btn-gradient tính lương net
+section.cb-section.career-development
+	.container
+		.cb-title.cb-title-center
+			h2 Phát triển sự nghiệp & học tập
+		.career-development-slide
+			.row
+				.col-sm-6.col-lg-4.col-xl-3
+					.item.bg-trends
+						.img
+							a(href="#")
+								img(src="./img/career/1.jpg", alt="")
+
+						.caption
+							p.category-title Job Trends
+							a(href="#").title Old questions that are difficult to answer "What is your weakest point?"
+				.col-sm-6.col-lg-4.col-xl-3
+					.item.bg-tips
+						.img
+							a(href="#")
+								img(src="./img/career/2.jpg", alt="")
+
+						.caption
+							p.category-title Job hunting Tips
+							a(href="#").title You choose monochrome or multicolored profile?
+				.col-sm-6.col-lg-4.col-xl-3
+					.item.bg-self
+						.img
+							a(href="#")
+								img(src="./img/career/3.jpg", alt="")
+
+						.caption
+							p.category-title Self Development
+							a(href="#").title Important questions for the career you should ask yourself
+				.col-sm-6.col-lg-4.col-xl-3
+					.item.bg-default
+						.img
+							a(href="#")
+								img(src="./img/career/4.jpg", alt="")
+						.caption
+							p.category-title Job Trends
+							a(href="#").title You choose monochrome or multicolored profile?
+		.view-more
+			a(href="#") Xem thêm
+				span.mdi.mdi-arrow-right
+.feedback-btn
+	a(href="#")
+		em.material-icons create
+		span Góp ý kiến
+include ../../feedback-modal/index.pug
+ul.list-nav-fixed
+	li
+		a(href="#")
+			em.fa.fa-facebook
+	li
+		a(href="#")
+			em.fa.fa-envelope
+	li
+		a(href="#")
+			em.fa.fa-comments
+	li
+		a(href="#")
+			em.fa.fa-volume-control-phone
+	li
+		a(href="#")
+			em.material-icons add

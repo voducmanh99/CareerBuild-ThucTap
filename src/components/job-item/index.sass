@@ -1,0 +1,247 @@
+.job-item
+	position: relative
+	a
+		text-decoration: none
+	.figure
+		display: flex
+		flex-wrap: wrap
+		border-top-left-radius: 4px
+		border-top: 1px solid #e5e5e5
+		border-right: 1px solid #e5e5e5
+		padding: 15px 10px
+		border-radius: 5px
+		position: relative
+		// padding-right: 85px
+		transition: .4s ease-in-out all
+		overflow: hidden
+		// @media(min-width: 1450px)
+		// 	padding-right: 90px
+		.image
+			flex: 0 0 79px
+			max-width: 79px
+			height: 79px
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 5px
+			border: 1px solid #e5e5e5
+			border-radius: 5px
+			img 
+				max-width: 100%
+				max-height: 100%
+		.figcaption 
+				flex: 0 0 auto
+				max-width: calc(100% - 79px)
+				padding-left: 15px
+		.title
+			margin-bottom: 3px
+			p, a
+				font-size: 16px
+				font-weight: 700
+				color: #172642
+				line-height: 1.2
+				+line(1)
+			&.is-orange
+				p, a
+					color: #fb9104
+			&.is-red
+				p, a 
+					color: #fc0821
+			@media(max-width: 576px)
+				p, a
+					-webkit-line-clamp: initial
+		.caption
+			font-size: 14px
+			color: #5d677a
+			line-height: 1.4
+			.salary
+				color: #008563
+			.company-name
+				color: #5d677a
+				+line(1)
+				@media(max-width: 576px)
+					-webkit-line-clamp: initial
+			.welfare
+				display: flex
+				li
+					display: flex
+					align-items: center
+					span
+						margin-right: 4px
+						line-height: initial
+					+ li
+						margin-left: 12px
+			.location
+				p
+					overflow: hidden
+					display: -webkit-box
+					-webkit-box-orient: vertical
+					text-overflow: ellipsis
+					-webkit-line-clamp: 1
+					height: 21px
+					padding-left: 0
+					+ p
+						display: flex
+						&:before
+							content: '|'
+							margin: 0 
+							margin-right: 8px
+				ul 
+					display: flex
+					flex-wrap: wrap
+					li
+						padding-left: 0
+						+ li
+							display: flex
+							&:before
+								content: '|'
+								margin: 0 
+								margin-right: 8px
+								margin-left: 8px
+		.top-icon
+			position: absolute
+			z-index: 11
+			top: 0
+			right: 0
+			display: none
+			span 
+				margin-bottom: 2px
+			.top
+				display: flex
+				background: #f7a334
+				color: #ffffff
+				font-size: 12px
+				text-transform: uppercase
+				border-top-right-radius: 4px
+				border-bottom-left-radius: 4px
+				padding: 1.5px 4.5px
+				line-height: 1
+				height: 16px
+				width: 32px
+				display: flex
+				justify-content: center
+				align-items: center
+			.new
+				background: none
+				color: #ff0000
+				font-size: 12px
+				font-weight: 600
+				text-transform: uppercase
+				border-top-right-radius: 4px
+				border-bottom-left-radius: 4px
+				padding: 1.5px 4.5px
+				line-height: 1
+				height: 16px
+				width: 32px
+				display: flex
+				justify-content: center
+				align-items: center
+			@media(max-width: 1200px)
+				display: flex
+				top: 2px
+				span 
+					margin-bottom: 0
+					margin-left: 2px
+		.premium-icon
+			position: absolute
+			top: -15px
+			right: -15px
+		
+		.timeago
+			font-size: 12px
+			text-transform: uppercase
+			font-weight: 700
+			span
+				color: red
+	.bottom-right-icon
+		position: absolute
+		right: 30px
+		bottom: 25px
+		.applied-icon
+			font-size: 12px
+			background: #287ab9
+			border-radius: 0 4px 0 4px
+			color: #fff
+			padding: 1.5px 3px
+			max-width: 92px
+			margin-left: auto
+			text-align: center
+		ul
+			margin-top: 10px
+			display: flex
+			li
+				a
+					display: flex
+					align-items: center
+					text-decoration: none
+					color: inherit
+					span
+						margin-right: 8px
+					&:hover
+						color: #fb9104
+					&.saved
+						color: rgba(#5d677a, 0.5)
+				+ li
+					margin-left: 15px
+					display: flex
+					align-items: center
+					&:before
+						content: '|'
+						margin-right: 15px
+		&.check-box
+			.check
+				display: flex
+				justify-content: flex-end
+				label 
+					position: relative
+					padding-left: 25px
+					cursor: pointer
+					&:before
+						font-family: 'Material Design Icons'
+						content: '\F131'
+						position: absolute
+						top: -22px
+						left: 0
+						font-size: 24px
+						color: #5d677a
+				input 
+					display: none
+					&:checked
+						background: black
+						~label
+							&:before
+								content: '\F132'
+								color: #5d677a
+	&.has-background
+		background: #ebf8ff
+		margin-bottom: 10px
+		.figure
+			border-top: 0
+	&.active
+		border: 1px solid #009B74
+	@media (min-width: 1025px)
+		.figure
+			&:hover
+				box-shadow: 0 0 15px rgba(46,46,46,0.3)
+				// border-color: #ffffff
+				border-top-left-radius: 5px
+				border-bottom-right-radius: 5px
+	@media (max-width: 1025px)
+		.figure
+			.caption
+				.welfare
+					display: none
+	@media (max-width: 576px)
+		.figure
+			padding: 20px 15px 10px 15px
+			.title
+				h3
+					+line(1)
+		.bottom-right-icon
+			position: static
+			width: 100%
+			text-align: right
+			margin-top: 10px
+			padding: 0 15px 20px 15px
+			ul
+				justify-content: flex-end

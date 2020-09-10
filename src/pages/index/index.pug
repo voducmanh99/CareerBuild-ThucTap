@@ -1,0 +1,20 @@
+extends ../_vietnamsalary.pug
+
+block var
+	- var title = "Home"
+	- var name = "index"
+	- var bodyClass = "home-vn-salary-page"
+
+block link
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	link(rel="stylesheet" href="./gallery/fancybox/jquery.fancybox.css")
+	link(rel="stylesheet" href="./gallery/swiper/swiper.css")
+	link(rel="stylesheet" href="./gallery/jquery-auto-complete/jquery.auto-complete.css")
+
+block main
+	include ../../components/phase5/home-vn-salary/index
+
+block script
+	script(src="./gallery/swiper/swiper.js")
+	script(src="./gallery/fancybox/jquery.fancybox.js")
+	script(src="./gallery/jquery-auto-complete/jquery.auto-complete.js")

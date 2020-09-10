@@ -1,0 +1,115 @@
+footer
+	background: #f5f5f5
+	.lnr-arrow-up
+		&:before
+			content: '\e877'
+	.logo
+		margin-bottom: 20px
+	address
+		ul
+			li
+				display: flex
+				font-size: 14px
+				span 
+					margin-right: 8px
+	h3
+		font-size: 14px
+		color: #182642
+		margin-bottom: r(20px)
+		text-transform: uppercase
+		font-weight: 700
+	.top-footer
+		padding: 35px 0
+		.footer-top
+			.content
+				> *
+					font-size: 16px
+					font-weight: 400
+					color: #5d677a
+			@media(min-width: 1200px)
+				display: flex
+				.content
+					max-width: 780px
+				.main-img
+					padding-left: 20px
+					display: flex
+					justify-content: flex-end
+		.footer-mid
+			margin-top: 25px
+			> *
+				font-size: 12px
+				font-weight: 400
+				color: #5d677a
+			@media(min-width: 1200px)
+				margin-top: 50px
+	.footer-links
+		ul
+			li
+				a
+					color: inherit
+					font-size: 14px
+				+ li
+					margin-top: 5px
+	.footer-app-links
+		.app-links
+			margin-left: -10px
+			margin-bottom: -10px
+			a
+				display: inline-block
+				margin-left: 10px
+				margin-bottom: 10px
+	.footer-social-links
+		margin-top: 30px
+		ul
+			display: flex
+			align-items: center
+			li
+				a
+					color: inherit
+					font-size: 18px
+					&:hover
+						color: #f79c25
+				+ li
+					margin-left: 20px
+	.bottom-footer
+		padding: 17px 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.left-bottom-footer
+			font-size: 12px
+			ul
+				display: flex
+				li
+					+ li
+						display: flex
+						align-items: center
+						margin-left: 10px
+						&:before
+							content: '|'
+							margin-right: 10px
+					a
+						color: inherit
+		.right-bottom-footer
+			display: flex
+			justify-content: space-between
+			.back-to-top
+				margin-left: 30px
+				width: 48px
+				height: 48px
+				border-radius: 50%
+				min-width: 48px
+				background: #109ed9
+				color: #fff
+				font-size: 18px
+				display: flex
+				justify-content: center
+				align-items: center
+				cursor: pointer
+	@media screen and ( max-width: 768px )
+		.bottom-footer
+			display: block
+			text-align: center
+		.left-bottom-footer
+			ul
+				justify-content: center

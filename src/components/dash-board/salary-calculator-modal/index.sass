@@ -1,0 +1,254 @@
+.salary-calculator-modal
+    background: #ffffff
+    border-radius: 5px
+    overflow: hidden
+    border: 1px solid #e3e3e3
+    padding: 0 !important
+    @media(min-width: 1025px)
+        width: 730px
+    .modal-title
+        border-bottom: 1px solid #e5e5e5
+        padding: 5px 10px
+        h3 
+            font-size: 20px
+            font-weight: 700
+            color: #172642
+            text-transform: uppercase
+        @media(min-width: 1025px)
+            padding: 6.5px 40px
+            h3 
+                font-size: 22px
+        @media(min-width: 1200px)
+            h3 
+                font-size: 24px
+    .modal-body
+        align-items: center
+        padding: 10px
+        .row
+            margin: 0 -15px
+            > *
+                margin-bottom: 0
+            + .row
+                margin: 0 -15px
+        .form-calculate
+            border-bottom: 1px solid #e5e5e5
+        @media(min-width: 1025px)
+            padding: 30px
+        @media(min-width: 1200px)
+            padding: 30px 40px
+        .form-group
+            margin-bottom: 20px !important
+            label 
+                font-size: 14px
+                font-weight: 400
+                color: #5d677a
+                margin-bottom: 5px
+            input 
+                width: 100%
+                height: 40px
+                border: none
+                border-bottom: 1px solid #ececec
+                padding: 5px 20px
+                background: #f7f7f7
+                font-size: 16px
+                font-weight: 700
+                color: #999999
+                padding-right: 55px
+            select
+                appearance: none
+                height: 40px
+                border: none
+                border-bottom: 1px solid #93bcdc
+                padding: 5px 20px
+                font-size: 16px
+                font-weight: 700
+                color: #172642
+            .input-group
+                position: relative
+            .input-group-addon
+                font-size: 14px
+                font-weight: 400
+                color: #999999
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                right: 20px
+            .radio-group
+                display: flex
+                flex-wrap: wrap
+                margin: 0 -5px
+                .frm-radio
+                    flex: 0 0 50%
+                    max-width: 50%
+                    padding: 0 5px
+                    label 
+                        font-size: 16px
+                        font-weight: 700
+                        color: #172642
+                        padding-left: 20px
+                        position: relative
+                        &:after
+                            content: '\f43d'
+                            position: absolute
+                            top: 2px
+                            left: 0
+                            font: normal normal normal 24px/1 Material Design Icons
+                            font-size: 18px
+                            color: #5d677a
+                    input 
+                        display: none
+                        &:checked
+                            background: black
+                            ~label
+                                &:after
+                                    content: '\F43E'
+                                    color: #5d677a
+            .check-box-group
+                label
+                    padding-left: 25px
+                    position: relative
+                    &:after
+                        content: '\f131'
+                        position: absolute
+                        top: 2px
+                        left: 0
+                        font: normal normal normal 24px/1 Material Design Icons
+                        font-size: 18px
+                        color: #5d677a
+                input
+                    // opacity: 0
+                    display: none
+                    &:checked
+                        background: black
+                        ~label
+                            &:after
+                                content: '\f132'
+                                color: #5d677a
+            &.form-title
+                h4 
+                    font-size: 16px
+                    font-weight: 700
+                    color: #287ab9
+                    text-transform: uppercase
+            &.salary-total
+                .input-group
+                    input
+                        background: none
+            &.form-button
+                .button-group
+                    display: flex
+                    flex-wrap: wrap
+                    margin: 0 -10px
+                    .calculate, .cancel
+                        flex: 0 0 50%
+                        max-width: 50%
+                        padding: 0 10px
+                    .btn-gradient
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        height: 44px
+                        padding: 5px 20px
+                        border-radius: 5px
+                        background-image: linear-gradient(270deg, #169b74, #86cb49, #169b74)
+                        color: #fff
+                        font-size: 16px
+                        font-weight: 700
+                        text-align: center
+                        text-decoration: none
+                        text-transform: uppercase
+                    .btn-cancel
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        height: 44px
+                        padding: 5px 20px
+                        border-radius: 5px
+                        background: #ebebeb
+                        color: #182642
+                        font-size: 16px
+                        font-weight: 700
+                        text-align: center
+                        text-decoration: none
+                        text-transform: uppercase
+    .modal-foot
+        padding: 10px 
+        padding-top: 0
+        p, li
+            font-size: 14px
+            font-weight: 400
+            color: #5d677a
+            margin-bottom: 5px
+        .red 
+            color: #ff0000
+            font-size: 16px
+            font-weight: 700
+        li 
+            padding-left: 15px
+            position: relative
+            margin-bottom: 0
+            &:before
+                content: ''
+                position: absolute
+                top: 6px
+                left: 0
+                width: 6px
+                height: 6px
+                border-radius: 50%
+                background: #999999
+            span 
+                &.red 
+                    font-size: 14px
+        @media(min-width: 1025px)
+            padding: 30px
+            padding-top: 0
+        @media(min-width: 1200px)
+            padding: 30px 40px
+            padding-top: 0
+.editor-modal-dashboard
+    display: none 
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 999
+    background: #ffffff
+    padding: 15px
+    width: calc(100% - 30px)
+    // margin: 0 15px
+    max-width: 1000px
+    .modal-title
+        border-bottom: 1px solid #e5e5e5
+        padding: 5px 0
+        h3 
+            font-size: 20px
+            font-weight: 700
+            color: #172642
+            text-transform: uppercase
+        @media(min-width: 1025px)
+            padding: 6.5px 0
+            h3 
+                font-size: 22px
+        @media(min-width: 1200px)
+            h3 
+                font-size: 24px
+    .btn-close
+        position: absolute
+        right: 0
+        top: 0
+        opacity: 0.8
+        height: 44px
+        width: 44px
+        vertical-align: top
+        padding: 10px
+        cursor: pointer
+        svg 
+            display: block
+            height: 100%
+            overflow: visible
+            position: relative
+            width: 100%
+    &.active
+        display: block
+    @media(min-width: 1200px)
+        padding: 25px

@@ -1,0 +1,13 @@
+
+root = true
+
+[*]
+insert_final_newline = true
+quote_type = auto
+space_after_anonymous_functions = true
+space_after_control_statements = true
+spaces_around_operators = true
+spaces_in_brackets = false
+end_of_line = lf
+indent_style = tab
+indent_size = 4

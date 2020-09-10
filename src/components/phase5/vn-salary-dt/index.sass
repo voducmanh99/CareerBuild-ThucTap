@@ -1,0 +1,720 @@
+
+select
+	background-color: #ffffff
+.mdi-star
+	&::before
+		content: '\F4CE'
+.mdi-close-circle:before
+	content: '\f159'
+.mdi-menu-up:before
+	content: '\F360'
+.mdi-information-outline:before
+	content: '\F2FD'
+.justify-content-center
+	justify-content: center
+.col-xxl-6
+	padding: 0 15px
+	width: 100%
+	@media(min-width: 1440px)
+		flex: 0 0 50%
+		max-width: 50%
+.salary-range-2
+	width: 630px
+	width: 100%
+	height: 200px
+	display: flex
+	justify-content: center
+	align-items: center
+	max-width: 630px
+	.progress-salary
+		display: flex
+		flex-wrap: wrap 
+		width: 100%
+		margin: 0 -3px
+		li 
+			flex: 0 0 10%
+			max-width: 10%
+			width: 100%
+			padding: 0 3px
+			position: relative
+			&:before 
+				display: none
+			&::after
+				display: block
+			.progress-dot
+				height: 14px
+				background: #5ac24f
+				width: 100%
+			.value-text-medium
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				top: calc( 100% + 10px)
+				text-align: center
+				width: max-content
+				span 
+					font-size: 18px
+					font-weight: 400
+					color: #5d677a
+				p 
+					font-size: 14px
+					font-weight: 500
+					color: #999999
+			&.rectangle-color
+				.progress-dot
+					background: #008738
+			&.value-point-popular-min, &.value-point-popular-max
+				.value-text-medium
+					top: auto 
+					bottom: calc(100% + 10px)
+					p 
+						color: #009a74
+						font-size: 16px
+			&.salary-of-you
+				.progress-dot
+					background: #fdb816
+				.value-text-medium
+					top: auto 
+					bottom: calc(100% + 10px)
+					p 
+						color: #fdb816
+						font-size: 16px
+						em 
+							color: #fdb816
+							font-size: 14px
+							line-height: 1.2
+							padding-left: 3px
+
+.vn-salary-detail-form
+	.main-form
+		padding: 20px 0
+	.list-form-group
+		display: flex
+		flex-wrap: wrap
+
+		margin: 0 -10px
+		.form-group
+			flex: 0 0 100%
+			max-width: 100%
+			position: relative
+			width: 100%
+			padding: 0 10px
+			margin-top: 10px
+			&:first-child
+				margin-top: 0
+			input, select
+				width: 100%
+				font-size: 14px
+				font-weight: 400
+				color: #666666
+				padding: 5px 15px
+				padding-left: 40px
+				height: 45px
+				border-radius: 4px
+				border: 1px solid #cccccc
+			input
+				&::placeholder
+					font-size: 14px
+					font-weight: 400
+					color: #cccccc
+			select
+				-webkit-appearance: none
+				-moz-appearance: none
+				color: #cccccc
+				option
+					color: #666666
+			label
+				position: absolute
+				top: 0
+				left: 10px
+				z-index: 11
+				height: 45px
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 40px
+				em
+					font-size: 20px
+					color: #cccccc
+			&.form-keyword
+				position: relative
+				input
+					padding-right: 30px
+				.cleartext
+					position: absolute
+					top: 10px
+					right: 18px
+					z-index: 11
+					cursor: pointer
+					opacity: 0
+					color: #cccccc
+					em
+						font-size: 18px
+						color: #cccccc
+					&.active
+						opacity: 1
+			&.form-submit
+				button
+					background-image: $gradient-1
+					height: 45px
+					width: 270px
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100%
+					font-size: 18px
+					text-transform: uppercase
+					color: #ffffff
+					border-radius: 4px
+		@media(min-width: 768px)
+			.form-group
+				flex: 0 0 calc((100% - 270px) / 3)
+				max-width: calc((100% - 270px) / 3)
+				margin-top: 0
+				&.form-submit
+					flex: 0 0 270px
+					max-width: 270px
+.vn-salary-detail
+	background: #faf9fe
+	.box-detail-top
+		background: #ffffff
+		padding: 15px
+		box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+		h1
+			font-size: 18px
+			font-weight: 700
+			color: #172642
+			line-height: 1.2
+			@media(min-width: 768px)
+				font-size: 20px
+			@media(min-width: 1024px)
+				font-size: 22px
+			@media(min-width: 1200px)
+				font-size: 24px
+		.noti
+			margin-top: 10px
+			p, a
+				font-size: 16px
+				color: #109ed9
+				em
+					font-size: 16px
+					color: #109ed9
+					padding-right: 10px
+		@media(min-width: 1024px)
+			padding: 30px
+			.cb-name
+				display: flex
+				justify-content: space-between
+			.noti
+				margin-top: 0
+		@media(min-width: 1200px)
+			padding: 30px 60px
+	.main-salary
+		margin-top: 10px
+		.salary-default
+			margin-bottom: 10px
+			p
+				font-size: 16px
+				color: #5d677a
+			span
+				margin-top: 5px
+				display: flex
+				font-size: 24px
+				font-weight: 700
+				color: #5d677a
+				@media(min-width: 768px)
+					font-size: 26px
+				@media(min-width: 1024px)
+					font-size: 28px
+				@media(min-width: 1200px)
+					font-size: 30px
+			@media(min-width: 1024px)
+				margin-bottom: 20px
+		.list-salary
+			.item
+				padding: 10px 0
+				display: flex
+				justify-content: space-between
+				align-items: center
+				border-bottom: 1px solid #e5e5e5
+				p
+					font-size: 14px
+					font-weight: 400
+					color: #5d677a
+				.salary-number
+					.arrow-up
+						width: 0
+						height: 0
+						border-left: 7.5px solid transparent
+						border-right: 7.5px solid transparent
+						display: inline-block
+						border-bottom: 8px solid #009a74
+						// padding: 0 3px
+					.number
+						color: #009a74
+						// padding-left: 3px
+					.gray
+						font-size: 14px
+						color: #999999
+						// padding-left: 3px
+		.right-salary 
+			width: 100%
+			.salary-range-2
+				zoom: 0.5
+			@media(min-width: 576px)
+				.salary-range-2
+					zoom: 0.7
+			@media(min-width: 768px)
+				.salary-range-2
+					zoom: 0.9
+			@media(min-width: 1024px)
+				.salary-range-2
+					zoom: 0.7
+			@media(min-width: 1200px)
+				.salary-range-2
+					zoom: 0.9
+			@media(min-width: 1366px)
+				.salary-range-2
+					zoom: 1
+		@media(min-width: 1024px)
+			display: flex
+			margin-top: 30px
+			.left-salary
+				min-width: 300px
+			.right-salary
+				padding-left: 100px
+				.list-salary
+					max-width: 430px
+	.banner
+		img
+			width: 100%
+			height: auto
+	.box-detail-bottom
+		margin-top: 40px
+	.box-jobs-list
+		margin-top: 40px
+		padding: 15px
+		background: #ffffff
+		box-shadow: 0 0 10px 0 rgba(00,0,0,0.1)
+		.title
+			h2
+				font-size: 18px
+				font-weight: 700
+				color: #172642
+				line-height: 1.2
+				margin-bottom: 20px
+				@media(min-width: 768px)
+					font-size: 20px
+				@media(min-width: 1024px)
+					font-size: 22px
+				@media(min-width: 1200px)
+					font-size: 24px
+
+		.job-item
+			.figure
+				border: none
+				border-bottom: 1px solid #e5e5e5
+				border-radius: 0
+				&:hover
+					box-shadow: none
+				.new
+					font-size: 14px
+					font-weight: 700
+				.image
+					width: 70px
+					flex: 0 0 70px
+					max-width: 70px
+					height: 70px
+				.figcaption
+					flex: 0 0 calc(100% - 70px)
+					max-width: calc(100% - 70px)
+					.timeago
+						span
+							font-size: 12px
+							font-weight: 700
+							color: #5d677a
+					.title
+						h3
+							font-size: 16px
+							font-weight: 700
+							color: #172642
+							line-height: 1.2
+						&.is-orange
+							h3
+								color: #fb9104
+						&.is-red
+							h3
+								color: #fc0821
+						&.is-blue
+							h3
+								color: #287ab9
+					.caption
+						.company-name, .salary
+							font-size: 14px
+							font-weight: 400
+							color: #5d677a
+						.salary
+							color: #008563
+							em 
+								padding-right: 5px
+								width: 14px
+						.location
+							display: flex
+							em 
+								display: flex
+								justify-content: flex-start
+								align-items: center
+							ul
+								li
+									font-size: 14px
+									font-weight: 400
+									color: #5d677a
+			&:hover
+				.figure
+					.figcaption
+						.title
+							h3
+								color: #fb9104
+		@media(min-width: 1200px)
+			padding: 30px
+		@media(min-width: 1440px)
+			.row
+				margin: 0 -20px
+				.col-xxl-6
+					padding: 0 20px
+	.list-banner
+		margin-top: 40px
+		margin: 0 -7.5px
+		> *
+			padding: 0 7.5px
+		@media(min-width: 1200px)
+			margin-top: 55px
+	.pl-xl-10
+		> div
+			margin-top: 40px
+			&:first-child
+				margin-top: 0
+		@media(min-width: 1200px)
+			padding-left: 10px
+.widget
+	background: #ffffff
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+	margin-bottom: 30px
+	.widget-head
+		background: #d9e6ed
+		padding: 7px 15px
+		@media(min-width: 1025px)
+			padding: 11.5px 30px
+		h3
+			font-size: 18px
+			font-weight: 700
+			color: #172642
+			margin-bottom: 0
+			text-transform: uppercase
+			@media(min-width: 1025px)
+				font-size: 18px
+	.widget-body
+		padding: 15px
+		@media(min-width: 1025px)
+			padding: 25px 30px
+	&.widget-5
+		padding: 0
+		.cb-title-h3
+			h3
+				margin-bottom: 0
+		.cb-sub-title
+			font-size: 14px
+			font-weight: 400
+			color: #5d677a
+			margin-bottom: 10px
+		.widget-body
+			.title
+				h4
+					font-size: 14px
+					font-weight: 400
+					color: #287ab9
+					cursor: pointer
+			.main-form
+				padding-top: 15px
+				.form-group
+					margin-bottom: 16px
+					label
+						font-size: 14px
+						font-weight: 400
+						color: #5d677a
+						width: 100%
+						span
+							font-size: 12px
+							font-weight: 400
+							color: #999999
+							transition: 0.5s
+							font-style: normal
+							display: initial
+							@media(min-width: 1025px)
+								font-size: 14px
+						@media(min-width: 1440px)
+							font-size: 16px
+					input
+						height: 40px
+						padding: 5px 0
+						font-size: 16px
+						font-weight: 700
+						color: #172642
+						border: none
+						border-bottom: 1px solid #93bcdc
+						width: 100%
+						&:focus
+							outline: none
+					&.form-text
+						position: relative
+						label
+							position: absolute
+							top: 7px
+							left: 0
+							pointer-events: none
+							transition: 0.5s
+						input
+							// &:valid ~ label,
+							&:focus ~ label,
+							&:not([value=""]) ~ label
+								top: -12px
+								left: 0
+								font-size: 14px
+								span
+									font-size: 10px
+					&.form-select
+						label
+							font-size: 14px
+						select
+							width: 100%
+							height: 40px
+							border: none
+							padding: 5px 0
+							border-bottom: 1px solid #93bcdc
+							font-size: 16px
+							font-weight: 700
+							color: #172642
+							-webkit-appearance: none
+							-moz-appearance: none
+					&.form-select-chosen
+						select
+							display: none
+
+						label 
+							margin-bottom: 5px
+						.chosen-container
+							width: 100% !important
+							min-height: 40px !important
+							.chosen-choices
+								height: 100%
+								border: none 
+								border-bottom: 1px solid #93bcdc
+								background-image: none
+								padding: 5px
+								padding-left: 0
+								.search-choice
+									background: #ebf8ff !important
+									height: 26px !important
+									border: none !important
+									display: flex !important
+									justify-content: center !important
+									align-items: center !important
+									.search-choice-close
+										background: none !important
+										&:before
+											font-family: 'Material Design Icons'
+											content: '\F156'
+											color: #5d677a
+											font-size: 11px
+										&:hover
+											&:before
+												color: #fc0821
+									span 
+										color: #5d677a
+										font-style: normal
+										font-size: 14px
+										padding-top: 0
+								.search-field 
+									input 
+										font-family: 'Roboto', sans-serif !important
+									.chosen-search-input
+										font-size: 16px
+										font-weight: 700
+										color: #172642
+							.chosen-drop
+								.chosen-results
+									&::-webkit-scrollbar
+										width: 6px !important
+									&::-webkit-scrollbar-track
+										background: #eaeaea !important
+									&::-webkit-scrollbar-thumb
+										background: #7fcb42 !important
+									&::-webkit-scrollbar-thumb:hover
+										background: #7fcb42 !important
+								.active-result
+									padding-left: 43px
+									position: relative
+									color: #182642
+									&::after
+										position: absolute
+										top: 2px
+										left: 20px
+										color: #5d677a
+										font: normal normal normal 24px/1 Material Design Icons
+										font-size: 18px
+										content: "\f131"
+									&:hover
+										color: #ffffff
+										&::after
+											color: #ffffff
+									&.highlighted
+										color: #ffffff
+										&::after
+											color: #ffffff
+								.result-selected
+									padding-left: 43px
+									position: relative
+									color: #182642
+									&::after
+										position: absolute
+										top: 2px
+										left: 20px
+										color: #287ab9
+										font: normal normal normal 24px/1 Material Design Icons
+										font-size: 18px
+										content: "\f132"
+
+										opacity: 1 
+									&:hover
+										color: #182642
+										cursor: pointer
+										&::after
+											color: #287ab9
+				.form-submit
+					display: flex
+					justify-content: center
+					align-items: center
+					padding-top: 3px
+					margin-bottom: 0
+					a
+						display: flex
+						align-items: center
+						justify-content: center
+						height: 44px
+						padding: 5px 20px
+						border-radius: 5px
+						background-image: linear-gradient(270deg, #169b74, #86cb49, #169b74)
+						color: #fff
+						font-size: 16px
+						font-weight: 700
+						text-align: center
+						text-decoration: none
+						text-transform: uppercase
+						width: 270px
+				.btn-advanced
+					display: flex
+					justify-content: center
+					align-items: center
+					margin-top: 10px
+					color: #287ab9
+					font-size: 16px
+					font-weight: 400
+		@media(min-width: 1025px)
+			.widget-body
+				.main-form
+					padding-top: 25px
+					.form-group
+						&.form-text
+							input
+								&:not([value=""]) ~ label,
+								&:focus ~ label
+									top: -15px
+.feedback-btn
+	position: fixed
+	background: #747d8d
+	border-top-left-radius: 5px
+	border-top-right-radius: 5px
+	height: 40px
+	min-width: 132px
+	top: 50%
+	transform: translateY(-50%) rotate(270deg)
+	right: -46px
+	display: flex
+	justify-content: center
+	align-items: center
+	z-index: 999
+	border: none
+	a
+		font-size: 14px
+		font-weight: 500
+		color: #ffffff
+		text-decoration: none
+		em
+			font-size: 16px
+			padding-right: 10px
+	@media(max-width: 800px)
+		display: none
+.list-nav-fixed
+	position: fixed
+	top: 200px
+	z-index: 999
+	left: 0
+	border-top-right-radius: 5px
+	border-bottom-right-radius: 5px
+	overflow: hidden
+	li
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		border-bottom: 1px solid #269956
+		&:last-child
+			border-bottom: none
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 10px
+			background: #008738
+			width: 50px
+			height: 50px
+			transition: .4s ease-in-out all
+			text-decoration: none
+			em
+				color: #ffffff
+				font-size: 22px
+				text-decoration: none
+			.material-icons
+				font-size: 36px
+			&:hover
+				background: #5ac24f
+	@media(max-width: 576px)
+		top: auto
+		bottom: 0
+		left: 0
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+		border: none
+		li
+			flex: 0 0 20%
+			max-width: 20%
+			width: 100%
+			border-bottom: none
+			border-right: 1px solid #269956
+			&:last-child
+				border-right: none
+			a
+				width: 100%
+.col-xl-9-custom
+	width: 100%
+	padding: 0 15px
+	@media(min-width: 1200px)
+		flex: 0 0 calc(100% - 350px)
+		max-width: calc(100% - 350px)
+.col-xl-3-custom
+	width: 100%
+	padding: 0 15px
+	@media(min-width: 1200px)
+		flex: 0 0 350px
+		max-width: 350px

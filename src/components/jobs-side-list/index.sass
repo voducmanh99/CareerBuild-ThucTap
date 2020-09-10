@@ -1,0 +1,44 @@
+.jobs-side-list
+	padding-right: 10px
+	max-height: calc(100vh - 210px)
+	overflow-y: auto
+	&::-webkit-scrollbar
+		width: 6px
+		background: #eaeaea
+	&::-webkit-scrollbar-thumb
+		background: #7fcb42
+	.job-item
+		.figure
+			border-right: 0
+			border-radius: 0
+	.jobs-list
+		.job-item
+			&:first-child
+				.figure
+					border-top: 0
+					padding-top: 10px
+	.load-more
+		a
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 80%
+			height: 46px
+			text-transform: uppercase
+			font-weight: 700
+			letter-spacing: 0.1rem
+			color: #287ab9
+			border: 2px solid #287ab9
+			border-radius: 5px
+			margin: 30px auto
+			text-decoration: none
+			transition: 0.3s all
+			max-width: r(302px)
+			span
+				margin-left: 8px
+			&:hover
+				background: #287ab9
+				color: #fff
+	@media screen and ( max-width: 1023px )
+		max-height: none
+		overflow-y: visible

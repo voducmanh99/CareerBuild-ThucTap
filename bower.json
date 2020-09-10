@@ -1,0 +1,42 @@
+{
+  "name": "source-v3",
+  "description": "source build html",
+  "main": "gulpfile.js",
+  "authors": [
+    "sonvh2510"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sonvh2510/01.ToolBuildHTML.git",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "fancybox": "^3.5.6",
+    "fullpage.js": "^3.0.4",
+    "swiper": "^4.4.6",
+    "jquery": "^3.3.1",
+    "font-awesome": "^4.7.0",
+    "mdi": "^4.9.95",
+    "linearicons": "^1.0.1",
+    "bootstrap": "^4.3.1",
+    "fullcalendar": "3.10.0",
+    "tippyjs": "^4.2.0",
+    "qtip2": "^2.2.1",
+    "Tabslet": "^1.7.3",
+    "sticky-kit": "^1.1.2",
+    "countup-coffee": "counter#^0.1.2",
+    "aos": "^2.3.4",
+    "chosen": "^1.8.7",
+    "jquery-auto-complete": "^1.0.7",
+    "material-design-icons": "^3.0.1",
+    "countUp.js": "^2.0.4",
+    "waypoints": "^4.0.1",
+    "cropperjs": "^1.5.7"
+  }
+}

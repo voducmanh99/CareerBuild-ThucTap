@@ -1,0 +1,129 @@
+.salary-calculator-modal(style="display: none")
+    .modal-title
+        h3 Salary Calculator (Gross 
+            em.mdi.mdi-arrow-right 
+            | NET)
+    .modal-body
+        .form-calculate
+            .form-group.currency.row
+                .col-lg-4
+                    .radio-group
+                        .frm-radio
+                            input(type="radio" id="vnd" name="currency")
+                            label(for="vnd") VND
+                        .frm-radio
+                            input(type="radio" id="usd" name="currency")
+                            label(for="usd") USD
+                .col-lg-8
+            .form-group.salary-total.row
+                .col-lg-4
+                    label(for="") Salary Total
+                .col-lg-8
+                    .input-group
+                        input(type="text" value="5.000") 
+                        span.input-group-addon VND (Salary + Allowances)
+            .form-group.form-title
+                h4 Insurance
+            .form-group.row
+                .col-lg-4
+                    .radio-group
+                        .frm-radio
+                            input(type="radio" id="full-wage" name="currency")
+                            label(for="full-wage") Full wage
+                        .frm-radio
+                            input(type="radio" id="other" name="currency")
+                            label(for="other") Other
+                .col-lg-8
+                    .input-group
+                        input(type="text" value="5.000") 
+                        span.input-group-addon VND
+            
+            .form-group.row
+                .col-lg-4
+                    label(for="") Social
+                .col-lg-8
+                    .input-group
+                        input(type="text" value="5.000") 
+                        span.input-group-addon %
+            
+            .form-group.row
+                .col-lg-4
+                    label(for="") Health
+                .col-lg-8
+                    .input-group
+                        input(type="text" value="5.000") 
+                        span.input-group-addon %
+            
+            .form-group.row
+                .col-lg-4
+                    label(for="") Unemployed
+                .col-lg-8
+                    .input-group
+                        input(type="text" value="5.000") 
+                        span.input-group-addon %
+            
+            .form-group.row
+                .col-lg-4
+                    .check-box-group
+                        input(type="checkbox" id="trade-union")
+                        label(for="trade-union") Trade union
+                .col-lg-8
+                    .input-group
+                        input(type="text" value="5.000") 
+                        span.input-group-addon %
+            
+            .form-group.row
+                .col-lg-4
+                    label(for="") Area
+                .col-lg-8
+                    .select-group
+                        select
+                            -for(x=0; x<5; x++)
+                                option Area #{x}
+            .form-group.row
+                .col-lg-4
+                    label(for="") UI Cap
+                .col-lg-8
+                    .input-group
+                        input(type="text" value="5.000") 
+                        span.input-group-addon VND
+            .form-group.row
+                .col-lg-4
+                    label(for="") Personal
+                .col-lg-8
+                    .input-group
+                        input(type="text" value="5.000") 
+                        span.input-group-addon VND
+            .form-group.form-title
+                h4 Dependant deduction
+            .form-group.row
+                .col-lg-4
+                    label(for="") Registration dependents
+                .col-lg-8
+                    .select-group
+                        select
+                            -for(x=0; x<5; x++)
+                                option #{x}
+            .form-group.row
+                .col-lg-4
+                    label(for="") Dependant deduction
+                .col-lg-8
+                    .input-group
+                        input(type="text" value="7.000") 
+                        span.input-group-addon VND
+            .form-group.form-button.row
+                .col-lg-4
+                .col-lg-8
+                    .button-group
+                        .calculate
+                            a(href="#").btn-gradient calculate
+                        .cancel
+                            a(href="javascript:void(0)" data-fancybox-close).btn-cancel Cancel
+    .modal-foot
+        p.red Note: 
+        ul 
+            li These .figures are an estimate of monthly provisional income.
+            li All currency in 
+                span.red VND 
+                | (Vietnamese Dong).
+            li Do not apply for foreigners working in Vietnam.

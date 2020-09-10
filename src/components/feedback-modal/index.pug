@@ -1,0 +1,19 @@
+.feedback-modal(style="display: none")
+	form
+		.logo
+			img(src="./img/logo.png", alt="")
+		.text
+			p
+				strong Send feedback to CareerBuilder.vn
+			p To improve the quality of our current services and provide our users with the best possible services as well as the most efficient user experience possible, we hope to receive your sincere feedback on website functions, visual appeal, content, etc.
+		.form-group
+			label Enter your feedback:
+			textarea(name="", cols="30", rows="10")
+			p.note (Please enter no more than 5.000 charaters)
+			span You have entered more than 5,000 characters
+		.form-group
+			label Email:
+			input(type="text")
+			span Please enter the correct email format
+		.form-group.form-submit
+			input(type="submit", value="Send")

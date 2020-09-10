@@ -1,0 +1,591 @@
+mixin job-item(img)
+	.job-item
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.title 
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary
+						em.fa.fa-usd
+						| Lương: 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						p Ha Noi | Ho Chi Minh City | Ho Chi Minh City
+			.top-icon
+				span.top Top
+				span.new New
+mixin job-item-has-welfare(img)
+	.job-item
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.timeago
+					span New
+				.title 
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary $ 500 - 1.000 USD
+					.location
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+					ul.welfare
+						li
+							span.mdi.mdi-laptop-mac
+							| Laptop
+						li
+							span.mdi.mdi-wallet-membership
+							| Rewards
+						li
+							span.mdi.mdi-cash-usd
+							| Salary increase
+				
+		.bottom-right-icon
+			.time  
+				time 02/02/2020
+			ul
+				li
+					a(href="https://www.youtube.com/watch?v=EngW7tLk6R8" data-fancybox="").play-video
+						span.mdi.mdi-play-circle-outline
+						| Video
+				li
+					a(href="javascript:;").save-job
+						span.mdi.mdi-heart-outline
+						span.text Save job
+
+	
+mixin job-item-has-welfare-db
+	.job-item
+		.figure
+			.figcaption
+				.timeago
+					span New
+				.title 
+					a(href="#") Sales Manager - Power Engine
+						span.new 
+							font(color="FF0000") (Mới)
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary $ 500 - 1.000 USD
+					.location
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+					ul.welfare
+						li
+							span.mdi.mdi-laptop-mac
+							| Laptop
+						li
+							span.mdi.mdi-wallet-membership
+							| Rewards
+						li
+							span.mdi.mdi-cash-usd
+							| Salary increase
+				
+		.bottom-right-icon
+			.time  
+				time 02/02/2020
+			ul
+				li
+					a(href="https://www.youtube.com/watch?v=EngW7tLk6R8" data-fancybox="").play-video
+						span.mdi.mdi-play-circle-outline
+						| Video
+				li
+					a(href="javascript:;").save-job
+						span.mdi.mdi-heart-outline
+						span.text Việc Làm Đã Lưu
+
+
+mixin job-item-no-img()
+	.job-item
+		.figure
+			.figcaption
+				.timeago
+					span New
+				.title 
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary $ 500 - 1.000 USD
+					.location
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+
+mixin job-item-company-profile()
+	.job-item
+		.figure
+			.figcaption
+				.title 
+					a(href="#") Sales Executive 
+				.caption
+					.location 
+						span.mdi.mdi-map-marker
+						ul
+							li Ha Noi
+							li Ho Chi Minh City
+					p.salary
+						span.mdi.mdi-currency-usd
+						| 500 - 1.000 USD
+					p.job-date
+						span.mdi.mdi-calendar-check
+						| 22/02/2020
+					a(href="#").job-view.main-color-1 View detail
+
+mixin job-side-item(img)
+	.job-item
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.timeago
+					span New
+				.title 
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary 
+						em.fa.fa-usd
+						| Lương: 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+					.time  
+						em.mdi.mdi-calendar
+						time 02/02/2020
+mixin job-side-item-2(img)
+	.job-item
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.title 
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary 
+						em.fa.fa-usd 
+						| Lương: 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+				.apply-now 
+					a(href="#") Ứng tuyển
+mixin job-side-item-red-title(img)
+	.job-item
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.timeago
+					span New
+				.title.is-red
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd. 
+					p.salary 
+						em.fa.fa-usd
+						| Lương: 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+					.time  
+						em.mdi.mdi-calendar
+						time 02/02/2020
+mixin job-side-item-red-title-save-job(img)
+	.job-item
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.timeago
+					span New
+				.title.is-red
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd. 
+					p.salary $ 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+		.bottom-right-icon
+			.time  
+				time 02/02/2020
+			ul
+				li
+					a(href="https://www.youtube.com/watch?v=EngW7tLk6R8" data-fancybox="").play-video
+						span.mdi.mdi-play-circle-outline
+						| Video
+				li
+					a(href="javascript:;").save-job
+						span.mdi.mdi-heart-outline
+						span.text Save job
+
+mixin job-side-item-orange-title(img)
+	.job-item
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.timeago
+					span New
+				.title.is-orange
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary 
+						em.fa.fa-usd
+						| Lương: 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+					.time  
+						em.mdi.mdi-calendar
+						time 02/02/2020
+
+mixin job-side-item-orange-title-save-job(img)
+	.job-item
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.timeago
+					span New
+				.title.is-orange
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary $ 500 - 1.000 USD
+					.location
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+		.bottom-right-icon
+			.time  
+				time 02/02/2020
+			ul
+				li
+					a(href="https://www.youtube.com/watch?v=EngW7tLk6R8" data-fancybox="").play-video
+						span.mdi.mdi-play-circle-outline
+						| Video
+				li
+					a(href="javascript:;").save-job
+						span.mdi.mdi-heart-outline
+						span.text Save job
+mixin job-side-item-has-background(img)
+	.job-item.has-background
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.timeago
+					span New
+				.title 
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary 
+						em.fa.fa-usd
+						| Lương: 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+					.time  
+						em.mdi.mdi-calendar
+						time 02/02/2020
+
+mixin job-side-item-premium(img)
+	.job-item.has-background
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.timeago
+					span New
+				.title 
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary 
+						em.fa.fa-usd
+						| Lương: 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+					.time  
+						em.mdi.mdi-calendar
+						time 02/02/2020
+			.premium-icon
+				img(src="./img/premium.png", alt="")
+		//- .bottom-right-icon
+		//- 	.applied-icon
+		//- 		span Already applied 
+
+mixin job-side-saved-job(img)
+	.job-item.has-background
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.timeago
+					span New
+				.title 
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary $ 500 - 1.000 USD
+					.location
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+			.premium-icon
+				img(src="./img/premium.png", alt="")
+		.bottom-right-icon
+			//- .applied-icon
+			//- 	span Already applied 
+			.time  
+				time 02/02/2020
+			ul
+				li
+					a(href="https://www.youtube.com/watch?v=EngW7tLk6R8" data-fancybox="").play-video
+						span.mdi.mdi-play-circle-outline
+						| Video
+				li
+					a(href="javascript:;").save-job.saved
+						span.mdi.mdi-heart-outline
+						span.text Saved job
+
+mixin job-side-has-video(img)
+	.job-item.has-background
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.timeago
+					span New
+				.title 
+					a(href="#") Sales Manager - Power Engine
+				.caption
+					a(href="#").company-name DKSH Vietnam Co., Ltd.
+					p.salary $ 500 - 1.000 USD
+					.location
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+		.bottom-right-icon
+			//- .applied-icon
+			//- 	span Already applied 
+			.time  
+				time 02/02/2020
+			ul
+				li
+					a(href="https://www.youtube.com/watch?v=EngW7tLk6R8" data-fancybox="").play-video
+						span.mdi.mdi-play-circle-outline
+						| Video
+				li
+					a(href="javascript:;").save-job
+						span.mdi.mdi-heart-outline
+						span.text Save job
+mixin job-item-has-welfare-2(img)
+	.job-item
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.title
+					a(href="#" ) Sales Manager - Power Engine
+					span.new
+						font(color="ff0000") (Mới)
+				.caption
+					//- .toollips
+					a(href="#").company-name
+						| DKSH Vietnam Co., Ltd.
+						//- .toolip
+						//- 	p DKSH Vietnam Co., Ltd.
+					.salary
+						p 
+							em.fa.fa-usd
+							| Lương: 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+					ul.welfare
+						li
+							span.mdi.mdi-laptop-mac
+							| Laptop
+						li
+							span.mdi.mdi-wallet-membership
+							| Rewards
+						li
+							span.mdi.mdi-cash-usd
+							| Salary increase
+				
+				.bottom-right-icon
+					ul
+						li
+							a(href="https://www.youtube.com/watch?v=EngW7tLk6R8" data-fancybox="").play-video
+								span.mdi.mdi-play-circle-outline
+								span.text Video
+						li
+							a(href="javascript:;").save-job
+								span.mdi.mdi-heart-outline
+								span.text Save job
+					.time.toollips
+						em.mdi.mdi-calendar
+						time 02/02/2020
+						.toolip
+							p Ngày cập nhập
+mixin job-side-saved-job-2(img)
+	.job-item.has-background.has-premium
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.title
+					a(href="#" ) Sales Manager - Power Engine
+					span.new
+						font(color="ff0000") (Mới)
+					
+				.caption
+					a(href="#").company-name
+						| DKSH Vietnam Co., Ltd.
+					.salary
+						p 
+							em.fa.fa-usd
+							| Lương: 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+					ul.welfare
+						li
+							span.mdi.mdi-laptop-mac
+							| Laptop
+						li
+							span.mdi.mdi-wallet-membership
+							| Rewards
+						li
+							span.mdi.mdi-cash-usd
+							| Salary increase
+				.premium-icon
+					img(src="./img/premium.png", alt="")
+				.bottom-right-icon
+					ul
+						li
+							a(href="https://www.youtube.com/watch?v=EngW7tLk6R8" data-fancybox="").play-video
+								span.mdi.mdi-play-circle-outline
+								span.text Video
+						li
+							a(href="javascript:;").save-job
+								span.mdi.mdi-heart-outline
+								span.text Việc Làm Đã Lưu
+					.time.toollips
+						em.mdi.mdi-calendar
+						time 02/02/2020
+						.toolip
+							p Ngày cập nhập
+mixin job-side-has-video-2(img)
+	.job-item.has-background
+		.figure
+			.image
+				a(href="#")
+					img(src=img, alt="")
+			.figcaption
+				.title
+					a(href="#" ) Sales Manager - Power Engine
+					span.new
+						font(color="ff0000") (Mới)
+					
+				.caption
+					//- .toollips
+					a(href="#").company-name
+						| DKSH Vietnam Co., Ltd.
+						//- .toolip
+						//- 	p DKSH Vietnam Co., Ltd.
+					.salary
+						p 
+							em.fa.fa-usd
+							| Lương: 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						ul 
+							li Ha Noi
+							li Ho Chi Minh City
+					ul.welfare
+						li
+							span.mdi.mdi-laptop-mac
+							| Laptop
+						li
+							span.mdi.mdi-wallet-membership
+							| Rewards
+						li
+							span.mdi.mdi-cash-usd
+							| Salary increase
+				.bottom-right-icon
+					ul
+						li
+							a(href="https://www.youtube.com/watch?v=EngW7tLk6R8" data-fancybox="").play-video
+								span.mdi.mdi-play-circle-outline
+								span.text Video
+						li
+							a(href="javascript:;").save-job
+								span.mdi.mdi-heart-outline
+								span.text Việc Làm Đã Lưu
+					.time.toollips
+						em.mdi.mdi-calendar
+						time 02/02/2020
+						.toolip
+							p Ngày cập nhập
+mixin job-item-no-img-2()
+	.job-item
+		.figure
+			.figcaption
+				.title
+					a(href="#") Sales Executive 
+					span.new
+						font(color="ff0000") (Mới)
+				.caption
+					a(href="#").company-name Olam Vietnam Co., Ltd.
+					p.salary
+						em.fa.fa-usd
+						| Lương: 500 - 1.000 USD
+					.location
+						em.mdi.mdi-map-marker
+						ul 
+							li Ha Noi

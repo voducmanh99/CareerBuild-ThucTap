@@ -1,0 +1,65 @@
+.career-development
+	.career-development-slide
+		position: relative
+	.swiper-prev,.swiper-next
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 20
+		cursor: pointer
+		outline: none
+		span
+			font-size: 32px
+	.swiper-prev
+		left: -40px
+	.swiper-next
+		right: -40px
+	.item
+		position: relative
+		border-radius: 5px
+		transition: 0.3s all
+		border: 2px solid transparent
+		overflow: hidden
+		.img
+			+img-scale(100%)
+		.caption
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			padding: 15px
+			text-align: center
+			height: 115px
+			.category-title
+				font-size: 13px
+				letter-spacing: 0.05rem
+				color: #5d677a
+				text-transform: uppercase
+				+line(1)
+			.title, a
+				font-size: 18px
+				color: #182642
+				font-weight: 700
+				+line(2)
+		&.bg-trends
+			.caption
+				background: rgba(#e2f5ff , 0.9)
+		&.bg-tips
+			.caption
+				background: rgba(#e2fff2 , 0.9)
+		&.bg-self
+			.caption
+				background: rgba(#fff4e2 , 0.9)
+		&.bg-default
+			.caption
+				background: rgba(#e2f5ff , 0.9)
+		&:hover
+			box-shadow: 0 0 15px rgba(45, 123, 183, 0.5)
+			border: 2px solid rgb(45, 123, 183)
+	@media screen and ( max-width: 1441px )
+		.swiper-prev,.swiper-next
+			color: #fff
+		.swiper-prev
+			left: 0
+		.swiper-next
+			right: 0
