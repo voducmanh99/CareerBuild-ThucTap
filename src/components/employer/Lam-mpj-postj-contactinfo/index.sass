@@ -1,0 +1,137 @@
+section.postjob-info
+    padding-top: 80px
+    background-color: #eaeaea
+    width: 100%
+    height: auto
+    padding-bottom: 70px
+    .container
+        background-color: white
+        box-shadow: 1px 1px 20px #f8f8f8
+        padding: 35px 30px
+        border-radius: 5px
+        .postjob-title 
+            .section-title
+                color: #182642
+                font-size: 24px!important
+                font-weight: 500
+                margin-bottom: 30px
+            .section-content
+                color: #182642
+                font-size: 14px
+                font-weight: 500
+                line-height: 30px
+                margin-bottom: 11px
+        .postjob-box
+            border: thin #dddddd solid
+            padding: 30px 10px
+            .postjob-box-title 
+                background-color: #f2f8fe
+                padding: 10px 
+                width: 100%
+                .section-title
+                    color: #0f223f
+                    font-size: 20px!important
+                    font-weight: 500
+                    
+            .postjob-box-label
+                padding: 30px 25px
+                .label-first,.label-second
+                    display: flex 
+                    align-items: center
+                    margin-bottom: 15px
+                    input 
+                        margin-right: 15px
+                .input-text
+                    display: flex 
+                    flex-direction: column
+                    width: 100%
+                    input,select
+                        width: 50%
+                        padding: 10px 0px
+                        border: 0
+                        border-bottom: thin #dddddd solid 
+                        margin-bottom: 30px
+                    select 
+                        appearance: none
+                        background-position: 99% 50%!important
+                    input 
+                        position: relative
+                        &:first-child
+                            margin-top: 30px
+                    .email-alert
+                        position: relative
+                        &::before
+                            position: absolute
+                            right: 46%
+                            bottom: 60%
+                            width: 15px
+                            height: 15px
+                            color: white
+                            content: "i"
+                            background: #007fb4
+                            text-align: center
+                            vertical-align: middle
+                            margin: 0 auto
+                            border-radius: 50%
+                            vertical-align: 50px
+                            z-index: 1
+                            font-size: 10px
+                        input 
+                            margin-top: 0px
+                    .label-first,.label-second
+                        height: 20px
+                        width: 100%
+                        display: flex
+                        align-items: center 
+                        justify-content: flex-start
+                        input 
+                            flex: 0 
+                            margin-right: 15px
+                        label 
+                            flex: 1
+                .btn-box
+                    display: flex 
+                    align-items: center
+                    padding: 40px 0px 0px 0px
+                    justify-content: center
+
+                    button.btn-submit 
+                        width: 200px
+                        height: 40px
+                        border-radius: 4px
+                        
+                        background-color: #0097d1
+                        background-image: linear-gradient(-227deg, #287ab9 0%, #0097d1 100%)
+                        
+                        a 
+                            color: #ffffff
+                            font-size: 13px
+                    button.btn-comeback
+                        width: 200px
+                        height: 40px
+                        border-radius: 4px
+                        background-color: #6b757e
+                        text-align: center
+                        vertical-align: middle
+                        transition: 0.3s
+                        margin-right: 30px
+                        &:hover
+                            a
+                                text-decoration: none!important
+                                color: white!important
+                        a 
+                            color: #ffffff
+                            font-size: 13px
+@media (max-width:1000px)
+    .input-text
+        input,select
+            width: 100%!important
+        .email-alert
+            &::before
+                position: absolute
+                right: 0%!important
+@media (max-width:575.98px)
+    .postjob-box-label
+        button.btn-comeback
+            margin-right: 10px!important
+
