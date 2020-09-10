@@ -1,24 +1,20 @@
 {
 	"buildAll": false,
-	"page": [{
+	"page": [
+		{
 			"name": "index",
 			"isWorking": false,
-			"js": [
-				"src/components/phase5/home-vn-salary/index.js"
-			]
+			"js": ["src/components/phase5/home-vn-salary/index.js"]
 		},
 		{
 			"name": "vn-salary-dt",
 			"isWorking": false,
-			"js": [
-				"src/components/phase5/vn-salary-dt/index.js"
-			]
+			"js": ["src/components/phase5/vn-salary-dt/index.js"]
 		},
 		{
 			"name": "02-employer-dashboard",
 			"isWorking": true,
 			"js": []
 		}
-
 	]
 }
