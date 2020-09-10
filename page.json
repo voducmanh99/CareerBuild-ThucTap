@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	"buildAll": false,
 	"page": [
 		{
@@ -18,3 +19,28 @@
 		}
 	]
 }
+=======
+    "buildAll": false,
+    "page": [{
+            "name": "index",
+            "isWorking": false,
+            "js": ["src/components/phase5/home-vn-salary/index.js"]
+        },
+        {
+            "name": "vn-salary-dt",
+            "isWorking": false,
+            "js": ["src/components/phase5/vn-salary-dt/index.js"]
+        },
+        {
+            "name": "02-employer-dashboard",
+            "isWorking": false,
+            "js": []
+        },
+        {
+            "name": "02-Faq-dt",
+            "isWorking": true,
+            "js": []
+        }
+    ]
+}
+>>>>>>> ce3ff2ad8212bd30483ac8eb4b9be22ba5530395
