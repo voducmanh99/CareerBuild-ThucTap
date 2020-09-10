@@ -1,5 +1,5 @@
 {
-    "buildAll": false,
+    "buildAll": true,
     "page": [{
             "name": "index",
             "isWorking": false,
@@ -17,8 +17,13 @@
         },
         {
             "name": "02-Faq-dt",
-            "isWorking": true,
+            "isWorking": false,
             "js": []
+        },
+        {
+            "name": "MJP-ExpiredJob-DetailJ-Email",
+            "isWorking": false,
+            "js": ["src/components/Lam-MJP-ExpiredJob-DetailJ-Email/index.js"]
         }
     ]
 }
