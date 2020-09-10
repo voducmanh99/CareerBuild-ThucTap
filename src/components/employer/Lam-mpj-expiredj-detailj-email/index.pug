@@ -1,0 +1,31 @@
+section.manager-page
+    .container 
+        section.manager-content
+            .manager-title 
+                h2.section-title Quản lí đăng tuyển 
+                button.btn-submit 
+                    span.material-icons create
+                    |Đăng tuyển dụng
+                a(href="") Hướng dẫn 
+            .manager-form
+                .row
+                    .col-xl-3.col-md-3.col-sm-12.section-content Nhập chức danh/ Mã công việc
+                    .col-xl-3.col-md-3.col-sm-12.section-content Tìm theo thời gian 
+                    .col-xl-3.col-md-3.col-sm-12.section-content Từ ngày
+                    .col-xl-3.col-md-3.col-sm-12.section-content Đến ngày 
+                    .col-xl-3.col-md-3.col-sm-12
+                        input#fname(type='text' name='fname' placeholder="Nhập từ khóa")
+                    .col-xl-3.col-md-3.col-sm-12
+                        select#fname(name="date" placeholder="Ngày đăng")
+                            option(value="0") Ngày đăng
+                            option(value="1") 
+                                |Ngày 
+                                span 10/09/2020
+                    .col-xl-3.col-md-3.col-sm-12
+                        input#fromday(type="text" name='fromday' placeholder="Chọn ngày")
+                    .col-xl-3.col-md-3.col-sm-12
+                        input#today(type='text' name='today' placeholder="Chọn ngày")
+                button.btn-timkiem
+                    span.material-icons search
+                    | Tìm kiếm
+

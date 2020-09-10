@@ -21,9 +21,9 @@
             "js": []
         },
         {
-            "name": "MJP-ExpiredJob-DetailJ-Email",
+            "name": "mpj-expiredj-detailj-email",
             "isWorking": false,
-            "js": ["src/components/Lam-MJP-ExpiredJob-DetailJ-Email/index.js"]
+            "js": []
         }
     ]
 }
