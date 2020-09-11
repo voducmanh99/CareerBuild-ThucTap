@@ -1,5 +1,5 @@
 {
-	"buildAll": true,
+	"buildAll": false,
 	"page": [
 		{
 			"name": "index",
@@ -13,7 +13,7 @@
 		},
 		{
 			"name": "02-employer-dashboard",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
@@ -27,14 +27,19 @@
 			"js": []
 		},
 		{
+			"name": "02-ManageJobPosting-ExpiredJobs-DetailJob-Detail",
+			"isWorking": true,
+			"js": []
+		},
+		{
 			"name": "02-Faq-dt",
 			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "MJP-ExpiredJob-DetailJ-Email",
-			"isWorking": false,
-			"js": ["src/components/Lam-MJP-ExpiredJob-DetailJ-Email/index.js"]
+			"isWorking": true,
+			"js": []
 		}
 	]
 }
