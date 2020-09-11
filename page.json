@@ -37,8 +37,13 @@
 			"js": []
 		},
 		{
-			"name": "MJP-ExpiredJob-DetailJ-Email",
-			"isWorking": true,
+			"name": "mpj-expiredj-detailj-email",
+			"isWorking": false,
+			"js": []
+		},
+		{
+			"name": "mpj-postj-contactinfo",
+			"isWorking": false,
 			"js": []
 		}
 	]

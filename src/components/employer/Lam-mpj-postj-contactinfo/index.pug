@@ -1,0 +1,42 @@
+section.postjob-info
+    .container 
+        
+        .postjob-title 
+            h2.section-title Đăng tuyển dụng 
+        .postjob-tab
+            p.section-tab Thông tin tuyển dụng
+        .postjob-box 
+            .postjob-box-title 
+                h2.section-title Thông tin liên hệ
+            form(action="") 
+                .postjob-box-label
+                    .label-first
+                        input(type="checkbox" id="1") 
+                        label(for="1") Ẩn thông tin công ty: Tên công ty và giới thiệu về công ty 
+                            a(href="") (Xem lại thông tin đã tạo)
+                    .label-second        
+                        input(type="checkbox" id="2") 
+                        label(for="2") Chọn ẩn thông tin: Tên công ty, địa chỉ , tên người liên hệ
+                    .input-text
+                        input(type="text" placeholder="Tên công ty*" )
+                        input(type="text" placeholder="Địa chỉ*" )
+                        input(type="text" placeholder="Người liên hệ*" )
+                        .email-alert
+                            input(type="email" placeholder="Email 1*" )
+                        .email-alert 
+                            input(type="email" placeholder="Email 2*" )
+                        select#lang(name="lang")
+                            option(value="0" checked) Tiếng Việt
+                            option(value="1") Tiếng Anh
+                        .label-first
+                            input(type="checkbox" id="3") 
+                            label(for="3") Nhận hồ sơ gợi ý phù hợp với vị trí tuyển dụng
+                        .label-second
+                            input(type="checkbox" id="4") 
+                            label(for="4") Thiết lập thư trả lời tự động khi có ứng viên nộp đơn ứng tuyển
+                    .btn-box 
+                        button(type="submit").btn-comeback 
+                            a(href="") Quay lại
+                        button.btn-submit 
+                            a(href="") Lưu và tìm kiếm
+

@@ -1,16 +1,18 @@
 extends ../_employer.pug
 
 block var
-	- var title = "MJP-ExpiredJob-DetailJ-Email"
-	- var name = "MJP-ExpiredJob-DetailJ-Email"
+	- var title = "mpj-postj-contactinfo"
+	- var name = "mpj-postj-contactinfo"
 	- var bodyClass = "employer-home-page"
 block link 
 	link(rel="stylesheet" href="./gallery/swiper/swiper.css")
 	link(rel="stylesheet" href="./gallery/chart.js/Chart.min.css")
+	link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+
 block main
 	//- inclde chỗ này 
 
-	include ../../components/employer/Lam-MJP-ExpiredJob-DetailJ-Email/index.pug
+	include ../../components/employer/Lam-mpj-postj-contactinfo/index.pug
 
 
 
@@ -20,3 +22,5 @@ block main
 block script
 	script(src="./gallery/swiper/swiper.js")
 	script(src="./gallery/chart.js/Chart.min.js")
+	script(src="https://code.jquery.com/jquery-1.12.4.js")
+	script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
