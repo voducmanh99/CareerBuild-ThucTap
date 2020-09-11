@@ -13,17 +13,17 @@
 		},
 		{
 			"name": "02-employer-dashboard",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "02-faq",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "02-managefollowers",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
