@@ -49,6 +49,11 @@
             "name": "mpj-expiredj-detailj-infomation",
             "isWorking": true,
             "js": []
+        },
+        {
+            "name": "mjp-postj-jobadview-popup",
+            "isWorking": true,
+            "js": []
         }
     ]
 }
