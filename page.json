@@ -1,5 +1,5 @@
 {
-    "buildAll": true,
+    "buildAll": false,
     "page": [{
             "name": "index",
             "isWorking": false,
@@ -21,13 +21,13 @@
             "js": []
         },
         {
-            "name": "mpj-expiredj-detailj-email",
-            "isWorking": false,
+            "name": "mjp-expiredj-detailj-email",
+            "isWorking": true,
             "js": []
         },
         {
-            "name": "mpj-postj-contactinfo",
-            "isWorking": false,
+            "name": "mjp-postj-contactinfo",
+            "isWorking": true,
             "js": []
         }
     ]
