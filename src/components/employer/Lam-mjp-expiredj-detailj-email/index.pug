@@ -1,31 +1,135 @@
-section.manager-page
+section.manager-fl
     .container 
-        section.manager-content
-            .manager-title 
-                h2.section-title Quản lí đăng tuyển 
-                button.btn-submit 
-                    span.material-icons create
-                    |Đăng tuyển dụng
-                a(href="") Hướng dẫn 
-            .manager-form
+        .fl__box
+            section.fl__search
+                .fl__search--boxtitle
+                    h1.fl__search--title Quản lý đăng tuyển
+                    a(href="").btn.btn-dangtin
+                        span.material-icons
+                            | edit
+                        |Đăng tuyển dụng
+                    a(href="").hd Hướng dẫn
+                a(href="").none-dk Hướng dẫn
                 .row
-                    .col-xl-3.col-md-3.col-sm-12.section-content Nhập chức danh/ Mã công việc
-                    .col-xl-3.col-md-3.col-sm-12.section-content Tìm theo thời gian 
-                    .col-xl-3.col-md-3.col-sm-12.section-content Từ ngày
-                    .col-xl-3.col-md-3.col-sm-12.section-content Đến ngày 
-                    .col-xl-3.col-md-3.col-sm-12
-                        input#fname(type='text' name='fname' placeholder="Nhập từ khóa")
-                    .col-xl-3.col-md-3.col-sm-12
-                        select#fname(name="date" placeholder="Ngày đăng")
-                            option(value="0") Ngày đăng
-                            option(value="1") 
-                                |Ngày 
-                                span 10/09/2020
-                    .col-xl-3.col-md-3.col-sm-12
-                        input#fromday(type="text" name='fromday' placeholder="Chọn ngày")
-                    .col-xl-3.col-md-3.col-sm-12
-                        input#today(type='text' name='today' placeholder="Chọn ngày")
-                button.btn-timkiem
-                    span.material-icons search
-                    | Tìm kiếm
+                    .col-lg-6.col-xl
+                        label(for="") Nhập chức danh/ Mã công việc
+                        input(type="text", placeholder="Nhập từ khóa")
+                    .col-lg-6.col-xl
+                        label(for="") Tìm theo thời gian
+                        select(name="")
+                            option(value="") Ngày đăng
+                    .col-lg-6.col-xl
+                        label(for="") Từ ngày
+                        input#datepicker(type='text', placeholder='Chọn ngày')
+                    .col-lg-6.col-xl
+                        label(for="") Đến ngày
+                        input#datepicker2(type='text', placeholder='Chọn ngày')
+                    .col-lg-12.col-xl.fl-end
+                        button.btn-timkiem
+                                span.material-icons search
+                                | Tìm kiếm
+            section.fl__boxmain
+                h1.fl__boxmain--title
+                section.fl__thongtin
+                    p Việc làm hết hạn
+                    h1.fl__thongtin--title Finance Manager (KVHCM)
+                    .row
+                        .col-lg-4
+                            .fl__thongtin--des
+                                table
+                                    tbody
+                                        tr
+                                            th Trạng thái
+                                            td Hoàn tất
+                                        tr
+                                            th Hết hạn
+                                            td 29-05-2020
+                                        tr
+                                            th Hỗ trợ gia hạn
+                                            td -
 
+                        .col-lg-4
+                            .fl__thongtin--des.center
+                                table
+                                    tbody
+                                        tr
+                                            th Xem
+                                            td 51 
+                                        tr
+                                            th Nộp trực tuyến
+                                            td 
+                                                a(href="") 
+                                                    | 2 (Xem hồ sơ ứng viên)
+                                        tr
+                                            th Email
+                                            td -
+                        .col-lg-4
+                            .fl__thongtin--des.right
+                                .fl__thongtin--func
+                                    .nhanban
+                                        a(href="") 
+                                            span.material-icons
+                                                | content_copy
+                                            |Nhân bản
+                                    .mail-auto
+                                        a(href="") 
+                                            span.material-icons
+                                                | email
+                                            |Mail trả lời tự động
+                    .fl__quanlytag
+                        h3.section-title Thư trả lời tự động
+                        .fl__quanlytag--thongtin
+                        table 
+                            tr.title
+                                th  Tiêu đề 
+                                td  Test Interview
+                            tr.content 
+                                th Nội dung
+                                td 
+                                    p HRVietnam will work in partnership with your organization's human resource and adminstration to provide a variety of flexible and creative outsourcing options tailored to your specific needs.
+
+                                    p Payroll Management 
+                                    .small-li
+                                        li  Managing empolyment records and labour contracts 
+
+                                        li  Reporting and registration to relevant authorities
+
+                                        li  Processing payment to emplyees and authorities 
+
+                                        li  Handling sicoal/health/un-empolyment insurance claims 
+
+                                        li  Finalizing annual personal income tax returns 
+
+                                        li  Consulting and updating on labour laws 
+
+                                        li  Providing other payroll and HR related suopport 
+                                    p Temporary staffing
+                                    .small-li
+                                        li Recruit temporary staff (short term and long term)
+
+
+
+
+
+
+
+
+                            //- .tt-1
+                            //-     h4.heading Kỹ năng
+                            //-     p.text Là các từ khóa thường xuất hiện trong hồ sơ ứng viên hay chức danh tương tự như chức danh đăng tuyển của công ty bạn.
+                            //- .tt-2
+                            //-     h4.heading Lưu ý
+                            //-     ul
+                            //-         li.text
+                            //-             span.material-icons
+                            //-                 | fiber_manual_record
+                            //-             |Hệ thống sẽ tìm và gợi ý những hồ sơ ứng viên phù hợp dựa trên các “Resume Skill” được tạo.
+                            //-         li.text
+                            //-             span.material-icons
+                            //-                 | fiber_manual_record
+                            //-             |Thêm mới hoặc lựa chọn các “Tag/Kỹ năng” phù hợp với vị trí tuyển dụng của Quý công ty.
+                            //-         li.text
+                            //-             span.material-icons
+                            //-                 | fiber_manual_record
+                            //-             |Bạn được phép tạo tối đa 10 “Tag/Kỹ năng” cho một vị trí tuyển dụng.
+                    
