@@ -1,0 +1,18 @@
+extends ../_employer.pug
+
+block var
+	- var title = "Home"
+	- var name = "02-faq"
+	- var bodyClass = "employer-home-page"
+block link
+	link(rel="stylesheet", href="./gallery/jquery-ui/jquery-ui.css")
+block main
+	//- inclde chô này 
+
+	include ../../components/employer/nguyen-faq/index.pug
+
+
+	include ../../components/employer/home/mail/index.pug
+
+block script
+	script(src="./gallery/jquery-ui/jquery-ui.js")

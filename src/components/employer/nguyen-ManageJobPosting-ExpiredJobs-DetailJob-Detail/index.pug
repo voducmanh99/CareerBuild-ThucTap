@@ -1,0 +1,155 @@
+section.manager-fl
+    .container 
+        .fl__box
+            section.fl__search
+                .fl__search--boxtitle
+                    h1.fl__search--title Quản lý đăng tuyển
+                    a(href="").btn.btn-dangtin
+                        span.material-icons
+                            | edit
+                        |Đăng tuyển dụng
+                    a(href="").hd Hướng dẫn
+                .row
+                    .col
+                        label(for="") Nhập chức danh/ Mã công việc
+                        input(type="text", placeholder="Nhập từ khóa")
+                    .col
+                        label(for="") Tìm theo thời gian
+                        select(name="")
+                            option(value="") Ngày đăng
+                    .col
+                        label(for="") Từ ngày
+                        input#datepicker(type='text', placeholder='Chọn ngày')
+                    .col
+                        label(for="") Đến ngày
+                        input#datepicker2(type='text', placeholder='Chọn ngày')
+                    .col.fl-end
+                        button.btn-timkiem
+                                span.material-icons search
+                                | Tìm kiếm
+            section.fl__boxmain
+                h1.fl__boxmain--title
+                section.fl__thongtin
+                    p Việc làm hết hạn
+                    h1.fl__thongtin--title Finance Manager (KVHCM)
+                    .row
+                        .col-4
+                            .fl__thongtin--des
+                                table
+                                    tbody
+                                        tr
+                                            th Trạng thái
+                                            td Hoàn tất
+                                        tr
+                                            th Hết hạn
+                                            td 29-05-2020
+                                        tr
+                                            th Hỗ trợ gia hạn
+                                            td -
+
+                        .col-4
+                            .fl__thongtin--des.center
+                                table
+                                    tbody
+                                        tr
+                                            th Xem
+                                            td 51 
+                                        tr
+                                            th Nộp trực tuyến
+                                            td 
+                                                a(href="") 
+                                                    | 2 (Xem hồ sơ ứng viên)
+                                        tr
+                                            th Email
+                                            td -
+                        .col-4
+                            .fl__thongtin--des.right
+                                .fl__thongtin--func
+                                    .nhanban
+                                        a(href="") 
+                                            span.material-icons
+                                                | content_copy
+                                            |Nhân bản
+                                    .mail-auto
+                                        a(href="") 
+                                            span.material-icons
+                                                | email
+                                            |Mail trả lời tự động
+                    .fl__quanlytag
+                        h3.section-title Quản lý tag
+                        .fl__quanlytag--thongtin
+                            .tt-1
+                                h4.heading Kỹ năng
+                                p.text Là các từ khóa thường xuất hiện trong hồ sơ ứng viên hay chức danh tương tự như chức danh đăng tuyển của công ty bạn.
+                            .tt-2
+                                h4.heading Lưu ý
+                                ul
+                                    li.text Hệ thống sẽ tìm và gợi ý những hồ sơ ứng viên phù hợp dựa trên các “Resume Skill” được tạo.
+                                    li.text Thêm mới hoặc lựa chọn các “Tag/Kỹ năng” phù hợp với vị trí tuyển dụng của Quý công ty.
+                                    li.text Bạn được phép tạo tối đa 10 “Tag/Kỹ năng” cho một vị trí tuyển dụng.
+                            .tt-3
+                                p.text
+
+
+                section.fl__danhsach
+                    table 
+                        thead
+                            tr
+                                th.fl__danhsach--title Tên ứng viên
+                                th.fl__danhsach--title-date Ngày follow
+                        tbody
+                            tr
+                                td.fl__danhsach--textleft
+                                    p.fl__danhsach--name Đỗ Thị Ngọc Hạnh
+                                    p.fl__danhsach--profile
+                                        b
+                                            | Hồ sơ:
+                                        |Trưởng / Phó phòng kế toán
+                                td.fl__danhsach--textright
+                                    p.fl__danhsach--date 29/04/2020
+                            tr
+                                td.fl__danhsach--textleft
+                                    p.fl__danhsach--name Lương Thị Tú Quỳnh
+                                    p.fl__danhsach--profile
+                                        b
+                                            | Hồ sơ:
+                                        |Trưởng phòng CNTT - Phần cứng / Mạng, CNTT - Phần mềm
+                                td.fl__danhsach--textright
+                                    p.fl__danhsach--date 29/04/2020
+                            tr
+                                td.fl__danhsach--textleft
+                                    p.fl__danhsach--name Trần Thị Thảo Vy
+                                    p.fl__danhsach--profile
+                                        b
+                                            | Hồ sơ:
+                                        |HR Manager
+                                td.fl__danhsach--textright
+                                    p.fl__danhsach--date 29/04/2020
+                            tr
+                                td.fl__danhsach--textleft
+                                    p.fl__danhsach--name Hoàng Trang
+                                    p.fl__danhsach--profile
+                                        b
+                                            | Hồ sơ:
+                                        |Commercial Finance Suppervisor/ Manager
+                                td.fl__danhsach--textright
+                                    p.fl__danhsach--date 29/04/2020
+                            tr
+                                td.fl__danhsach--textleft
+                                    p.fl__danhsach--name Nguyễn Ngọc Phát
+                                    p.fl__danhsach--profile
+                                        b
+                                            | Hồ sơ:
+                                        |Trưởng phòng CNTT - Phần cứng / Mạng, CNTT - Phần mềm
+                                td.fl__danhsach--textright
+                                    p.fl__danhsach--date 29/04/2020
+                            tr
+                                td.fl__danhsach--textleft
+                                    p.fl__danhsach--name Nguyễn Cao An
+                                    p.fl__danhsach--profile
+                                        b
+                                            | Hồ sơ:
+                                        |Trưởng phòng CNTT - Phần cứng / Mạng, CNTT - Phần mềm
+                                td.fl__danhsach--textright
+                                    p.fl__danhsach--date 29/04/2020
+

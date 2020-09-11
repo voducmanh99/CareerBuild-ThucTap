@@ -1,34 +1,42 @@
-{
-    "buildAll": false,
-    "page": [{
-            "name": "index",
-            "isWorking": false,
-            "js": ["src/components/phase5/home-vn-salary/index.js"]
-        },
-        {
-            "name": "vn-salary-dt",
-            "isWorking": false,
-            "js": ["src/components/phase5/vn-salary-dt/index.js"]
-        },
-        {
-            "name": "02-employer-dashboard",
-            "isWorking": false,
-            "js": []
-        },
-        {
-            "name": "02-Faq-dt",
-            "isWorking": false,
-            "js": []
-        },
-        {
-            "name": "mjp-expiredj-detailj-email",
-            "isWorking": true,
-            "js": []
-        },
-        {
-            "name": "mjp-postj-contactinfo",
-            "isWorking": true,
-            "js": []
-        }
-    ]
-}
+"buildAll": false,
+"page": [{
+        "name": "index",
+        "isWorking": false,
+        "js": ["src/components/phase5/home-vn-salary/index.js"]
+    },
+    {
+        "name": "vn-salary-dt",
+        "isWorking": false,
+        "js": ["src/components/phase5/vn-salary-dt/index.js"]
+    },
+    {
+        "name": "02-employer-dashboard",
+        "isWorking": false,
+        "js": []
+    },
+    {
+        "name": "02-faq",
+        "isWorking": true,
+        "js": []
+    },
+    {
+        "name": "02-managefollowers",
+        "isWorking": true,
+        "js": []
+    },
+    {
+        "name": "02-Faq-dt",
+        "isWorking": false,
+        "js": []
+    },
+    {
+        "name": "mjp-expiredj-detailj-email",
+        "isWorking": true,
+        "js": []
+    },
+    {
+        "name": "mjp-postj-contactinfo",
+        "isWorking": true,
+        "js": []
+    }
+]

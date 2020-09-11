@@ -1,0 +1,20 @@
+extends ../_employer.pug
+
+block var
+	- var title = "02-ManageJobPosting-ExpiredJobs-DetailJob-Detail"
+	- var name = "02-ManageJobPosting-ExpiredJobs-DetailJob-Detail"
+	- var bodyClass = "employer-home-page"
+block link
+	link(rel="stylesheet", href="./gallery/jquery-ui/jquery-ui.css")
+	link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+block main
+	//- inclde chô này 
+
+	include ../../components/employer/nguyen-ManageJobPosting-ExpiredJobs-DetailJob-Detail/index.pug
+
+
+	include ../../components/employer/home/mail/index.pug
+
+block script
+	script(src="./gallery/jquery-ui/jquery-ui.js")
+	script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
