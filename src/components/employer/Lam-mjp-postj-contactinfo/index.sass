@@ -1,3 +1,6 @@
+.mx-auto 
+    margin-left: auto !important
+    margin-right: auto !important
 section.postjob-info
     padding-top: 80px
     background-color: #eaeaea
@@ -177,16 +180,6 @@ section.postjob-info
                         a 
                             color: #ffffff
                             font-size: 13px
-// @media (max-width:1440px)
-//     .label-first,.label-second
-//         .email-alert-2
-//             position: absolute
-//             right: 58%!important
-// @media (max-width:1366px)
-//     .label-first,.label-second
-//         .email-alert-2
-//             position: absolute
-//             right: 42%!important
 @media (max-width:1000px)
     .input-text
         input,select
@@ -207,4 +200,85 @@ section.postjob-info
     .email-alert-2
         width: 22px!important
         
+
+// Popup
+section.popup
+    margin-top: 30px
+    .row 
+        .col-md-8 
+            background-color: white 
+            border: thin #dddddd solid
+            padding-left: 0!important
+            padding-right: 0!important
+            .popup-box 
+                position: relative
+                padding: 30px 40px 
+                .btn-close
+                    position: absolute 
+                    top: 0% 
+                    right: 0% 
+                    width: 36px 
+                    height: 34px
+                    background: #069fdb
+                    color: white
+                .section-title
+                    color: #182642
+                    font-size: 18px!important
+                    font-weight: 500
+                    padding-bottom: 10px
+                    border-bottom: 1px #dddddd solid
+                .brand 
+                    padding: 30px 0px
+                    a.section-brand 
+                        font-size: 17px  
+                        text-decoration: underline 
+                        color: #007eb5
+                .postjob-box-title 
+                    .section-title
+                        width: 100%
+                        color: #182642
+                        font-size: 18px!important
+                        font-weight: 500
+                        margin-left: auto!important
+                        background-color: #f2f8fe
+                        border: 0!important
+                        text-align: left 
+                        padding: 15px 30px!important
+                        // padding: 15px 30px
+                    .section-content
+                        color: #182642
+                        font-size: 14px
+                        font-weight: 400
+                        line-height: 30px
+                        margin-bottom: 11px
+                        padding: 30px 0px 30px 30px
+.collapsible 
+    color: white
+    cursor: pointer
+    padding: 18px
+    width: 100%
+    border: none
+    text-align: left
+    outline: none
+    font-size: 15px
+    background-image: url(../img/arrow_up.png)
+    background-position: 99% 55%
+    background-repeat: no-repeat
+    background-size: 4%
+.postjob-collapse-content
+    padding: 0
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+    margin-bottom: 20px
+    p   
+        padding: 30px 0px 30px 30px!important
+        &:last-child
+            padding: 0px 0px 30px 30px 
+.active-collapse
+    background-image: url(../img/arrow_down.png)
+    background-position: 99% 55%
+    background-repeat: no-repeat
+    background-size: 4%
+
 
