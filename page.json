@@ -12,36 +12,41 @@
         },
         {
             "name": "02-employer-dashboard",
-            "isWorking": true,
+            "isWorking": false,
             "js": []
         },
         {
             "name": "02-faq",
-            "isWorking": true,
+            "isWorking": false,
             "js": []
         },
         {
             "name": "02-managefollowers",
-            "isWorking": true,
+            "isWorking": false,
             "js": []
         },
         {
             "name": "02-ManageJobPosting-ExpiredJobs-DetailJob-Detail",
-            "isWorking": true,
+            "isWorking": false,
             "js": []
         },
         {
             "name": "02-Faq-dt",
-            "isWorking": true,
+            "isWorking": false,
             "js": []
         },
         {
             "name": "mjp-expiredj-detailj-email",
-            "isWorking": true,
+            "isWorking": false,
             "js": []
         },
         {
             "name": "mjp-postj-contactinfo",
+            "isWorking": true,
+            "js": []
+        },
+        {
+            "name": "mpj-expiredj-detailj-infomation",
             "isWorking": true,
             "js": []
         }
