@@ -69,6 +69,8 @@ section.db-s1
                             .form-group
                                 select(name="").select-date
                                     option(value="Jul 1, 2020 - 31 Jul, 2020") Jul 1, 2020 - 31 Jul, 2020
+                    .db-s2__box--chart
+                        #mychart4(style='height: 100%; width: 100%;')
             .col-sm-12.col-md-6
                 .db-s2__box
                     h1.db-s2__box--title Biểu đồ ứng viên
@@ -77,6 +79,9 @@ section.db-s1
                             .form-group
                                 select(name="").select-date
                                     option(value="Jul 1, 2020 - 31 Jul, 2020") Jul 1, 2020 - 31 Jul, 2020
+                    .db-s2__box--chart
+                        canvas#myChart
+                        <div id="js-legend1" class="chart-legend"></div>
         .row.sec2
             .col-sm-12.col-md-6
                 .db-s2__box
@@ -87,7 +92,8 @@ section.db-s1
                                 select(name="").select-date
                                     option(value="Jul 1, 2020 - 31 Jul, 2020") Jul 1, 2020 - 31 Jul, 2020
                     .db-s2__box--chart
-                        canvas#myChart(width='400', height='400')
+                        canvas#myChart2
+                        <div id="js-legend2" class="chart-legend chart-2"></div>
             .col-sm-12.col-md-6
                 .db-s2__box
                     h1.db-s2__box--title Biểu đồ tuyển dụng theo cấp bậc
@@ -95,7 +101,10 @@ section.db-s1
                         form(action="")
                             .form-group
                                 select(name="").select-date
-                                    option(value="Jul 1, 2020 - 31 Jul, 2020") Jul 1, 2020 - 31 Jul, 2020        
+                                    option(value="Jul 1, 2020 - 31 Jul, 2020") Jul 1, 2020 - 31 Jul, 2020     
+                    .db-s2__box--chart.chart-3
+                        canvas#myChart3   
+                        <div id="js-legend" class="chart-legend"></div>
         .row
             .col-12
                 .db__end
@@ -110,4 +119,6 @@ section.db-s1
                         | Mobile: 0918 11 55 90
                     p.db__end--text
                         | Email: test.pham@gmaill.com
+                        span
+                            |Phiên đăng nhập gần đây nhất: 31/07/2020
 

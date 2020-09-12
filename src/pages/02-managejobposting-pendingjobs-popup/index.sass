@@ -1,0 +1,24 @@
+// css chính
+@import src/shared/import.sass
+.is-browser-IE
+	header .main-menu .menu li:nth-child(2).dropdown .dropdown-menu
+		min-width: calc( 100% + 110px )
+	.employer-banner
+		overflow: hidden
+	.employer-mail
+		position: fixed
+		width: 100%
+		&.no-scroll
+			position: relative
+	.employer-customer 
+		@media(min-width: 1025px)
+			.main-button .button-prev
+				right: 103%
+
+@import src/components/employer/header/index.sass
+@import src/components/employer/footer/index.sass
+@import src/components/employer/home/mail/index.sass
+@import src/components/employer/feedback/index.sass
+
+
+@import src/components/employer/nguyen-managejobposting-pendingjobs-popup/index.sass
