@@ -10,6 +10,7 @@
             "isWorking": false,
             "js": ["src/components/phase5/vn-salary-dt/index.js"]
         },
+        // Phần Nguyên
         {
             "name": "02-employer-dashboard",
             "isWorking": false,
@@ -45,6 +46,7 @@
             "isWorking": false,
             "js": []
         },
+        // Phần Lâm
         {
             "name": "02-Faq-dt",
             "isWorking": false,

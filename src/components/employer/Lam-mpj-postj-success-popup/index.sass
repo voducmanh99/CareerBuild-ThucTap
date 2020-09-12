@@ -1,13 +1,9 @@
 .mx-auto 
     margin-left: auto !important
     margin-right: auto !important
-.row 
-    .col-8,.col-2
-        padding: 0!important
 // Popup
 .section-title
     padding-bottom: 10px
-    border-bottom: 1px #dddddd solid
     color: #182642
     font-size: 18px !important
     font-weight: 500
@@ -17,6 +13,8 @@
     font-size: 16px
     font-weight: 400
     line-height: 30px
+    width: 100% 
+    text-align: center
 .section-content-2 
     color: #182642
     font-size: 14px
@@ -26,89 +24,44 @@ section.popup
     margin-top: 80px
     margin-bottom: 50px
     .row 
-        .col-md-8 
-            max-width: 930px!important
+        .col-4
+            max-width: 450px!important
             background-color: white 
             border: thin #dddddd solid
             padding-left: 0!important
             padding-right: 0!important
-            .popup-box 
-                position: relative
-                padding: 30px 40px 
-                .btn-close
-                    position: absolute 
-                    top: 0% 
-                    right: 0% 
-                    width: 34px 
-                    height: 34px
-                    background: #069fdb
-                    color: white
-                .postjob-box-title
-                    .listjob-content 
-                        padding: 30px 0px 
-                        ul 
-                            padding-left: 15px 
-                            li 
-                                list-style: disc
-                                line-height: 20px
-                                &::marker 
-                                    color: #cccccc
-                    .listjob-table 
-                        table 
-                            width: 100% 
-                            height: auto
-                            border: thin #cccccc solid
-                            tr 
-                                display: flex 
-                                justify-content: space-between 
-                                align-items: center 
-                                flex-direction: row 
-                                padding: 10px 40px
-                                &.bg-table  
-                                    background: #e7e7e7
-                                &:not(:first-child),&:not(:last-child)
-                                    border-bottom: thin #cccccc solid
-                                &:nth-of-type(2)
-                                    background: white 
-                                th 
-                                    text-transform: uppercase
-                                    font-weight: bold
-                                    color: #0f213e
-                                    display: flex
-                                    &:nth-of-type(3)
-                                        text-align: center
-                                        margin-left: 20px
-                                @media (max-width: 1200px)
-                                    .section-content 
-                                        font-size: calc(16px + 6 * ((100vw - 1200px) / 680))
-                                    .section-content 
-                                        font-size: calc(14px + 6 * ((100vw - 1200px) / 680))
-                                td 
-                                    font-weight: 400
-                                    color: black
-                                    span
-                                        color: #4192c1
-                                    &:nth-of-type(3)
-                                        text-align: center
-                .pagination 
-                    margin-top: 20px
+            .success-box
+                .success-header 
+                    width: 100%
+                    height: 100px 
+                    background: #87cc48 
+                    text-align: center
+                    display: flex 
+                    justify-content: center 
+                    align-items: center
+                    position: relative
+                    img 
+                        width: 17%
+                .success-content 
+                    width: 100%
+                    height: auto
+                    padding: 30px 30px 0px 30px
                     display: flex
-                    width: 100% 
-                    align-items: center 
                     justify-content: center
-                    a 
-                        color: black
-                        font-size: 16px
-                        float: left
-                        padding: 8px 16px
-                        margin: 0px 5px
-                        text-decoration: none
-                        &:hover:not(.active)
-                            background-color: #cccccc
-                            border-radius: 50%
-                    a.active 
+                    align-items: center
+                    flex-direction: column
+                    .section-content 
+                        border-bottom: thin #cccccc solid
+                        padding-bottom: 30px
+                .success-button
+                    padding: 30px 0px 35px 0px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    button.btn-check
+                        width: 90px 
+                        height: 30px 
                         background-color: #0098d1
                         color: white
-                        border-radius: 50%
-                    
+                        border-radius: 5px
 
