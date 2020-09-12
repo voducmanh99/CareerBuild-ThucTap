@@ -10,7 +10,6 @@
             "isWorking": false,
             "js": ["src/components/phase5/vn-salary-dt/index.js"]
         },
-        // Phần Nguyên
         {
             "name": "02-employer-dashboard",
             "isWorking": false,
@@ -28,7 +27,7 @@
         },
         {
             "name": "02-mjp-expiredjobs-detailjob-detail",
-            "isWorking": true,
+            "isWorking": false,
             "js": []
         },
         {
@@ -46,15 +45,14 @@
             "isWorking": false,
             "js": []
         },
-        // Phần Lâm
         {
             "name": "02-Faq-dt",
-            "isWorking": false,
+            "isWorking": true,
             "js": []
         },
         {
             "name": "mjp-expiredj-detailj-email",
-            "isWorking": false,
+            "isWorking": true,
             "js": []
         },
         {
