@@ -54,6 +54,17 @@
             "name": "mjp-postj-jobadview-popup",
             "isWorking": true,
             "js": []
+        },
+        {
+            "name": "mjp-postj-listj-popup",
+            "isWorking": true,
+            "js": []
+        },
+        {
+            "name": "mpj-postj-success-popup",
+            "isWorking": true,
+            "js": []
         }
+
     ]
 }
