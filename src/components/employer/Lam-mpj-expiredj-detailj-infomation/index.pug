@@ -1,0 +1,97 @@
+section.manager-fl
+    .container 
+        .fl__box
+            section.fl__search
+                .fl__search--boxtitle
+                    h1.fl__search--title Quản lý đăng tuyển
+                    a(href="").btn.btn-dangtin
+                        span.material-icons
+                            | edit
+                        |Đăng tuyển dụng
+                    a(href="").hd Hướng dẫn
+                a(href="").none-dk Hướng dẫn
+                .row
+                    .col-lg-6.col-xl
+                        label(for="") Nhập chức danh/ Mã công việc
+                        input(type="text", placeholder="Nhập từ khóa")
+                    .col-lg-6.col-xl
+                        label(for="") Tìm theo thời gian
+                        select(name="")
+                            option(value="") Ngày đăng
+                    .col-lg-6.col-xl
+                        label(for="") Từ ngày
+                        input#datepicker(type='text', placeholder='Chọn ngày')
+                    .col-lg-6.col-xl
+                        label(for="") Đến ngày
+                        input#datepicker2(type='text', placeholder='Chọn ngày')
+                    .col-lg-12.col-xl.fl-end
+                        button.btn-timkiem
+                                span.material-icons search
+                                | Tìm kiếm
+            section.fl__boxmain
+                h1.fl__boxmain--title
+                section.fl__thongtin
+                    p Việc làm hết hạn
+                    h1.fl__thongtin--title Finance Manager (KVHCM)
+                    .row
+                        .col-lg-4
+                            .fl__thongtin--des
+                                table
+                                    tbody
+                                        tr
+                                            th Trạng thái
+                                            td Hoàn tất
+                                        tr
+                                            th Hết hạn
+                                            td 29-05-2020
+                                        tr
+                                            th Hỗ trợ gia hạn
+                                            td -
+
+                        .col-lg-4
+                            .fl__thongtin--des.center
+                                table
+                                    tbody
+                                        tr
+                                            th Xem
+                                            td 51 
+                                        tr
+                                            th Nộp trực tuyến
+                                            td 
+                                                a(href="") 
+                                                    | 2 (Xem hồ sơ ứng viên)
+                                        tr
+                                            th Email
+                                            td -
+                        .col-lg-4
+                            .fl__thongtin--des.right
+                                .fl__thongtin--func
+                                    .nhanban
+                                        a(href="") 
+                                            span.material-icons
+                                                | content_copy
+                                            |Nhân bản
+                                    .mail-auto
+                                        a(href="") 
+                                            span.material-icons
+                                                | email
+                                            |Mail trả lời tự động
+                    .fl__quanlytag
+                        h3.section-title Thông tin đăng tuyển
+                        .fl__quanlytag--thongtin
+                        table 
+                                tbody.col-md-6
+                                    tr.title
+                                        th  Trạng thái:
+                                        td  Hoàn tất
+                                    tr.title
+                                        th  Thời gian:
+                                        td  30 ngày
+                                tbody.col-md-6
+                                    tr.title
+                                        th  Ngày đăng:
+                                        td  29/04/2020
+                                    tr.title
+                                        th  Ngày hết hạn:
+                                        td  29/05/2020
+                    

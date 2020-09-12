@@ -52,13 +52,23 @@
 			"js": []
 		},
 		{
-			"name": "mpj-expiredj-detailj-email",
+			"name": "mjp-expiredj-detailj-email",
 			"isWorking": false,
 			"js": []
 		},
 		{
-			"name": "mpj-postj-contactinfo",
-			"isWorking": false,
+			"name": "mjp-postj-contactinfo",
+			"isWorking": true,
+			"js": []
+		},
+		{
+			"name": "mpj-expiredj-detailj-infomation",
+			"isWorking": true,
+			"js": []
+		},
+		{
+			"name": "mjp-postj-jobadview-popup",
+			"isWorking": true,
 			"js": []
 		}
 	]
