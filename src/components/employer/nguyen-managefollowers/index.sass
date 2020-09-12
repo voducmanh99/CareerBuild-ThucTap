@@ -5,7 +5,6 @@ section.manager-fl
     height: auto
     padding-bottom: 30px
     .fl__box
-        height: 766px
         box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.05)
         border-radius: 4px
         background-color: #ffffff   
@@ -95,6 +94,9 @@ section.manager-fl
             padding-left: 30px
         &--textleft
             padding-left: 30px
+            @media( max-width: 768px )
+                padding-left: 20px
+                padding-right: 20px
         &--name 
             color: #333333
             font-size: 14px
@@ -111,4 +113,6 @@ section.manager-fl
             color: #333333
             font-size: 14px
             font-weight: 400
+            @media(max-width: 768px)
+                padding-right: 20px
                 

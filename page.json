@@ -26,7 +26,22 @@
             "js": []
         },
         {
-            "name": "02-ManageJobPosting-ExpiredJobs-DetailJob-Detail",
+            "name": "02-mjp-expiredjobs-detailjob-detail",
+            "isWorking": true,
+            "js": []
+        },
+        {
+            "name": "02-managejobposting-pendingjobs-popup",
+            "isWorking": false,
+            "js": []
+        },
+        {
+            "name": "02-managejobposting-postjobs-addlocation-popup",
+            "isWorking": false,
+            "js": []
+        },
+        {
+            "name": "02-managejobposting-postjobs-jobad-popup",
             "isWorking": false,
             "js": []
         },
@@ -65,6 +80,5 @@
             "isWorking": true,
             "js": []
         }
-
     ]
 }

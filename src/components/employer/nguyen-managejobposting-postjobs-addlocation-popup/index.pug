@@ -1,0 +1,36 @@
+section.manager-fl
+    .container
+        .row
+            .col-md-12.col-lg-8.mx-auto
+                .popup__themtag
+                    .popup__ttbox
+                        .popup__themtag--close
+                            button.close(type='button', aria-label='Close')
+                                span.material-icons
+                                    | close
+                        .popup__themtag--text 
+                            h2 Thêm địa chỉ
+                            form(action="")
+                                .row
+                                    .col-6
+                                        label(for="") Tỉnh/Thành phố *
+                                        select(name="")
+                                            option(value="") Chọn Tỉnh/Thành phố
+                                    .col-6
+                                        label(for="") Quận/Huyện *
+                                        select(name="")
+                                            option(value="") Chọn Quận/Huyện
+                                .row
+                                    .col-6
+                                        label(for="") Địa điểm làm việc *
+                                        input(type="text", placeholder="Địa điểm làm việc")
+                                .row
+                                    .col-12
+                                        .map
+                                            iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15677.454892630503!2d106.6919575!3d10.7834295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6112227c8e4adb56!2sCAREERBUILDER%20JSC!5e0!3m2!1sen!2s!4v1599814044070!5m2!1sen!2s', width='100%', height='100%', frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
+                                .row
+                                    .col-12
+                                        .button-add-dc
+                                            button.tdd(type='button') Thêm địa điểm 
+                                            button.luu(type='button') Lưu 
+

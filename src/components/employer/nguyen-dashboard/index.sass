@@ -157,6 +157,46 @@
 			appearance: none
 			padding-left: 20px
 			background-image: url(../img/s2.png)
+	&--chart
+		position: relative
+		height: 222px
+		width: 368px
+		margin: 0 auto
+		.chart-legend
+			ul 
+				display: flex
+				justify-content: center
+				align-items: center
+				li 
+					font-size: 12px
+					margin-right: 10px
+					color: #6f6f6f
+					display: flex
+					align-items: center
+					span 
+						display: inline-block
+						width: 31px
+						height: 4px
+						margin-right: 2px
+						border-radius: 5px
+						overflow: hidden
+		.chart-2
+			li:last-child
+				span 
+					width: 23px!important
+					height: 8px!important
+					border-radius: 0!important
+	.chart-3
+		width: 400px!important
+		margin-top: 22px
+		.chart-legend
+			margin-top: 10px
+			ul 
+				li 
+					span 
+						width: 4px
+						height: 5px
+
 .db__end
 	padding: 22px 30px
 	background-color: white
@@ -173,8 +213,17 @@
 		font-size: 16px
 		font-weight: 400
 		line-height: 24px
+		overflow: auto
 		b 
 			color: #1e5c8b
+		span 
+			color: #666666
+			font-size: 16px
+			font-weight: 400
+			float: right
+			@media( max-width: 600px )
+				float: left
+				
 .p-0	
 	padding: 0
 .bb-1

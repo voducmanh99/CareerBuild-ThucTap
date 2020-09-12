@@ -1,0 +1,240 @@
+section.manager-fl
+    .container 
+        .fl__box
+            section.fl__search
+                .fl__search--boxtitle
+                    h1.fl__search--title Quản lý đăng tuyển
+                    a(href="").btn.btn-dangtin
+                        span.material-icons
+                            | edit
+                        |Đăng tuyển dụng
+                    a(href="").hd Hướng dẫn
+                a(href="").none-dk Hướng dẫn
+                .row
+                    .col-lg-6.col-xl
+                        label(for="") Nhập chức danh/ Mã công việc
+                        input(type="text", placeholder="Nhập từ khóa")
+                    .col-lg-6.col-xl
+                        label(for="") Tìm theo thời gian
+                        select(name="")
+                            option(value="") Ngày đăng
+                    .col-lg-6.col-xl
+                        label(for="") Từ ngày
+                        input#datepicker(type='text', placeholder='Chọn ngày')
+                    .col-lg-6.col-xl
+                        label(for="") Đến ngày
+                        input#datepicker2(type='text', placeholder='Chọn ngày')
+                    .col-lg-12.col-xl.fl-end
+                        button.btn-timkiem
+                                span.material-icons search
+                                | Tìm kiếm
+            section.fl__boxmain
+                h1.fl__boxmain--title
+                section.fl__thongtin
+                    p Việc làm hết hạn
+                    h1.fl__thongtin--title Finance Manager (KVHCM)
+                    .row
+                        .col-lg-4
+                            .fl__thongtin--des
+                                table
+                                    tbody
+                                        tr
+                                            th Trạng thái
+                                            td Hoàn tất
+                                        tr
+                                            th Hết hạn
+                                            td 29-05-2020
+                                        tr
+                                            th Hỗ trợ gia hạn
+                                            td -
+
+                        .col-lg-4
+                            .fl__thongtin--des.center
+                                table
+                                    tbody
+                                        tr
+                                            th Xem
+                                            td 51 
+                                        tr
+                                            th Nộp trực tuyến
+                                            td 
+                                                a(href="") 
+                                                    | 2 (Xem hồ sơ ứng viên)
+                                        tr
+                                            th Email
+                                            td -
+                        .col-lg-4
+                            .fl__thongtin--des.right
+                                .fl__thongtin--func
+                                    .nhanban
+                                        a(href="") 
+                                            span.material-icons
+                                                | content_copy
+                                            |Nhân bản
+                                    .mail-auto
+                                        a(href="") 
+                                            span.material-icons
+                                                | email
+                                            |Mail trả lời tự động
+                    .fl__quanlytag
+                        h3.section-title Quản lý tag
+                        .fl__quanlytag--thongtin
+                            .tt-1
+                                h4.heading Kỹ năng
+                                p.text Là các từ khóa thường xuất hiện trong hồ sơ ứng viên hay chức danh tương tự như chức danh đăng tuyển của công ty bạn.
+                            .tt-2
+                                h4.heading Lưu ý
+                                ul
+                                    li.text
+                                        span.material-icons
+                                            | fiber_manual_record
+                                        |Hệ thống sẽ tìm và gợi ý những hồ sơ ứng viên phù hợp dựa trên các “Resume Skill” được tạo.
+                                    li.text
+                                        span.material-icons
+                                            | fiber_manual_record
+                                        |Thêm mới hoặc lựa chọn các “Tag/Kỹ năng” phù hợp với vị trí tuyển dụng của Quý công ty.
+                                    li.text
+                                        span.material-icons
+                                            | fiber_manual_record
+                                        |Bạn được phép tạo tối đa 10 “Tag/Kỹ năng” cho một vị trí tuyển dụng.
+                            .tt-3
+                                p.text Bạn đã xem 
+                                    span.so 1/5
+                                    | hồ sơ miễn phí
+                                a(href="") Hồ sơ đã xem 
+                                span.dive |
+                                a(href="") Xuất ra excel
+                    .fl__addTag
+                        form(action="")
+                            .form-group
+                                input#kynang1(type="checkbox")
+                                label(for="kynang1")
+                                    |My Tag/Kỹ năng
+                            .form-group
+                                input#kynang2(type="checkbox")
+                                label(for="kynang2")
+                                    |Coworker Tag/Kỹ năng
+                            .form-group
+                                button.btn-timkiem
+                                    | Tìm kiếm
+
+                section.fl__danhsach
+                    table 
+                        thead
+                            tr
+                                th.fl__danhsach--title.section-title
+                                    .center 
+                                        | tag/ kỹ năng
+                                        span.material-icons
+                                            | arrow_drop_down
+
+                                th.fl__danhsach--title-date.section-title 
+                                    .center 
+                                        | hồ sơ gợi ý
+                                        span.material-icons
+                                            | arrow_drop_down
+                                th.fl__danhsach--title-date.section-title 
+                                    .center 
+                                        | Ngày tạo
+                                        span.material-icons
+                                            | arrow_drop_down
+                                th.fl__danhsach--title-date.section-title 
+                                    .center 
+                                        | User
+                                        span.material-icons
+                                            | arrow_drop_down
+                                th.fl__danhsach--title-date.section-title 
+                                    .center 
+                                        | Thao tác
+                        tbody
+                            tr
+                                td.fl__danhsach--textleft
+                                    p
+                                        span.material-icons
+                                            | local_offer
+                                        | Finance Director
+                                td.fl__danhsach--textright
+                                    p.views
+                                        |3.410
+                                        span.material-icons
+                                            | visibility
+                                td.fl__danhsach--textright
+                                    p 29/04/2020
+                                td.fl__danhsach--textright
+                                    p Employer.
+                                td.fl__danhsach--textright.cancel
+                                    .icon-cancel
+                                        span.material-icons
+                                            | cancel
+                                    span.thongbao
+                                        | Xóa tag
+                            tr
+                                td.fl__danhsach--textleft
+                                    p
+                                        span.material-icons
+                                            | local_offer
+                                        | Giám đốc tài chính
+                                td.fl__danhsach--textright
+                                    p.views
+                                        |3.810
+                                        span.material-icons
+                                            | visibility
+                                td.fl__danhsach--textright
+                                    p 29/04/2020
+                                td.fl__danhsach--textright
+                                    p Employer.
+                                td.fl__danhsach--textright
+                            tr
+                                td.fl__danhsach--textleft
+                                    p
+                                        span.material-icons
+                                            | local_offer
+                                        | Trưởng phòng tài chính cấp cao
+                                td.fl__danhsach--textright
+                                    p.views
+                                        |3.910
+                                        span.material-icons
+                                            | visibility
+                                td.fl__danhsach--textright
+                                    p 29/04/2020
+                                td.fl__danhsach--textright
+                                    p Employer.
+                                td.fl__danhsach--textright
+                            tr
+                                td.fl__danhsach--textleft
+                                    p
+                                        span.material-icons
+                                            | local_offer
+                                        | Finance Manager KVHCM
+                                td.fl__danhsach--textright
+                                td.fl__danhsach--textright
+                                    p 29/04/2020
+                                td.fl__danhsach--textright
+                                    p Employer.
+                                td.fl__danhsach--textright
+                            tr
+                                td.fl__danhsach--textleft
+                                    p
+                                        span.material-icons
+                                            | local_offer
+                                        | Finance Manager
+                                td.fl__danhsach--textright
+                                td.fl__danhsach--textright
+                                    p 29/04/2020
+                                td.fl__danhsach--textright
+                                    p Employer.
+                                td.fl__danhsach--textright
+        .popup__themtag
+            .popup__ttbox
+                .popup__themtag--close
+                    button.close(type='button', aria-label='Close')
+                        span.material-icons
+                            | close
+                .popup__themtag--text 
+                    h3 Thêm tag mới
+                    .t-1
+                        p.t-1-b Tag/ Kỹ năng
+                        p Nhập tag/ Kỹ năng
+                .popup__themtag--button
+                    button.huy(type='button') Hủy
+                    button.luu(type='button') Lưu

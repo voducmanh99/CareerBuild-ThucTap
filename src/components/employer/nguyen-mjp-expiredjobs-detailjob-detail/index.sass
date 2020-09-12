@@ -1,0 +1,431 @@
+section.manager-fl
+    padding-top: 80px
+    background-color: #eaeaea
+    width: 100%
+    height: auto
+    padding-bottom: 30px
+    .fl__box
+        box-shadow: 3px 4px 25px rgba(0, 0, 0, 0.05)
+        border-radius: 4px
+        background-color: #ffffff   
+        overflow: hidden
+        padding: 30px 29px
+    .fl__search
+        margin-bottom: 22px
+        .none-dk
+            display: none 
+            color: #007db2
+            font-size: 14px
+            font-weight: 400
+            @media(max-width: 768px)
+                display: flex
+                justify-content: flex-start!important
+        &--boxtitle
+            display: flex
+            align-items: center
+            margin-bottom: 31px
+        &--title
+            color: #182642
+            font-size: 24px
+            font-weight: 700
+            line-height: 30px    
+            display: inline-block
+            display: flex
+        .hd 
+            display: flex
+            justify-content: flex-end
+            flex: 1
+            @media(max-width: 768px)
+                display: none
+        .btn-dangtin
+            border-radius: 4px
+            background-color: #0097d1
+            background-image: linear-gradient(to right, #169b74 0%, #86cb49 100%)
+            margin-left: 30px
+            overflow: hidden
+            height: 36px
+            color: white
+            text-align: center
+            font-size: 16px
+            display: flex
+            flex: 0 0 210px
+            align-items: center
+            justify-content: center
+            @media(max-width: 768px)
+                flex: 0 0 157px
+            span 
+                font-size: 18px
+                margin-right: 5px
+                text-decoration: none
+        label
+            color: #182642
+            font-size: 14px
+            font-weight: 500
+            line-height: 30px
+        input,select
+            width: 100%
+            height: 36px
+            border-radius: 5px
+            border: 1px solid #dddddd
+            background-color: #ffffff
+            overflow: hidden
+            padding-left: 22px
+            color: #999999
+            font-size: 14px
+            font-weight: 400
+            line-height: 30px
+        select 
+            appearance: none
+        .btn-timkiem
+            width: 100%
+            height: 36px
+            border-radius: 4px
+            background-color: #0097d1
+            background-image: linear-gradient(-227deg, #287ab9 0%, #0097d1 100%)
+            overflow: hidden
+            display: flex
+            align-items: center
+            justify-content: center
+            color: white
+            color: #ffffff
+            font-size: 16px
+            font-weight: 500
+            line-height: 30px
+            span 
+                color: #ffffff
+                font-size: 18px
+                margin-right: 10px
+        #datepicker,#datepicker2
+            background-image: url(../img/date.png)
+            background-position: 95% 50%
+            background-repeat: no-repeat
+            color: #666666
+        .fl-end
+            display: flex
+            align-items: flex-end
+    .fl__danhsach
+        .section-title
+            color: #182642
+            font-size: 20px
+            font-weight: 700
+            line-height: 30px
+            margin-bottom: 15px
+        table
+            width: 100%
+            thead
+                tr
+                    background-color: #e6e6e6
+                    overflow: hidden
+                    height: 50px
+                    color: #182642
+                    font-size: 14px
+                    font-weight: 700
+                    text-transform: uppercase
+            tbody
+                tr
+                    height: 72px
+                    border-bottom: 1px solid #e5e5e5
+                    border-left: 1px solid #e5e5e5
+                    border-right: 1px solid #e5e5e5
+                    td 
+                        p
+                            width: 140px
+                            padding-right: 20px
+                        .icon-cancel
+                            width: 70px
+                    td:first-child
+                        p
+                            width: 250px!important
+                    .cancel
+                        position: relative
+                        width: 103px
+                        &:hover .thongbao
+                            opacity: 1!important
+                        .material-icons
+                            font-size: 22px
+                            color: #007db2
+                            padding-left: 25px
+                            padding-top: 5px
+                            position: relative
+                            cursor: pointer
+                            @media ( max-width: 768px)
+                                padding-left: 15px
+                        .thongbao
+                            position: absolute
+                            bottom: -24px
+                            left: -7px
+                            width: 88px
+                            height: 44px
+                            background-color: white
+                            box-shadow: 1px 1px 9px 0px #0000001a
+                            border-radius: 5px
+                            overflow: hidden
+                            text-align: center
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            transition: .25s
+                            opacity: 0
+                            @media ( max-width: 768px)
+                                left: -17px
+        &--title
+            width: 730px
+            padding-left: 30px
+        &--textleft
+            padding-left: 30px
+        &--name 
+            color: #333333
+            font-size: 14px
+            font-weight: 400
+        &--profile
+            color: #007db2
+            font-size: 12px
+            font-weight: 400
+            b
+                color: #666666
+                font-weight: 700
+                margin-right: 10px
+        &--date
+            color: #333333
+            font-size: 14px
+            font-weight: 400
+    .fl__boxmain
+        padding: 40px 20px
+        border: 1px solid #e0e0e0
+        &--title
+            margin-bottom: 25px
+    .fl__thongtin
+        
+        &--title
+            color: #182642
+            font-size: 24px
+            font-weight: 700
+            margin-bottom: 18px
+        &--des
+            margin-bottom: 20px
+            th 
+                color: #182642
+                font-size: 16px
+                font-weight: 700
+                padding-right: 35px
+            td
+                color: #182642
+                font-size: 16px
+                font-weight: 400
+            @media(max-width: 996px)
+                justify-content: flex-start!important
+        &--func
+            display: flex
+            align-items: center
+            .nhanban
+                margin-right: 20px
+            span 
+                color: #007db2
+                font-size: 20px
+                font-weight: 400
+                margin-right: 12px
+                text-decoration: none
+            a 
+                color: #666666
+                font-size: 14px
+                font-weight: 400
+                display: flex
+                align-items: center
+        .center
+            display: flex
+            justify-content: center
+        .right
+            display: flex
+            justify-content: flex-end
+        .fl__quanlytag
+            .section-title
+                font-size: 16px
+                font-weight: 700
+                color: #007db2
+                border-bottom: 1px solid #287ab959
+                margin-bottom: 22px
+                padding-bottom: 8px
+            &--thongtin
+                padding: 0px 21px
+                .heading
+                    color: #182642
+                    font-size: 16px
+                    font-weight: 700
+                .text
+                    color: #182642
+                    font-size: 16px
+                    font-weight: 400
+                    display: flex
+                    align-items: center
+                   
+                .tt-1
+                    margin-bottom: 20px
+                .tt-2
+                    margin-bottom: 15px
+                    span 
+                        color: #cccccc
+                        font-size: 8px
+                        font-weight: 400
+                        margin-right: 10px
+                .tt-3
+                    margin-bottom: 25px
+                    .so
+                        color: #ff0505
+                        font-weight: 500
+                        padding: 0 5px
+                    a 
+                        color: #007db2
+                        font-size: 16px
+                        font-weight: 400
+                    .dive
+                        color: #007db2
+                        padding-right: 5px
+        .fl__addTag
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            margin-bottom: 30px
+            form 
+                width: 100%
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                label
+                    margin-right: 30px
+                    @media( max-width: 600px )
+                        margin-right: 15px
+                        font-size: 9px
+                        font-weight: 500
+                        display: flex
+                        align-items: center
+                    &:before
+                        content: ''
+                        width: 15px
+                        height: 14px
+                        margin-right: 10px
+                        color:#007db2
+                        font: normal normal normal 24px/1 Material Design Icons
+                        font-size: 15px
+                        content: "\f131"
+                input[type="checkbox"]
+                    margin-right: 10px
+                    display: none
+                    &:checked~label
+                        &::before
+                            content: "\f132"
+            .btn-timkiem
+                width: 120px
+                height: 30px
+                background-color: #0097d1
+                background-image: linear-gradient(-227deg, #287ab9 0%, #0097d1 100%)   
+                border-radius: 5px
+                overflow: hidden           
+                display: flex
+                justify-content: center
+                align-items: center
+                color: #ffffff
+                font-size: 14px
+                font-weight: 400
+                @media( max-width: 600px )
+                    width: 85px
+    .fl__danhsach
+        @media(max-width: 768px)
+            overflow-x: auto
+        .section-title
+            color: #182642
+            font-size: 14px
+            font-weight: 700
+            @media(max-width: 768px)
+                font-size: calc(12px + 6 * ((100vw - 768px) / 680))
+            .center
+                display: flex
+                align-items: center
+                span
+                    font-size: 18px
+                    color: #182642
+        tbody
+            tr 
+                td 
+                    p 
+                        color: #172642
+                        font-size: 14px
+                        font-weight: 500
+                        display: flex
+                        align-items: center
+                        span 
+                            color: #cccccc
+                            font-size: 14px
+                            margin-right: 24px
+                    .views
+                        color: #007db2
+                        font-size: 14px
+                        font-weight: 500
+                        span 
+                            color: #007db2
+                            font-size: 19px
+                            font-weight: 400
+                            margin-left: 10px
+        .fl__danhsach--title 
+            width: 45% !important
+    .popup__themtag
+        .popup__ttbox
+            width: 489px
+            height: 262px
+            border: 1px solid #e0e0e0
+            background-color: #ffffff
+            display: block
+            margin: 0 auto
+            margin-top: 20px
+            position: relative
+            @media(max-width: 600px)
+                width: 100%
+        .close
+            position: absolute
+            top: 0
+            right: 0
+            width: 34px
+            height: 34px
+            background-color: #109ed9
+            color: white
+            font-size: 14px
+            display: flex
+            font-weight: 400
+            align-items: center
+        &--close
+            display: block
+            height: 34px
+            width: 100%
+        &--text
+            padding: 0 30px 30px 30px
+            h3 
+                color: #172642
+                font-size: 18px
+                font-weight: 800
+                text-transform: uppercase
+                border-bottom: 2px solid #efefef
+                margin-bottom: 25px
+                padding-bottom: 10px
+            .t-1
+                color: #999999
+                font-size: 16px
+                font-weight: 400
+                border-bottom: 1px solid #efefef
+                padding-bottom: 10px
+                &-b 
+                    color: #5d677a
+        &--button
+            display: flex
+            justify-content: center
+            button
+                width: 140px
+                height: 40px
+                border-radius: 5px
+                overflow: hidden
+                color: #ffffff
+                font-size: 16px
+                font-weight: 700
+            .huy
+                background-color: #6c757d
+                margin-right: 10px
+            .luu
+                background-color: #0097d1
