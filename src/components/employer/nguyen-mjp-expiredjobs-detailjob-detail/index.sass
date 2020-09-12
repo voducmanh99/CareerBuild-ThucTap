@@ -127,6 +127,47 @@ section.manager-fl
                     border-bottom: 1px solid #e5e5e5
                     border-left: 1px solid #e5e5e5
                     border-right: 1px solid #e5e5e5
+                    td 
+                        p
+                            width: 140px
+                            padding-right: 20px
+                        .icon-cancel
+                            width: 70px
+                    td:first-child
+                        p
+                            width: 250px!important
+                    .cancel
+                        position: relative
+                        width: 103px
+                        &:hover .thongbao
+                            opacity: 1!important
+                        .material-icons
+                            font-size: 22px
+                            color: #007db2
+                            padding-left: 25px
+                            padding-top: 5px
+                            position: relative
+                            cursor: pointer
+                            @media ( max-width: 768px)
+                                padding-left: 15px
+                        .thongbao
+                            position: absolute
+                            bottom: -24px
+                            left: -7px
+                            width: 88px
+                            height: 44px
+                            background-color: white
+                            box-shadow: 1px 1px 9px 0px #0000001a
+                            border-radius: 5px
+                            overflow: hidden
+                            text-align: center
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            transition: .25s
+                            opacity: 0
+                            @media ( max-width: 768px)
+                                left: -17px
         &--title
             width: 730px
             padding-left: 30px
@@ -253,6 +294,10 @@ section.manager-fl
                     margin-right: 30px
                     @media( max-width: 600px )
                         margin-right: 15px
+                        font-size: 9px
+                        font-weight: 500
+                        display: flex
+                        align-items: center
                     &:before
                         content: ''
                         width: 15px
