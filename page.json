@@ -48,12 +48,12 @@
 		},
 		{
 			"name": "02-Faq-dt",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "mjp-expiredj-detailj-email",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
@@ -68,6 +68,16 @@
 		},
 		{
 			"name": "mjp-postj-jobadview-popup",
+			"isWorking": true,
+			"js": []
+		},
+		{
+			"name": "mjp-postj-listj-popup",
+			"isWorking": true,
+			"js": []
+		},
+		{
+			"name": "mpj-postj-success-popup",
 			"isWorking": true,
 			"js": []
 		}

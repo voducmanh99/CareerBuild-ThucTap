@@ -1,0 +1,35 @@
+
+section.popup
+    .container
+        .row 
+            .col-md-8.mx-auto
+                .popup-box
+                    button.btn-close X
+                    h2.section-title.text DANH SÁCH VỊ TRÍ TUYỂN DỤNG
+                    .postjob-box-title 
+                        .listjob-content 
+                            p.section-content Từ danh sách vị trí tuyển dụng, bạn có thể:
+                            ul 
+                                li.section-content Tái sử dụng các quảng cáo tuyển dụng đã tạo để đăng tuyển.
+                                li.section-content Tạo quảng cáo tuyển dụng theo yêu cầu mới bằng cách chỉnh sửa trên quảng cáo tuyển dụng đã tạo với thao tác "Nhân bản”.
+                        .listjob-table 
+                            table.table
+                                tbody 
+                                    tr.bg-table 
+                                            th.col-8.section-content CHỨC DANH 
+                                            th.col-2.section-content NGÀY ĐĂNG
+                                            th.col-2.section-content NHÂN BẢN
+                                    - for (i=1; i<10; i++)
+                                        tr 
+                                                td.col-8.section-content-2 981215 - Trưởng phòng kế hoạch
+                                                td.col-2.section-content-2 15/05/2020
+                                                td.col-2.section-content-2 
+                                                    span.material-icons filter_none
+                    .pagination
+                        a(href="").active 1 
+                        a(href="") 2
+                        a(href="") 3
+                        a(href="") 4
+                        a(href="") 5
+
+
