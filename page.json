@@ -13,17 +13,17 @@
 		},
 		{
 			"name": "02-employer-dashboard",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "02-faq",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "02-managefollowers",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
@@ -33,17 +33,17 @@
 		},
 		{
 			"name": "02-managejobposting-pendingjobs-popup",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "02-managejobposting-postjobs-addlocation-popup",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "02-managejobposting-postjobs-jobad-popup",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
