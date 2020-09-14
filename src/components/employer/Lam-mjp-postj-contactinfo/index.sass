@@ -10,7 +10,7 @@ section.postjob-info
     .container
         background-color: white
         box-shadow: 1px 1px 20px #f8f8f8
-        padding: 35px 30px
+        padding: 30px 30px 52px 30px
         border-radius: 5px
         .postjob-tab
             max-width: 200px
@@ -37,6 +37,7 @@ section.postjob-info
                 font-size: 16px 
                 font-weight: 500
                 width: 100%
+                color: #00486c
                 
         .postjob-title 
             position: relative 
@@ -44,7 +45,7 @@ section.postjob-info
                 color: #182642
                 font-size: 24px!important
                 font-weight: 500
-                margin-bottom: 30px
+                margin-bottom: 24px
             .section-content
                 color: #182642
                 font-size: 14px
@@ -74,7 +75,7 @@ section.postjob-info
                     font-weight: 500
                     
             .postjob-box-label
-                padding: 30px 25px
+                padding: 30px 25px 6px 25px
                 .label-first,.label-second
                     display: flex 
                     align-items: center
@@ -90,10 +91,13 @@ section.postjob-info
                         padding: 10px 0px
                         border: 0
                         border-bottom: thin #dddddd solid 
-                        margin-bottom: 30px
+                        margin-bottom: 14px
                     select 
                         appearance: none
                         background-position: 99% 50%!important
+                        height: 41px                                    
+                        &:not(:last-child)
+                            margin-bottom: 0px
                     input 
                         position: relative
                         &:first-child
@@ -122,11 +126,11 @@ section.postjob-info
                         height: 20px
                         width: 100%
                         display: flex
-                        align-items: center 
+                        align-items: baseline  
                         justify-content: flex-start
                         position: relative
                         input 
-                            flex: 0 
+                            flex: 0 0 13px
                             margin-right: 15px
                         label 
                             flex: 1
@@ -163,7 +167,7 @@ section.postjob-info
                         
                         a 
                             color: #ffffff
-                            font-size: 13px
+                            font-size: 16px
                     button.btn-comeback
                         width: 200px
                         height: 40px
@@ -173,13 +177,14 @@ section.postjob-info
                         vertical-align: middle
                         transition: 0.3s
                         margin-right: 30px
+                        font-size: 16px
                         &:hover
                             a
                                 text-decoration: none!important
                                 color: white!important
                         a 
                             color: #ffffff
-                            font-size: 13px
+                            font-size: 16px
 @media (max-width:1000px)
     .input-text
         input,select
@@ -224,7 +229,7 @@ section.popup
                 .section-title
                     color: #182642
                     font-size: 18px!important
-                    font-weight: 500
+                    font-weight: 600
                     padding-bottom: 10px
                     border-bottom: 1px #dddddd solid
                 .brand 
@@ -233,18 +238,19 @@ section.popup
                         font-size: 17px  
                         text-decoration: underline 
                         color: #007eb5
+                        font-weight: 500
                 .postjob-box-title 
                     .section-title
                         width: 100%
                         color: #182642
                         font-size: 18px!important
-                        font-weight: 500
+                        font-weight: 600
                         margin-left: auto!important
                         background-color: #f2f8fe
                         border: 0!important
                         text-align: left 
                         padding: 15px 30px!important
-                        // padding: 15px 30px
+                        text-transform: uppercase
                     .section-content
                         color: #182642
                         font-size: 14px
