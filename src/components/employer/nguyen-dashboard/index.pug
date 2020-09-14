@@ -12,10 +12,10 @@ section.db-s1
                             p.db-s1__box--but-2 Hồ sơ ứng tuyển mới
                         .db-s1__box--but
                             p.db-s1__box--but-1 20
-                            p.db-s1__box--but-2 Hồ sơ ứng tuyển mới
+                            p.db-s1__box--but-2 Đơn hàng chưa kích hoạt
                         .db-s1__box--but
                             p.db-s1__box--but-1 20
-                            p.db-s1__box--but-2 Hồ sơ ứng tuyển mới
+                            p.db-s1__box--but-2 Ứng viên
             .col-lg-6.col-xl-3
                 .db-s1__box
                     h3.db-s1__box--title Quản lý tìm kiếm
@@ -30,7 +30,7 @@ section.db-s1
             .col-lg-6.col-xl-3
                 .db-s1__box
                     h3.db-s1__box--title Quản lý đăng tuyển
-                    .db-s1__body.p-0
+                    .db-s1__body.p-0.p-qldt 
                         .db-s1__body--qldt.bb-1
                             span.db-s1__body--qldt-so.green 46
                             p.db-s1__body--qldt-text Việc làm đang tăng
@@ -48,7 +48,7 @@ section.db-s1
             .col-lg-6.col-xl-3
                 .db-s1__box
                     h3.db-s1__box--title Quản lý hoạt động
-                    .db-s1__body.p-0
+                    .db-s1__body.p-0.p-qlht
                         .db-s1__body--qlhd
                             p.db-s1__body--qlhd-date 02/06/2020
                             p.db-s1__body--qlhd-text Employer. Post Job: ID#: 953976 - Code: BA01 - Title: Business Analyst Leader. Post from: CB.vn
@@ -58,7 +58,7 @@ section.db-s1
                         .db-s1__body--qlhd
                             p.db-s1__body--qlhd-date 02/06/2020
                             p.db-s1__body--qlhd-text Employer. Reposting Job: Reposting Job: Job  ID = 522817
-                        .db-s1__body--qlhd
+                        .db-s1__body--qlhd.b-0 
                             a(href="") Xem thêm
         .row.sec2
             .col-sm-12.col-md-6
@@ -70,7 +70,7 @@ section.db-s1
                                 select(name="").select-date
                                     option(value="Jul 1, 2020 - 31 Jul, 2020") Jul 1, 2020 - 31 Jul, 2020
                     .db-s2__box--chart
-                        #mychart4(style='height: 100%; width: 100%;')
+                        #mychart4
             .col-sm-12.col-md-6
                 .db-s2__box
                     h1.db-s2__box--title Biểu đồ ứng viên
@@ -81,7 +81,7 @@ section.db-s1
                                     option(value="Jul 1, 2020 - 31 Jul, 2020") Jul 1, 2020 - 31 Jul, 2020
                     .db-s2__box--chart
                         canvas#myChart
-                        <div id="js-legend1" class="chart-legend"></div>
+                        #js-legend1.chart-legend
         .row.sec2
             .col-sm-12.col-md-6
                 .db-s2__box
@@ -93,7 +93,7 @@ section.db-s1
                                     option(value="Jul 1, 2020 - 31 Jul, 2020") Jul 1, 2020 - 31 Jul, 2020
                     .db-s2__box--chart
                         canvas#myChart2
-                        <div id="js-legend2" class="chart-legend chart-2"></div>
+                        #js-legend2.chart-legend.chart-2 
             .col-sm-12.col-md-6
                 .db-s2__box
                     h1.db-s2__box--title Biểu đồ tuyển dụng theo cấp bậc
@@ -104,7 +104,7 @@ section.db-s1
                                     option(value="Jul 1, 2020 - 31 Jul, 2020") Jul 1, 2020 - 31 Jul, 2020     
                     .db-s2__box--chart.chart-3
                         canvas#myChart3   
-                        <div id="js-legend" class="chart-legend"></div>
+                        #js-legend.chart-legend
         .row
             .col-12
                 .db__end
