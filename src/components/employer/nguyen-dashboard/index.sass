@@ -9,14 +9,17 @@
 		box-shadow: 4px 2px 25px rgba(0, 0, 0, 0.05)
 		overflow: hidden
 		&--title 
-			display: block
+			display: flex
+			align-items: center
+			justify-content: center
 			background-color: #1e5c8b
 			text-align: center
+			height: 50px
 			font-size: 18px
 			font-weight: 500
 			text-transform: uppercase
 			color: white
-			padding: 16px 0px
+			// padding: 0px 0px
 		&--name
 			color: #004970
 			font-size: 40px
@@ -57,7 +60,7 @@
 				margin-bottom: 15px
 	&__body
 		text-align: center
-		padding: 25px 20px 25px 20px
+		padding: 18px 20px 25px 20px
 		&--qltk
 			width: 100%
 			&-so
@@ -65,6 +68,9 @@
 				font-size: 60px
 				font-weight: 400
 				text-transform: uppercase
+				padding-top: 26px
+				padding-bottom: 6px
+				line-height: 1
 			&:first-child
 				padding-bottom: 25px	
 		&--qldt
@@ -107,7 +113,7 @@
 				font-size: 14px
 				font-weight: 400
 				line-height: 18px
-			&:not(:last-child)
+			&:not(:first-child)
 				border-top: 1px solid #e5e5e5
 			a 
 				color: #0097d1
@@ -116,6 +122,12 @@
 				line-height: 30px
 				text-align: right
 				display: block
+	.p-qldt 
+		padding-top: 15px
+	.p-qlht
+		padding-top: 4px
+	.b-0 
+		border: 0!important
 .db-s2__box
 	height: 370px
 	box-shadow: 4px 2px 25px rgba(0, 0, 0, 0.05)
@@ -159,16 +171,19 @@
 			background-image: url(../img/s2.png)
 	&--chart
 		position: relative
-		height: 222px
-		width: 368px
+		height: 177px
+		width: 322px
+		margin-top: 50px
+		margin-bottom: 4px
 		margin: 0 auto
 		.chart-legend
 			ul 
 				display: flex
 				justify-content: center
 				align-items: center
+				margin-bottom: 5px
 				li 
-					font-size: 12px
+					font-size: 9px
 					margin-right: 10px
 					color: #6f6f6f
 					display: flex
@@ -187,12 +202,14 @@
 					height: 8px!important
 					border-radius: 0!important
 	.chart-3
-		width: 400px!important
-		margin-top: 22px
+		width: 311px!important
+		margin-top: 43px
 		.chart-legend
-			margin-top: 10px
+			margin-top: 25px
+			font-size: 9px
 			ul 
 				li 
+					font-size: 9px
 					span 
 						width: 4px
 						height: 5px
@@ -207,7 +224,8 @@
 		font-size: 18px
 		line-height: 30px
 		text-transform: uppercase
-		font-size: 700
+		font-weight: 700
+		margin-bottom: 7px
 	&--text
 		color: #333333
 		font-size: 16px

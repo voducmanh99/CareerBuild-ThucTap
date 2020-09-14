@@ -75,6 +75,7 @@ var chart = new Chart("myChart", {
 document.getElementById("js-legend1").innerHTML = chart.generateLegend();
 
 // Chart 2
+Chart.defaults.global.defaultFontSize = "9";
 var data2 = {
 	labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
 	datasets: [
