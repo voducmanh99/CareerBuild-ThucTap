@@ -5,5 +5,6 @@ $(document).ready(function () {
         } else {
             $(this).removeClass('label-active');
         }
-    });
+	});
+	
 })
