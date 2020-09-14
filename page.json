@@ -13,22 +13,22 @@
 		},
 		{
 			"name": "02-employer-dashboard",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "02-faq",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "02-managefollowers",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "02-mjp-expiredjobs-detailjob-detail",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
@@ -48,37 +48,37 @@
 		},
 		{
 			"name": "02-Faq-dt",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "mjp-expiredj-detailj-email",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "mjp-postj-contactinfo",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "mpj-expiredj-detailj-infomation",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "mjp-postj-jobadview-popup",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "mjp-postj-listj-popup",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		},
 		{
 			"name": "mpj-postj-success-popup",
-			"isWorking": true,
+			"isWorking": false,
 			"js": []
 		}
 	]
