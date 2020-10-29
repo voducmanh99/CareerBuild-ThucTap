@@ -27,22 +27,22 @@
 		},
 		{
 			"name": "02-mjp-expiredjobs-detailjob-detail",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "02-managejobposting-pendingjobs-popup",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "02-managejobposting-postjobs-addlocation-popup",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "02-managejobposting-postjobs-jobad-popup",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
@@ -52,32 +52,32 @@
 		},
 		{
 			"name": "mjp-expiredj-detailj-email",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "mjp-postj-contactinfo",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "mpj-expiredj-detailj-infomation",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "mjp-postj-jobadview-popup",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "mjp-postj-listj-popup",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		},
 		{
 			"name": "mpj-postj-success-popup",
-			"isWorking": false,
+			"isWorking": true,
 			"js": []
 		}
 	]

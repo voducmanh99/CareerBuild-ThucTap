@@ -3,8 +3,7 @@ var utils = Samples.utils;
 //
 var data = {
 	labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
-	datasets: [
-		{
+	datasets: [{
 			backgroundColor: "rgba(9,238,186)",
 			borderColor: "rgba(9,238,186)",
 			data: [6, 4, 9, 5, 9, 1, 20, 10, 12, 11, 4, 4],
@@ -43,27 +42,23 @@ var options = {
 		position: "bottom",
 	},
 	scales: {
-		yAxes: [
-			{
-				gridLines: {
-					drawBorder: false,
-				},
-				stacked: true,
-				ticks: {
-					padding: 10,
-				},
+		yAxes: [{
+			gridLines: {
+				drawBorder: false,
 			},
-		],
-		xAxes: [
-			{
-				gridLines: {
-					display: false,
-				},
-				ticks: {
-					padding: 1,
-				},
+			stacked: true,
+			ticks: {
+				padding: 10,
 			},
-		],
+		}, ],
+		xAxes: [{
+			gridLines: {
+				display: false,
+			},
+			ticks: {
+				padding: 1,
+			},
+		}, ],
 	},
 };
 
@@ -78,8 +73,7 @@ document.getElementById("js-legend1").innerHTML = chart.generateLegend();
 Chart.defaults.global.defaultFontSize = "9";
 var data2 = {
 	labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
-	datasets: [
-		{
+	datasets: [{
 			backgroundColor: "rgba(9,238,186)",
 			borderColor: "rgba(9,238,186)",
 			data: [6, 4, 9, 5, 9, 1, 20, 10, 12, 11, 4, 4],
@@ -122,29 +116,25 @@ var options2 = {
 		position: "bottom",
 	},
 	scales: {
-		yAxes: [
-			{
-				gridLines: {
-					drawBorder: false,
-				},
-				stacked: true,
-				// autoSkipPadding: 1,
-				ticks: {
-					padding: 10,
-				},
+		yAxes: [{
+			gridLines: {
+				drawBorder: false,
 			},
-		],
-		xAxes: [
-			{
-				gridLines: {
-					display: false,
-				},
-				ticks: {
-					padding: 1,
-				},
-				stacked: true,
+			stacked: true,
+			// autoSkipPadding: 1,
+			ticks: {
+				padding: 10,
 			},
-		],
+		}, ],
+		xAxes: [{
+			gridLines: {
+				display: false,
+			},
+			ticks: {
+				padding: 1,
+			},
+			stacked: true,
+		}, ],
 	},
 };
 
@@ -155,20 +145,18 @@ var chart = new Chart("myChart2", {
 document.getElementById("js-legend2").innerHTML = chart.generateLegend();
 
 // Chart 3
-var data = [
-	{
-		backgroundColor: [
-			"#00aaf7",
-			"#e5eaf0",
-			"#00e9b4",
-			"#a4f7e5",
-			"#a3e0fc",
-		],
-		data: [44.52, 3.25, 6.68, 11.13, 34.42],
-		borderColor: "#fff",
-		label: "Dataset 1",
-	},
-];
+var data = [{
+	backgroundColor: [
+		"#00aaf7",
+		"#e5eaf0",
+		"#00e9b4",
+		"#a4f7e5",
+		"#a3e0fc",
+	],
+	data: [44.52, 3.25, 6.68, 11.13, 34.42],
+	borderColor: "#fff",
+	label: "Dataset 1",
+}, ];
 var options = {
 	legend: {
 		display: false,
